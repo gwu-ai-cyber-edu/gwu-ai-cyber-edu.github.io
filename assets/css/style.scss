@@ -2,8 +2,9 @@
 ---
 @import "{{ site.theme }}";
 
-/* 1. HIDE THE GITHUB BUTTONS */
-header ul {
+/* 1. NUCLEAR OPTION: Hide 'View on GitHub' and all header buttons */
+header ul, 
+header p.view {
   display: none !important;
 }
 
@@ -17,7 +18,7 @@ div.wrapper {
 header {
   float: none;
   width: 100%;
-  text-align: left; /* Or center, if you prefer */
+  text-align: center; /* Or left, if you prefer */
   margin-bottom: 20px;
   position: relative; 
 }
