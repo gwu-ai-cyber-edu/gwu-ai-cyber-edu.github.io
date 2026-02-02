@@ -1,5 +1,6 @@
 <div style="text-align: center; margin-bottom: 20px;">
   <img src="https://upload.wikimedia.org/wikipedia/commons/d/da/George_Washington_University_wordmark.svg" alt="GWU Logo" height="80" style="margin-right: 20px;">
+  <img src="https://www.clipartmax.com/png/middle/279-2794086_university-of-hawaii-at-manoa-university-of-hawaii-at-manoa-logo.png" alt="UH Logo" height = "70">
   <img src="https://new.nsf.gov/themes/custom/nsf_theme/logo.svg" alt="NSF Logo" height="80">
 </div>
 
