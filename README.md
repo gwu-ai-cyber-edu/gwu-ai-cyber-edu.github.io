@@ -1,10 +1,9 @@
-# AI in Cybersecurity Education: Faculty Development Summer Institute 2026
 
 **Host:** The George Washington University, Washington, D.C.  
 **Program Dates:** June 1 – July 10, 2026  
 **Application Deadline:** February 28, 2026
 
-[**APPLY NOW**](https://gwcybercorps.smapply.us/prog/ai_cyber_edu_2026/)
+<a href="https://gwcybercorps.smapply.us/prog/ai_cyber_edu_2026/" class="btn">APPLY NOW</a>
 
 ---
 
@@ -61,7 +60,8 @@ The application process is managed via our online portal. Before you begin, plea
 
 **Deadline:** February 28, 2026 
 
-[**START YOUR APPLICATION**](https://gwcybercorps.smapply.us/prog/ai_cyber_edu_2026/)
+<a href="https://gwcybercorps.smapply.us/prog/ai_cyber_edu_2026/" class="btn">Start Your Application Here</a>
+
 
 ---
 
