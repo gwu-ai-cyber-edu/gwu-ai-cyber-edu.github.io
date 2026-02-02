@@ -16,16 +16,20 @@ header, section, footer {
 header {
   background-color: #003366; /* Navy Blue */
   color: white !important;
-  padding: 40px 20px;        /* 40px top/bottom, 20px sides */
+  padding: 40px 20px;
   text-align: center;
-  margin-bottom: 50px;       /* FORCE HUGE GAP between Header and Text */
-  border-bottom: 5px solid #ccaa00; /* Optional: Gold stripe at bottom */
+  margin-bottom: 50px;
+  border-bottom: 5px solid #ccaa00;
 }
 
-header h1 {
-  color: white !important;
+/* This targets both the Title (h1) AND the Link inside it (a) */
+header h1, header h1 a {
+  color: white !important;      /* Force White */
   margin: 0 0 10px 0;
   font-size: 2.2em;
+  text-decoration: none;        /* Remove underline */
+  pointer-events: none;         /* Make it unclickable */
+  cursor: default;              /* Regular mouse cursor */
 }
 
 header p {
