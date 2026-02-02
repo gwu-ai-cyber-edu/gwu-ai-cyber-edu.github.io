@@ -1,6 +1,6 @@
 <div style="text-align: center; margin-bottom: 20px;">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/d/da/George_Washington_University_wordmark.svg" alt="GWU Logo" style="height: 80px; margin-right: 20px;vertical-align: middle;">
-  <img src="https://github.com/user-attachments/assets/cea3a09e-f7d2-4903-b7dd-c2abb9da023c" alt="UH Logo" style="height: 80px; margin-right: 20px; vertical-align: middle;">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/d/da/George_Washington_University_wordmark.svg" alt="GWU Logo" style="height: 80px; margin-right: 10px;vertical-align: middle;">
+  <img src="https://github.com/user-attachments/assets/cea3a09e-f7d2-4903-b7dd-c2abb9da023c" alt="UH Logo" style="height: 80px; margin-right: 10px; vertical-align: middle;">
   <img src="https://new.nsf.gov/themes/custom/nsf_theme/logo.svg" alt="NSF Logo" style="height: 80px;vertical-align: middle;">
 </div>
 
