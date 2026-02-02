@@ -2,57 +2,91 @@
 ---
 @import "{{ site.theme }}";
 
-/* 1. NUCLEAR OPTION: Hide 'View on GitHub' and all header buttons */
-header ul, 
-header p.view {
-  display: none !important;
-}
-
-/* 2. FORCE SINGLE COLUMN LAYOUT */
-/* By default, Minimal floats the header left. We will reset that. */
-div.wrapper {
-  max-width: 900px; /* Makes the text area wider */
-  margin: 0 auto;
-}
-
+/* 1. UNIVERSITY BRANDING HEADER */
+/* This turns the top title area into a Navy Blue block */
 header {
-  float: none;
+  background-color: #003366; /* GWU/NSF Navy Blue */
+  color: #ffffff !important;
+  padding: 40px;
+  border-radius: 6px;
+  margin-bottom: 30px;
   width: 100%;
-  text-align: center; /* Or left, if you prefer */
-  margin-bottom: 20px;
-  position: relative; 
-}
-
-section {
+  box-sizing: border-box;
   float: none;
-  width: 100%;
+  text-align: center;
 }
 
-/* 3. OPTIONAL: CLEAN UP HEADER TEXT */
-header h1 {
-  margin-bottom: 0.2em;
+header h1, header h2 {
+  color: #ffffff !important;
+  margin: 10px 0;
 }
 
-/* HIDE THE FOOTER */
+header p {
+  color: #dddddd !important; /* Light grey for description */
+}
+
+/* 2. NUCLEAR OPTION: HIDE GITHUB LINKS */
+/* This forces the "View on GitHub" and footer credits to disappear */
+header ul, 
+header p.view,
 footer {
   display: none !important;
 }
 
-/* MAKE BUTTONS */
+/* 3. LAYOUT FIXES */
+div.wrapper {
+  max-width: 950px; /* Gives you more width */
+  margin: 0 auto;
+}
+
+section {
+  width: 100%;
+  float: none;
+  font-size: 1.1em; /* Makes text slightly larger/easier to read */
+  line-height: 1.6;
+}
+
+/* 4. MAKE THE BUTTONS POP */
 a.btn {
   display: inline-block;
-  background-color: #003366; /* Matches your Header Blue */
-  color: white !important;   /* Forces text to be white */
-  padding: 15px 30px;        /* Big click area */
-  border-radius: 5px;        /* Rounded corners */
-  text-decoration: none;     /* No underline */
+  background-color: #003366;
+  color: white !important;
+  padding: 12px 25px;
+  border-radius: 4px;
+  text-decoration: none;
   font-weight: bold;
-  font-size: 1.1em;
+  text-align: center;
   margin: 10px 0;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Subtle shadow for depth */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: all 0.2s;
 }
 
 a.btn:hover {
-  background-color: #002244; /* Slightly darker when you mouse over */
-  transform: translateY(-1px); /* Moves up slightly on hover */
+  background-color: #002244; /* Darker blue on hover */
+  transform: translateY(-2px); /* Lifts up slightly */
+  box-shadow: 0 6px 8px rgba(0,0,0,0.15);
+}
+
+/* 5. PROFESSIONAL TABLE STYLE */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 0.95em;
+}
+
+table th {
+  background-color: #003366;
+  color: white;
+  padding: 12px;
+  text-align: left;
+}
+
+table td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+table tr:nth-child(even) {
+  background-color: #f2f2f2; /* Zebra striping */
 }
