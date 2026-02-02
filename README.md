@@ -1,3 +1,7 @@
+<div style="text-align: center; margin-bottom: 20px;">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/d/da/George_Washington_University_wordmark.svg" alt="GWU Logo" height="80" style="margin-right: 20px;">
+  <img src="https://new.nsf.gov/themes/custom/nsf_theme/logo.svg" alt="NSF Logo" height="80">
+</div>
 
 **Host:** The George Washington University, Washington, D.C.  
 **Program Dates:** June 1 – July 10, 2026  
@@ -32,7 +36,7 @@ The summer schedule is designed to balance intensive cohort building with the fl
 ---
 
 ### Funding & Support
-We are committed to making this professional development accessible. [cite_start]All admitted participants receive[cite: 20]:
+We are committed to making this professional development accessible. All admitted participants receive:
 
 * **Travel:** Fully covered airfare/train for **two round trips** (Phase 1 + return for Phase 3).
 * **Housing:** Private apartment-style housing at GWU (includes kitchens and private baths), available for the full six weeks.
