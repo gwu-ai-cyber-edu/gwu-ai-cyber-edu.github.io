@@ -6,7 +6,7 @@
 
 **Host:** The George Washington University, Washington, D.C.  
 **Program Dates:** June 1 – July 10, 2026  
-**Application Deadline:** February 28, 2026
+**Application Deadline:** ~~February 28, 2026~~ March 14, 2026
 
 <a href="https://gwcybercorps.smapply.us/prog/ai_cyber_edu_2026/" class="btn">APPLY NOW</a>
 
@@ -63,7 +63,7 @@ The application process is managed via our online portal. Before you begin, plea
     * Release time for the summer dates.
     * Commitment to offering the course/module in the upcoming academic year.
 
-**Deadline:** February 28, 2026 
+**Deadline:** ~~February 28, 2026~~March 14, 2026 
 
 <a href="https://gwcybercorps.smapply.us/prog/ai_cyber_edu_2026/" class="btn">Start Your Application Here</a>
 
