@@ -63,7 +63,7 @@ The application process is managed via our online portal. Before you begin, plea
     * Release time for the summer dates.
     * Commitment to offering the course/module in the upcoming academic year.
 
-**Timeline:** 
+### Timeline: 
 
 * The application period for 2026 has closed. 
 * Review period: March 16 - April 10, 2026
