@@ -63,10 +63,13 @@ The application process is managed via our online portal. Before you begin, plea
     * Release time for the summer dates.
     * Commitment to offering the course/module in the upcoming academic year.
 
-**Deadline:** ~~February 28, 2026~~March 14, 2026 
+**Timeline:** 
 
-<a href="https://gwcybercorps.smapply.us/prog/ai_cyber_edu_2026/" class="btn">Start Your Application Here</a>
-
+* The application period for 2026 has closed. 
+* Review period: March 16 - April 10, 2026
+* Participant confrimation period: April 13-24, 2026
+* Cohort finalized by May 1, 2026
+* Workshop begins June 1, 2026
 
 ---
 
