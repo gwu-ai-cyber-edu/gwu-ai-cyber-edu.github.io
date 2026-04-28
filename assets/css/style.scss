@@ -37,6 +37,23 @@ header p {
   font-size: 1.0em;             /* CHANGED: Slight reduction for the subtitle too */
 }
 
+header nav.site-nav {
+  margin-top: 18px;
+}
+
+header nav.site-nav a {
+  color: white !important;
+  display: inline-block;
+  font-weight: bold;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+header nav.site-nav a:hover,
+header nav.site-nav a[aria-current="page"] {
+  text-decoration: underline;
+}
+
 /* 3. MAIN CONTENT AREA */
 div.wrapper {
   max-width: 950px;
