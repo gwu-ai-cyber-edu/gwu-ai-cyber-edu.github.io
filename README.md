@@ -6,6 +6,8 @@ This directory contains the Jekyll site for the AI in Cybersecurity Education su
 
 - `index.md`: the site homepage that GitHub Pages renders.
 - `schedule.md`: the schedule page linked from the top navigation.
+- `topics/`: numbered morning topic pages (`topics-XX.md`) linked from the schedule and rendered at `/topic/XX/`.
+- `activity/`: numbered activity pages (`activity-XX.md`) linked from the Phase 1 schedule and rendered at `/activity/XX/`.
 - `_layouts/default.html`: the local page layout used for both pages.
 - `assets/css/style.scss`: site styling, including the header nav and table/button rules.
 - `_config.yml`: Jekyll and theme configuration.
