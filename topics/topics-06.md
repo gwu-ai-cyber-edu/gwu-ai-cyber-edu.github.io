@@ -45,13 +45,13 @@ By the end of the session, participants should be able to evaluate whether a sec
 
 Small groups generate cybersecurity tasks from their own teaching or professional contexts, select 2-3 examples, and classify each task as a good fit for ML, possible with constraints, or poor fit for ML. Groups identify the likely type of ML, key challenges, and the role a human should play in the workflow.
 
-[Open worksheet: ML Fit Spectrum](/topic/06/worksheet/ml-fit-spectrum/)
+[Download worksheet: ML Fit Spectrum PDF](/assets/worksheets/topic-06-ml-fit-spectrum.pdf)
 
 ### Rapid Micro-Module Design
 
 Teams draft a short, non-lab classroom module that teaches one ML-for-security tradeoff. Each team identifies learning objectives, course placement, an in-class activity, a key tradeoff such as precision versus recall or trust versus automation, and a quick assessment check.
 
-[Open worksheet: Micro-Module Design](/topic/06/worksheet/micro-module-design/)
+[Download worksheet: Micro-Module Design PDF](/assets/worksheets/topic-06-micro-module-design.pdf)
 
 ## Key Diagrams
 

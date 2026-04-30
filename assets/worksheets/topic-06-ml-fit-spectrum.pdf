@@ -1,0 +1,81 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 4 0 R /F2 5 0 R >> >> /Contents 6 0 R >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+6 0 obj
+<< /Length 2200 >>
+stream
+BT /F2 18 Tf 54 738 Td (Worksheet: ML Fit Spectrum) Tj ET
+BT /F1 10 Tf 54 710 Td (Use this worksheet during the Topic 06 discussion on matching cybersecurity tasks to) Tj ET
+BT /F1 10 Tf 54 697 Td (appropriate AI/ML approaches.) Tj ET
+BT /F2 13 Tf 54 672 Td (Instructions) Tj ET
+BT /F1 10 Tf 54 654 Td (Work in a small group. Generate cybersecurity tasks from your own teaching or professional) Tj ET
+BT /F1 10 Tf 54 641 Td (context, choose 2-3 examples, and classify each task as a good fit for ML, possible with) Tj ET
+BT /F1 10 Tf 54 628 Td (constraints, or poor fit for ML.) Tj ET
+BT /F1 10 Tf 54 611 Td (For each task, identify the likely type of ML, the main implementation or teaching) Tj ET
+BT /F1 10 Tf 54 598 Td (challenges, and the role a human should play in the workflow.) Tj ET
+0.6 w 54 539 504 42 re S
+BT /F2 8 Tf 58 566 Td (Security Task) Tj ET
+0.6 w 54 581 m 54 539 l S
+BT /F2 8 Tf 176 566 Td (ML Fit \(Good / Possible / Poor\)) Tj ET
+0.6 w 172 581 m 172 539 l S
+BT /F2 8 Tf 280 566 Td (Type of ML) Tj ET
+0.6 w 276 581 m 276 539 l S
+BT /F2 8 Tf 356 566 Td (Key Challenges) Tj ET
+0.6 w 352 581 m 352 539 l S
+BT /F2 8 Tf 478 566 Td (Human Role) Tj ET
+0.6 w 474 581 m 474 539 l S
+0.6 w 558 581 m 558 539 l S
+0.6 w 54 497 504 42 re S
+0.6 w 54 539 m 54 497 l S
+0.6 w 172 539 m 172 497 l S
+0.6 w 276 539 m 276 497 l S
+0.6 w 352 539 m 352 497 l S
+0.6 w 474 539 m 474 497 l S
+0.6 w 558 539 m 558 497 l S
+0.6 w 54 455 504 42 re S
+0.6 w 54 497 m 54 455 l S
+0.6 w 172 497 m 172 455 l S
+0.6 w 276 497 m 276 455 l S
+0.6 w 352 497 m 352 455 l S
+0.6 w 474 497 m 474 455 l S
+0.6 w 558 497 m 558 455 l S
+0.6 w 54 413 504 42 re S
+0.6 w 54 455 m 54 413 l S
+0.6 w 172 455 m 172 413 l S
+0.6 w 276 455 m 276 413 l S
+0.6 w 352 455 m 352 413 l S
+0.6 w 474 455 m 474 413 l S
+0.6 w 558 455 m 558 413 l S
+BT /F2 13 Tf 54 395 Td (Reflection) Tj ET
+BT /F1 10 Tf 54 377 Td (- Which task was the strongest ML fit, and what evidence supports that choice?) Tj ET
+BT /F1 10 Tf 54 364 Td (- Which task looked tempting but had constraints that would make ML risky or) Tj ET
+BT /F1 10 Tf 66 351 Td (ineffective?) Tj ET
+BT /F1 10 Tf 54 338 Td (- What would students need to understand before evaluating this task?) Tj ET
+endstream
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000251 00000 n 
+0000000321 00000 n 
+0000000396 00000 n 
+trailer << /Size 7 /Root 1 0 R >>
+startxref
+2647
+%%EOF
