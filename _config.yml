@@ -1,12 +1,14 @@
-# theme: jekyll-theme-cayman
-# theme: jekyll-theme-minimal
-
-remote_theme: pages-themes/minimal@v0.2.0
+theme: jekyll-theme-minimal
 plugins:
-- jekyll-remote-theme # add this line to the plugins list if you already have one
+- jekyll-seo-tag
 
 title: AI in Cybersecurity Education 
 description: Faculty Development Summer Institute 2026
 
 
 show_downloads: false
+
+sass:
+  quiet_deps: true
+  silence_deprecations:
+    - import
