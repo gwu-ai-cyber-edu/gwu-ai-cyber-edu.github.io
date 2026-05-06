@@ -55,7 +55,7 @@ continued implementation and improvement
 
 | Date | Topic | Description | Activity |
 | :--- | :--- | :--- | :--- |
-| Mon 6/8/26 | [Applying ML to Cybersecurity Problems](/topic/06/) | Map the ML pipeline to intrusion detection, phishing detection, and malware classification, then build a security-focused classifier to compare against the Week 1 model.  | [Security Classifier Lab](/activity/06/) |
+| Mon 6/8/26 | [Applying ML to Cybersecurity Problems](/topic/06/) | Map the ML pipeline to intrusion detection, phishing detection, malware classification, and security operations, then translate these patterns into teachable classroom labs.  | [Security Classifier Lab Design Studio](/activity/06/) |
 | Tue 6/9/26 | [Securing AI Systems](/topic/07/) | AI threat models, deployment vulnerabilities, prompt injection, leakage, and jailbreaks, with emphasis on system design and basic defenses. | [AI Systems Security Lab](/activity/07/) |
 | Wed 6/10/26 | [Ethics, Governance, and Responsible Use](/topic/08/) | Responsible student use of generative AI, disclosure and attribution, acceptable assistance, bias and fairness, accountability, and institutional policy constraints. | [Responsible Use and Governance Workshop](/activity/08/) |
 | Thu 6/11/26 | [Privacy in AI/ML and Cybersecurity](/topic/09/) | Privacy risks in training data, logs, prompts, and outputs, including data leakage, sensitive cybersecurity datasets, and classroom-safe data practices. | [Privacy Risk Review](/activity/09/) |
