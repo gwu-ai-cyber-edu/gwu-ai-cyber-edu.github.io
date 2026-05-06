@@ -1,0 +1,65 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 4 0 R /F2 5 0 R >> >> /Contents 6 0 R >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+6 0 obj
+<< /Length 1745 >>
+stream
+BT /F2 18 Tf 54 738 Td (Worksheet: Teaching Seed Design) Tj ET
+BT /F1 10 Tf 54 710 Td (Use this worksheet during the Topic 06 closing discussion. The goal is to sketch a short) Tj ET
+BT /F1 10 Tf 54 697 Td (classroom teaching seed that helps students reason about one ML-for-security tradeoff.) Tj ET
+BT /F2 13 Tf 54 672 Td (Learning Objectives) Tj ET
+BT /F1 10 Tf 54 654 Td (By the end of this teaching seed, students will be able to:) Tj ET
+BT /F1 10 Tf 54 637 Td (1.) Tj ET
+0.6 w 76 636 m 558 636 l S
+BT /F1 10 Tf 54 615 Td (2.) Tj ET
+0.6 w 76 614 m 558 614 l S
+BT /F2 13 Tf 54 581 Td (Course Placement) Tj ET
+BT /F1 10 Tf 54 563 Td (- Course:) Tj ET
+BT /F1 10 Tf 54 550 Td (- Level:) Tj ET
+BT /F1 10 Tf 54 537 Td (- Prerequisites:) Tj ET
+BT /F1 10 Tf 54 524 Td (- Time available:) Tj ET
+BT /F2 13 Tf 54 499 Td (Class Example) Tj ET
+BT /F1 10 Tf 54 481 Td (- Example from your course:) Tj ET
+BT /F1 10 Tf 54 468 Td (- Security task:) Tj ET
+BT /F1 10 Tf 54 455 Td (- Teaching moment to use:) Tj ET
+BT /F1 10 Tf 54 442 Td (- Why this example fits:) Tj ET
+BT /F2 13 Tf 54 417 Td (Activity Description) Tj ET
+BT /F1 10 Tf 54 399 Td (- Activity format:) Tj ET
+BT /F1 10 Tf 54 386 Td (- Student task:) Tj ET
+BT /F1 10 Tf 54 373 Td (- Materials or data needed:) Tj ET
+BT /F1 10 Tf 54 360 Td (- Instructor facilitation notes:) Tj ET
+BT /F2 13 Tf 54 335 Td (Key Tradeoff to Highlight) Tj ET
+BT /F1 10 Tf 54 317 Td (- Tradeoff:) Tj ET
+BT /F1 10 Tf 54 304 Td (- Why it matters in cybersecurity:) Tj ET
+BT /F1 10 Tf 54 291 Td (- How students will observe or discuss it:) Tj ET
+BT /F2 13 Tf 54 266 Td (Assessment Check) Tj ET
+BT /F1 10 Tf 54 248 Td (- Quick evidence of learning:) Tj ET
+BT /F1 10 Tf 54 235 Td (- Common misconception to watch for:) Tj ET
+endstream
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000251 00000 n 
+0000000321 00000 n 
+0000000396 00000 n 
+trailer << /Size 7 /Root 1 0 R >>
+startxref
+2192
+%%EOF

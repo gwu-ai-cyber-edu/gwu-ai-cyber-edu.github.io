@@ -1,0 +1,85 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 4 0 R /F2 5 0 R >> >> /Contents 6 0 R >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+6 0 obj
+<< /Length 2615 >>
+stream
+BT /F2 18 Tf 54 738 Td (Worksheet: Security Tasks, Patterns, and AI/ML Fit) Tj ET
+BT /F1 10 Tf 54 710 Td (Use this worksheet during Topic 06 Discussion 1. The goal is to identify cybersecurity) Tj ET
+BT /F1 10 Tf 54 697 Td (tasks, connect them to the closest AI/ML application pattern, and sketch classroom) Tj ET
+BT /F1 10 Tf 54 684 Td (activities that help students reason about fit, limits, and security consequences.) Tj ET
+BT /F2 13 Tf 54 659 Td (Instructions) Tj ET
+BT /F1 10 Tf 54 641 Td (Work in a small group. Generate cybersecurity tasks from your own teaching or professional) Tj ET
+BT /F1 10 Tf 54 628 Td (context. Choose 2-3 examples, name the closest application pattern, and classify each task) Tj ET
+BT /F1 10 Tf 54 615 Td (as a strong fit for AI/ML, possible with constraints, or poor fit for AI/ML.) Tj ET
+BT /F1 10 Tf 54 598 Td (For each task, identify the AI/ML role, the classroom use, and the guardrail or human review) Tj ET
+BT /F1 10 Tf 54 585 Td (that would keep the example grounded.) Tj ET
+0.6 w 54 526 504 42 re S
+BT /F2 8 Tf 58 553 Td (Security Task) Tj ET
+0.6 w 54 568 m 54 526 l S
+BT /F2 8 Tf 176 553 Td (Pattern Label) Tj ET
+0.6 w 172 568 m 172 526 l S
+BT /F2 8 Tf 280 553 Td (AI/ML Role) Tj ET
+0.6 w 276 568 m 276 526 l S
+BT /F2 8 Tf 356 553 Td (Fit) Tj ET
+0.6 w 352 568 m 352 526 l S
+BT /F2 8 Tf 478 553 Td (Classroom Use) Tj ET
+0.6 w 474 568 m 474 526 l S
+0.6 w 558 568 m 558 526 l S
+0.6 w 54 484 504 42 re S
+0.6 w 54 526 m 54 484 l S
+0.6 w 172 526 m 172 484 l S
+0.6 w 276 526 m 276 484 l S
+0.6 w 352 526 m 352 484 l S
+0.6 w 474 526 m 474 484 l S
+0.6 w 558 526 m 558 484 l S
+0.6 w 54 442 504 42 re S
+0.6 w 54 484 m 54 442 l S
+0.6 w 172 484 m 172 442 l S
+0.6 w 276 484 m 276 442 l S
+0.6 w 352 484 m 352 442 l S
+0.6 w 474 484 m 474 442 l S
+0.6 w 558 484 m 558 442 l S
+0.6 w 54 400 504 42 re S
+0.6 w 54 442 m 54 400 l S
+0.6 w 172 442 m 172 400 l S
+0.6 w 276 442 m 276 400 l S
+0.6 w 352 442 m 352 400 l S
+0.6 w 474 442 m 474 400 l S
+0.6 w 558 442 m 558 400 l S
+BT /F2 13 Tf 54 382 Td (Reflection) Tj ET
+BT /F1 10 Tf 54 364 Td (- Which task was the strongest AI/ML fit, and what evidence supports that choice?) Tj ET
+BT /F1 10 Tf 54 351 Td (- Which task looked tempting but had constraints that would make AI/ML risky or) Tj ET
+BT /F1 10 Tf 66 338 Td (ineffective?) Tj ET
+BT /F1 10 Tf 54 325 Td (- Which pattern label was the closest match, and what did that label reveal about the) Tj ET
+BT /F1 10 Tf 66 312 Td (classroom use?) Tj ET
+BT /F1 10 Tf 54 299 Td (- What short in-class activity could help students evaluate the task and its) Tj ET
+BT /F1 10 Tf 66 286 Td (tradeoffs?) Tj ET
+endstream
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000251 00000 n 
+0000000321 00000 n 
+0000000396 00000 n 
+trailer << /Size 7 /Root 1 0 R >>
+startxref
+3062
+%%EOF
