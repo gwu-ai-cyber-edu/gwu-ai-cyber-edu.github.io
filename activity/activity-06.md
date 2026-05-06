@@ -25,7 +25,7 @@ By the end of the activity, participants should be able to:
 
 ## Student Lab Package
 
-The downloadable lab is written as a student-facing assignment. It uses an IDS-style classifier over synthetic network-flow records and is designed for Google Colab. Students compare at least three classifier types, evaluate a validation split and five-fold cross-validation, designate one best model in `best_model.py`, and explain how the model output would fit into an IDS workflow.
+The downloadable lab is written as a student-facing assignment. It uses an IDS-style classifier over synthetic network-flow records and is designed for Google Colab. Students create derived features, choose at least three classifier types to compare, evaluate a validation split and five-fold cross-validation, designate one best model in `best_model.py`, and explain how the model output would fit into an IDS workflow.
 
 - [Download the IDS student lab write-up PDF](/assets/activities/topic-06-ids-student-lab.pdf)
 - [Download the Google Colab starter package ZIP](/assets/activities/topic-06-ids-student-lab-starter.zip)
@@ -35,20 +35,24 @@ To use the starter package:
 1. Download and unzip the starter package.
 2. Upload `ids_colab_explorer.ipynb` to Google Colab.
 3. Upload the `data/` directory when prompted by the notebook, or upload `ids_flows_dev.csv` and `ids_flows_train.csv` into the Colab runtime.
-4. Run the notebook cells and complete the TODO prompts.
-5. Transfer the selected final feature pipeline and classifier into `best_model.py`.
+4. Run the notebook cells, complete the code TODOs, and replace notebook `Answer here:` placeholders.
+5. Transfer the selected final feature pipeline, classifier, threshold, and model name into `best_model.py`.
 6. Replace the `Answer here:` placeholders in `evaluation_notes.md`, `incident_review.md`, and `reflection.md`.
 
 The starter package includes a 30-row development set and a 5,000-row training set. The private withheld test set used for bonus scoring is not included in the starter package.
 
 The student submission package includes:
 
-- `ids_colab_explorer.ipynb` as the exploration and evidence notebook
+- `ids_colab_explorer.ipynb` as the exploration and evidence notebook, including code TODOs and written answers
 - `evaluation_notes.md` with validation and cross-validation results for at least three classifiers
 - `best_model.py` with the selected reproducible scoring pipeline
 - `incident_review.md` with alert interpretation and human-review notes
 - `reflection.md` with answers to the lab reflection questions
 - `ai_assistance_log.md` if AI assistance was used
+
+### AI Agent Use In The Student Lab
+
+Students may use AI agents for debugging, code explanation, and brainstorming model or feature choices. The starter package includes `AGENTS.md`, which describes the intended boundaries for agent help. The goal is not to make those boundaries impossible to bypass; the goal is for students to practice using assistance while preserving their own reasoning, security interpretation, and final submitted code.
 
 ## From Lab Review To Lab Design
 
@@ -59,7 +63,7 @@ After reviewing the student lab, we will discuss how the lab is structured:
 - How do metrics become security reasoning?
 - How do train/test evaluation, five-fold cross-validation, and private withheld scoring support different teaching goals?
 - What would make the sample data easier or harder to classify?
-- How does comparing logistic regression, a decision tree, and a random forest connect back to Week 1 supervised learning?
+- How does comparing multiple classifier families connect back to Week 1 supervised learning?
 - How does the bonus competition change model selection, and why should final scoring use withheld data?
 - Where does the lab preserve human review?
 - What parts of the structure could transfer to another security topic?
