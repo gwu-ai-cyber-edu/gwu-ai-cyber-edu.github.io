@@ -1,0 +1,66 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 4 0 R /F2 5 0 R >> >> /Contents 6 0 R >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+6 0 obj
+<< /Length 2823 >>
+stream
+BT /F2 18 Tf 54 738 Td (Worksheet: Threat Modeling a Research Literature Assistant) Tj ET
+BT /F1 10 Tf 54 710 Td (Use this worksheet during Topic 07 Activity 1. Build a short threat-model entry for a) Tj ET
+BT /F1 10 Tf 54 697 Td (research literature assistant using the threat-card shape, then map it to one OWASP LLM Top) Tj ET
+BT /F1 10 Tf 54 684 Td (10 category.) Tj ET
+BT /F2 13 Tf 54 659 Td (The Application) Tj ET
+BT /F1 10 Tf 54 641 Td (A reading helper for student researchers. It accepts uploaded PDFs, local notes, and a) Tj ET
+BT /F1 10 Tf 54 628 Td (student question. It produces summaries, cross-paper comparisons, draft citations, and) Tj ET
+BT /F1 10 Tf 54 615 Td (surfaced passages.) Tj ET
+BT /F2 13 Tf 54 590 Td (Pick One Scenario) Tj ET
+BT /F1 10 Tf 54 572 Td (- A paper with hidden instructions or malformed citations.) Tj ET
+BT /F1 10 Tf 54 559 Td (- A poisoned summary or fabricated comparison note.) Tj ET
+BT /F1 10 Tf 54 546 Td (- Private draft notes exposed through the assistant.) Tj ET
+BT /F1 10 Tf 54 533 Td (- A large upload that drives cost or latency.) Tj ET
+BT /F1 10 Tf 54 516 Td (Selected scenario: ____________________________________________________) Tj ET
+BT /F2 13 Tf 54 491 Td (Threat Card) Tj ET
+BT /F1 10 Tf 54 473 Td (- Component: ___________________________________________________________) Tj ET
+BT /F1 10 Tf 54 460 Td (- Assumption: __________________________________________________________) Tj ET
+BT /F1 10 Tf 54 447 Td (- Attacker capability: _________________________________________________) Tj ET
+BT /F1 10 Tf 54 434 Td (- Attack path: _________________________________________________________) Tj ET
+BT /F1 10 Tf 54 421 Td (- Impact: ______________________________________________________________) Tj ET
+BT /F2 13 Tf 54 396 Td (OWASP Mapping) Tj ET
+BT /F1 10 Tf 54 378 Td (- Best-fit OWASP category \(LLM01..LLM10\): ____________________________) Tj ET
+BT /F1 10 Tf 54 365 Td (- Why this category fits: ______________________________________________) Tj ET
+BT /F2 13 Tf 54 340 Td (Boundary Walk) Tj ET
+BT /F1 10 Tf 54 322 Td (- One asset: ___________________________________________________________) Tj ET
+BT /F1 10 Tf 54 309 Td (- One trust boundary crossed: __________________________________________) Tj ET
+BT /F1 10 Tf 54 296 Td (- One influence point \(untrusted text becomes model-visible\): _________) Tj ET
+BT /F1 10 Tf 54 283 Td (- One output reuse point \(output drives a downstream action\): _________) Tj ET
+BT /F2 13 Tf 54 258 Td (Reflection) Tj ET
+BT /F1 10 Tf 54 240 Td (- What part of the threat-card shape was hardest to fill in?) Tj ET
+BT /F1 10 Tf 54 227 Td (- Did the scenario cross more than one boundary? Which mattered most?) Tj ET
+BT /F1 10 Tf 54 214 Td (- What classroom prompt would make a student apply this same shape to a real system?) Tj ET
+endstream
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000251 00000 n 
+0000000321 00000 n 
+0000000396 00000 n 
+trailer << /Size 7 /Root 1 0 R >>
+startxref
+3270
+%%EOF

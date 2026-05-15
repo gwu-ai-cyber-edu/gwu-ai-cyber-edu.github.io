@@ -25,7 +25,7 @@ By the end of the activity, participants should be able to:
 
 ## Student Lab Package
 
-The downloadable lab is written as a student-facing assignment. It uses an IDS-style classifier over synthetic network-flow records and is designed for Google Colab. Students create derived features, choose at least three classifier types to compare, evaluate a validation split and five-fold cross-validation, designate one best model in `best_model.py`, and explain how the model output would fit into an IDS workflow.
+The downloadable lab is written as a student-facing assignment. It uses an IDS-style classifier over network log records and is designed for Google Colab. Students create derived features, choose at least three classifier types to compare, evaluate a train/validation split and five-fold cross-validation, designate one best model in `best_model.py`, and explain how the model output would fit into an IDS workflow. In the student materials, "validation" refers to the local train/validation split, while "test" is reserved for the private competition test set used for bonus scoring.
 
 - [Download the IDS student lab write-up PDF](/assets/activities/topic-06-ids-student-lab.pdf)
 - [Download the Google Colab starter package ZIP](/assets/activities/topic-06-ids-student-lab-starter.zip)
@@ -39,7 +39,7 @@ To use the starter package:
 5. Transfer the selected final feature pipeline, classifier, threshold, and model name into `best_model.py`.
 6. Replace the `Answer here:` placeholders in `evaluation_notes.md`, `incident_review.md`, and `reflection.md`.
 
-The starter package includes a 30-row development set and a 5,000-row training set. The private withheld test set used for bonus scoring is not included in the starter package.
+The starter package includes a small development set and a 5,000-row synthetic training set. The private competition test set used for bonus scoring is the real Kaggle [Cybersecurity Threat Detection Dataset](https://www.kaggle.com/datasets/dhrubangtalukdar/cybersecurity-threat-detection-dataset), shares the same 13 columns as the training file, and is not included in the starter package.
 
 The student submission package includes:
 
@@ -61,14 +61,14 @@ After reviewing the student lab, we will discuss how the lab is structured:
 - What makes the security task visible?
 - What makes the dataset feasible for class use?
 - How do metrics become security reasoning?
-- How do train/test evaluation, five-fold cross-validation, and private withheld scoring support different teaching goals?
+- How do a local train/validation split, five-fold cross-validation, and a private competition test set support different teaching goals? (In the student materials, "validation" refers to the local split and "test" refers to the competition file.)
 - What would make the sample data easier or harder to classify?
 - How does comparing multiple classifier families connect back to Week 1 supervised learning?
-- How does the bonus competition change model selection, and why should final scoring use withheld data?
+- How does the bonus competition change model selection, and why should final scoring use a private competition test set?
 - Where does the lab preserve human review?
 - What parts of the structure could transfer to another security topic?
 
-The included data uses feature-separable attack categories with moderate overlap. This keeps the task approachable with standard classifiers while preserving useful discussion about false positives, false negatives, thresholds, and synthetic-data limits.
+The synthetic training data uses feature-separable attack categories with moderate overlap. The competition test set is a real public dataset that is more imbalanced and noisier. This gap keeps the task approachable with standard classifiers while preserving useful discussion about false positives, false negatives, thresholds, distribution shift, and the limits of synthetic data.
 
 ## Guided Lab Design Sprint
 
