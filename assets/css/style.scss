@@ -137,3 +137,121 @@ section table a:hover,
 section table a:focus {
   text-decoration: underline;
 }
+
+/* 7. WEEKLY GRID TABLE STYLING */
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+  margin-bottom: 30px;
+  border: 1px solid #e1e4e8;
+  border-radius: 6px;
+}
+
+.weekly-grid-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  font-size: 0.9em;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.weekly-grid-table th, 
+.weekly-grid-table td {
+  border: 1px solid #d1d5da;
+  padding: 10px;
+  vertical-align: top;
+  text-align: left;
+}
+
+.weekly-grid-table th {
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+
+.weekly-grid-table th.time-col {
+  width: 100px;
+}
+
+.weekly-grid-table td.time-cell {
+  background-color: #f6f8fa;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+  color: #586069;
+}
+
+/* Event Types Styling */
+.weekly-grid-table .empty-cell {
+  background-color: #fafbfc;
+  color: #959da5;
+}
+
+.weekly-grid-table .food-event {
+  background-color: #fff9e6; /* Soft warm yellow */
+  color: #856404;
+}
+
+.weekly-grid-table .food-event-center {
+  background-color: #fff9e6; /* Soft warm yellow */
+  color: #856404;
+  text-align: center;
+  vertical-align: middle;
+  font-style: italic;
+}
+
+.weekly-grid-table .holiday {
+  background-color: #f1f3f4; /* Soft grey */
+  color: #5f6368;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: bold;
+}
+
+.weekly-grid-table .lab-session {
+  background-color: #f3e8fd; /* Soft purple */
+  color: #7b1fa2;
+}
+
+.weekly-grid-table .lecture-session {
+  background-color: #ebf5ff; /* Soft blue */
+  color: #004085;
+}
+
+.weekly-grid-table .lecture-session:hover {
+  background-color: #d6ebff;
+}
+
+.weekly-grid-table .guest-orientation {
+  background-color: #e6f4ea; /* Soft green */
+  color: #137333;
+}
+
+.weekly-grid-table .guest-orientation:hover {
+  background-color: #d2ebd9;
+}
+
+.weekly-grid-table .free-lab {
+  background-color: #f3e8fd; /* Soft purple for labs */
+  color: #7b1fa2;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.weekly-grid-table .instructor {
+  display: block;
+  font-size: 0.85em;
+  font-weight: bold;
+  color: #586069;
+  margin-top: 4px;
+}
+
+.weekly-grid-table .location {
+  display: block;
+  font-size: 0.85em;
+  color: #6a737d;
+  margin-top: 2px;
+  font-style: italic;
+}

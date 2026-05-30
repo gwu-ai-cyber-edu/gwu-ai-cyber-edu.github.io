@@ -43,6 +43,141 @@ continued implementation and improvement
 
 ### Week 1
 
+**Week 1 at-a-glance:**
+
+<div class="table-responsive">
+  <table class="weekly-grid-table">
+    <thead>
+      <tr>
+        <th class="time-col">Time</th>
+        <th>Monday 6/1</th>
+        <th>Tuesday 6/2</th>
+        <th>Wednesday 6/3</th>
+        <th>Thursday 6/4</th>
+        <th>Friday 6/5</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="time-cell">9:30 - 10 AM</td>
+        <td class="food-event">Arrival and Breakfast <span class="location">[SEH Green Wall Atrium]</span></td>
+        <td class="empty-cell"></td>
+        <td class="empty-cell"></td>
+        <td class="empty-cell"></td>
+        <td class="empty-cell"></td>
+      </tr>
+      <tr>
+        <td class="time-cell">10 AM - 11 AM</td>
+        <td class="guest-orientation">
+          Welcome and Orientation
+          <span class="location">[SEH Lehman]</span>
+        </td>
+        <td class="lecture-session" rowspan="2">
+          Supervised Learning Foundations
+          <span class="instructor">Rebecca</span>
+          <span class="location">[SEH 4040]</span>
+        </td>
+        <td class="lecture-session" rowspan="2">
+          Neural Networks
+          <span class="instructor">Shi</span>
+          <span class="location">[SEH 4040]</span>
+        </td>
+        <td class="lecture-session" rowspan="2">
+          Robustness
+          <span class="instructor">Shi</span>
+          <span class="location">[SEH 4040]</span>
+        </td>
+        <td class="guest-orientation" rowspan="2">
+          Guest speaker: Mohit Iyyer
+        </td>
+      </tr>
+      <tr>
+        <td class="time-cell">11 AM - 11:30 AM</td>
+        <td class="lecture-session" rowspan="2">
+          World View
+          <span class="instructor">Shi</span>
+          <span class="location">[SEH 4040]</span>
+        </td>
+      </tr>
+      <tr>
+        <td class="time-cell">11:30 AM - 12 PM</td>
+        <td class="food-event-center" colspan="3" rowspan="2">Lunch on your own</td>
+        <td class="food-event-center" rowspan="2">
+          Provided Lunch with the guest
+          <span class="location">[SEH Green Wall Atrium]</span>
+        </td>
+      </tr>
+      <tr>
+        <td class="time-cell">12 PM - 1 PM</td>
+        <td class="food-event-center" rowspan="2">Lunch on your own</td>
+      </tr>
+      <tr>
+        <td class="time-cell">1 PM - 1:30 PM</td>
+        <td class="lecture-session" rowspan="2">
+          Supervised Learning Foundations Continued
+          <span class="instructor">Rebecca</span>
+          <span class="location">[SEH 4040]</span>
+        </td>
+        <td class="lecture-session" rowspan="2">
+          Generative Models and Transformers
+          <span class="instructor">Shi</span>
+          <span class="location">[SEH 4040]</span>
+        </td>
+        <td class="lecture-session" rowspan="2">
+          Towards agents
+          <span class="instructor">Shi</span>
+          <span class="location">[SEH 4040]</span>
+        </td>
+        <td class="lab-session" rowspan="3">
+          Adapt-a-Lab Sprint
+          <span class="instructor">Robert, Shi, Rebecca</span>
+          <span class="location">[SEH 4040]</span>
+        </td>
+      </tr>
+      <tr>
+        <td class="time-cell">1:30 PM - 2:30 PM</td>
+        <td class="lab-session" rowspan="2">
+          Guided Lab: ML Tech Stack
+          <span class="instructor">Robert</span>
+          <span class="location">[SEH 4040]</span>
+        </td>
+      </tr>
+      <tr>
+        <td class="time-cell">2:30 PM - 4 PM</td>
+        <td class="lab-session">
+          Guided Lab: Supervised Learning
+          <span class="instructor">Rebecca</span>
+          <span class="location">[SEH 4040]</span>
+        </td>
+        <td class="lab-session">
+          Guided Lab: LLM
+          <span class="instructor">Shi</span>
+          <span class="location">[SEH 4040]</span>
+        </td>
+        <td class="lab-session">
+          Guided Lab: Adversarial ML
+          <span class="instructor">Shi</span>
+          <span class="location">[SEH 4040]</span>
+        </td>
+      </tr>
+      <tr>
+        <td class="time-cell">4 PM - 5 PM</td>
+        <td class="free-lab" colspan="5">Free lab time</td>
+      </tr>
+      <tr>
+        <td class="time-cell">5 PM - 7 PM</td>
+        <td class="food-event-center">
+          Welcome Reception
+          <span class="location">[SEH Green Wall Atrium]</span>
+        </td>
+        <td class="empty-cell" colspan="4"></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+**Day-by-day details:**
+
 | Date | Topic | Description | Activity |
 | :--- | :--- | :--- | :--- |
 | Mon 6/1/26 | [Orientation + AI Mental Models](/topic/01/) | Program kickoff, participant introductions, AI vs. traditional programming, and a Colab classification demo to start translating ML workflows into cybersecurity contexts. | [Orientation Worksheet](/activity/01/) |
@@ -52,6 +187,97 @@ continued implementation and improvement
 | Fri 6/5/26 | [Participant Deep Dives + Lesson Design](/topic/05/) | Participant-selected deep dives, a lab adaptation sprint, backward design, and course integration planning.  | [Adapt-a-Lab Sprint](/activity/05/) |
 
 ### Week 2
+
+**Week 2 at-a-glance:**
+
+<div class="table-responsive">
+  <table class="weekly-grid-table">
+    <thead>
+      <tr>
+        <th class="time-col">Time</th>
+        <th>Monday 6/8</th>
+        <th>Tuesday 6/9</th>
+        <th>Wednesday 6/10</th>
+        <th>Thursday 6/11</th>
+        <th>Friday 6/12</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="time-cell">10 AM - 11 AM</td>
+        <td class="lecture-session" rowspan="2">
+          Applying ML to Cyber Problems
+          <span class="instructor">Adam</span>
+          <span class="location">[SEH 4040]</span>
+        </td>
+        <td class="lecture-session" rowspan="2">
+          Securing AI Systems
+          <span class="instructor">Adam</span>
+          <span class="location">[SEH 4040]</span>
+        </td>
+        <td class="guest-orientation">
+          Guest Speaker: David Broniatowski
+        </td>
+        <td class="lecture-session" rowspan="2">
+          Privacy
+          <span class="instructor">Arkady</span>
+          <span class="location">[SEH 4040]</span>
+        </td>
+        <td class="lab-session" rowspan="2">
+          Build-it Break-it Fix-it
+          <span class="instructor">Adam</span>
+          <span class="location">[SEH 4040]</span>
+        </td>
+      </tr>
+      <tr>
+        <td class="time-cell">11 AM - 12 PM</td>
+        <td class="guest-orientation">
+          Discussion
+        </td>
+      </tr>
+      <tr>
+        <td class="time-cell">12 PM - 1 PM</td>
+        <td class="food-event-center">Lunch on your own</td>
+        <td class="food-event-center">Lunch on your own</td>
+        <td class="food-event-center">Provided Lunch</td>
+        <td class="food-event-center">Lunch on your own</td>
+        <td class="food-event-center">Provided working lunch</td>
+      </tr>
+      <tr>
+        <td class="time-cell">1 PM - 3 PM</td>
+        <td class="lab-session">
+          Guided Lab: Security Classifier
+          <span class="instructor">Adam</span>
+          <span class="location">[SEH 4040]</span>
+        </td>
+        <td class="lab-session">
+          Guided Lab: AI Systems Security
+          <span class="instructor">Adam</span>
+          <span class="location">[SEH 4040]</span>
+        </td>
+        <td class="guest-orientation">
+          Guest Speaker: Elissa Redmiles
+        </td>
+        <td class="lecture-session">
+          Human Factors Privacy
+          <span class="instructor">Shiza</span>
+          <span class="location">[SEH 4040]</span>
+        </td>
+        <td class="lab-session">
+          Build-it Break-it Fix-it
+          <span class="instructor">Adam</span>
+          <span class="location">[SEH 4040]</span>
+        </td>
+      </tr>
+      <tr>
+        <td class="time-cell">Beyond 3 PM</td>
+        <td class="free-lab" colspan="5">Free Lab time</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+**Day-by-day details:**
 
 | Date | Topic | Description | Activity |
 | :--- | :--- | :--- | :--- |
@@ -63,11 +289,91 @@ continued implementation and improvement
 
 ### Week 3
 
+**Week 3 at-a-glance:**
+
+<div class="table-responsive">
+  <table class="weekly-grid-table">
+    <thead>
+      <tr>
+        <th class="time-col">Time</th>
+        <th>Monday 6/15</th>
+        <th>Tuesday 6/16</th>
+        <th>Wednesday 6/17</th>
+        <th>Thursday 6/18</th>
+        <th>Friday 6/19</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="time-cell">10 AM - 11 AM</td>
+        <td class="lecture-session" rowspan="2">
+          Throughline Review and Dataset Realism
+          <span class="instructor">Rebecca</span>
+          <span class="location">[SEH 4040]</span>
+        </td>
+        <td class="lecture-session" rowspan="2">
+          AI Assisted Prototyping and Teaching Methods
+          <span class="instructor">Adam</span>
+          <span class="location">[SEH 4040]</span>
+        </td>
+        <td class="guest-orientation" rowspan="2">
+          Guest Speaker: Malihe Aliktani
+        </td>
+        <td class="lab-session" rowspan="2">
+          Cohort Showcase
+          <span class="instructor">Adam, Arkady, Rebecca, Robert, Shi</span>
+          <span class="location">[SEH 4040]</span>
+        </td>
+        <td class="holiday" rowspan="5">
+          Juneteenth (Holiday)
+        </td>
+      </tr>
+      <tr>
+        <td class="time-cell">11 AM - 12 PM</td>
+      </tr>
+      <tr>
+        <td class="time-cell">12 PM - 1 PM</td>
+        <td class="food-event-center">Lunch on your own</td>
+        <td class="food-event-center">Lunch on your own</td>
+        <td class="food-event-center">Provided Lunch with the Speaker</td>
+        <td class="food-event-center">Provided Lunch</td>
+      </tr>
+      <tr>
+        <td class="time-cell">1 PM - 3 PM</td>
+        <td class="lab-session">
+          Lab: Initial Prototype
+          <span class="instructor">Rebecca</span>
+          <span class="location">[SEH 4040]</span>
+        </td>
+        <td class="lecture-session">
+          Class factory continued
+          <span class="instructor">Adam</span>
+          <span class="location">[SEH 4040]</span>
+        </td>
+        <td class="food-event-center">
+          Cohort Field Trip
+        </td>
+        <td class="lecture-session">
+          Transition Plan
+          <span class="instructor">Adam, Arkady, Rebecca, Robert, Shi</span>
+          <span class="location">[SEH 4040]</span>
+        </td>
+      </tr>
+      <tr>
+        <td class="time-cell">Beyond 3 PM</td>
+        <td class="free-lab" colspan="4">Free Lab Time</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+**Day-by-day details:**
+
 | Date | Topic | Description | Activity |
 | :--- | :--- | :--- | :--- |
 | Mon 6/15/26 | [Throughline Review, Datasets, and Realism](/topic/11/) | Reconnect Weeks 1-2 concepts, examine dataset realism and classroom simplification, and draft an initial module prototype for peer review.  | [Initial Prototype and Peer Review](/activity/11/) |
 | Tue 6/16/26 | [AI-Assisted Prototyping and Teaching Methods](/topic/12/) | Use AI tools to draft lectures, labs, rubrics, instructor notes, and student materials while evaluating outputs for correctness, feasibility, privacy, and security realism. | [AI-Assisted Teaching Materials Sprint](/activity/12/) |
-| Wed 6/17/26 | [All-Day Module Refinement Studio](/topic/13/) | All-day studio focused on improving module prototypes through alignment, scaffolding, assessment design, misconception planning, adaptation, and structured peer review.  | [Module Refinement Studio](/activity/13/) |
+| Wed 6/17/26 | Guest Speaker: Malihe Aliktani | Guest Speaker session with Malihe Aliktani in the morning, followed by a Cohort Field Trip in the afternoon. | Cohort Field Trip |
 | Thu 6/18/26 | [All-Day Showcase and Phase 2/3 Transition](/topic/14/) | All-day showcase and transition block with short teaching previews, structured critique, a Phase 2 build backlog, and a Phase 3 teaching-demo plan.  | [Showcase and Transition Planning](/activity/14/) |
 
 ## Phase 2: Week 4-5: Curriculum Refinement (remote)
