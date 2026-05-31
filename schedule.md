@@ -7,7 +7,7 @@ permalink: /schedule/
 # Program Description
 
 <div class="schedule-warning">
-  <strong>Schedule note:</strong> All institute materials and schedule details are currently under development and subject to change. A final schedule will be posted before the start of the institute.
+  <strong>Schedule note:</strong> Upcoming scheduled events are subject to change. A finalized version of this summer's activities will be shared in the archive upon completion.
 </div>
 
 This 6-week hybrid institute supports computer science and cybersecurity faculty in developing,
@@ -184,7 +184,7 @@ continued implementation and improvement
 | Tue 6/2/26 | [Supervised Learning Foundations](/topic/02/) | Supervised learning pipeline, evaluation metrics, and a guided classifier lab mapped to IDS, phishing detection, and malware classification. | [Supervised Learning Lab](/activity/02/) |
 | Wed 6/3/26 | [Neural Networks + LLM Foundations](/topic/03/) | Neural networks, transformers, prompt engineering, and an LLM lab that participants adapt toward cybersecurity uses such as SOC copilots and threat intelligence. | [LLM Foundations Lab](/activity/03/) |
 | Thu 6/4/26 | [Adversarial ML + Trustworthy AI](/topic/04/) | Adversarial examples, robustness, and a model-attack lab that leads into a classroom build-break-fix activity design. | [Adversarial ML Lab](/activity/04/) |
-| Fri 6/5/26 | [Participant Deep Dives + Lesson Design](/topic/05/) | Participant-selected deep dives, a lab adaptation sprint, backward design, and course integration planning.  | [Adapt-a-Lab Sprint](/activity/05/) |
+| Fri 6/5/26 | [Guest speaker: Dr. Mohit Iyyer (UMD)](/topic/05/) | We are pleased to have Dr. Iyyer present a guest lecture in the morning; in the afternoon, we will faciliate participant-selected deep dive discussion and a lab adaptation sprint, backward design, and course integration planning.  | [Adapt-a-Lab Sprint](/activity/05/) |
 
 ### Week 2
 
