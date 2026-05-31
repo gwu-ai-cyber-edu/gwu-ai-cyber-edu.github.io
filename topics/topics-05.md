@@ -8,10 +8,8 @@ permalink: /topic/05/
 
 ## Morning Outline
 
-- Feature engineering and security data challenges
-- Evaluation beyond accuracy
-- Dataset imbalance, drift, and labeling
-- Interpretability, LLM failure modes, and teaching AI without heavy math
+Guest speaker: [Dr. Mohit Iyyer](https://www.cs.umd.edu/~miyyer/), University of Maryland at College Park.
+Title and Abstract TBA
 
 ## Afternoon Preview
 
