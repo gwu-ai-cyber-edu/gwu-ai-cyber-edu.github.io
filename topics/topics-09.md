@@ -1,18 +1,9 @@
 ---
 layout: default
-title: Build-Break-Fix Adversarial Exercise
+title: Privacy in AI/ML and Cybersecurity
 permalink: /topic/09/
 ---
 
-# Build-Break-Fix Adversarial Exercise
+# Privacy in AI/ML and Cybersecurity
 
-## Morning Outline
-
-- Team roles
-- Attack versus defense
-- System-level thinking
-- How adversaries change system design
-
-## Afternoon Preview
-
-The afternoon activity is [Build-Break-Fix Lab](/activity/09/), where teams build, attack, and patch AI-enabled security tools.
+This morning session looks at privacy in machine learning: why a private dataset does not automatically produce a private model, how training data can leak, and the main defenses that address it — differential privacy, federated learning, and privacy-preserving machine learning — including what each one does and does not protect, with an eye toward how to teach these ideas in a cybersecurity classroom.
