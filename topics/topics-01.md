@@ -10,10 +10,8 @@ permalink: /topic/01/
 
 - Program kickoff, goals, and structure
 - Participant introductions and teaching context
-- AI versus traditional programming
-- What machine learning does: patterns, not rules
-- Security callouts: IDS, phishing, malware
+- World view and state of AI
 
 ## Afternoon Preview
 
-The afternoon activity is [Orientation Worksheet](/activity/01/), a short setup and reflection exercise around the day’s ideas.
+The afternoon activity is [ML Tech Stack](/activity/01/), an overview of tools and technical frameworks.
