@@ -180,7 +180,7 @@ continued implementation and improvement
 
 | Date | Topic | Description | Activity |
 | :--- | :--- | :--- | :--- |
-| Mon 6/1/26 | [Orientation + AI Mental Models](/topic/01/) | Program kickoff, participant introductions, AI vs. traditional programming, and a Colab classification demo to start translating ML workflows into cybersecurity contexts. | [Orientation Worksheet](/activity/01/) |
+| Mon 6/1/26 | [Orientation + World view and State of AI](/topic/01/) | Program kickoff, participant introductions, an overview on the state of AI, and an introduction to technicla frameworks. | [Orientation Worksheet](/activity/01/) |
 | Tue 6/2/26 | [Supervised Learning Foundations](/topic/02/) | Supervised learning pipeline, evaluation metrics, and a guided classifier lab mapped to IDS, phishing detection, and malware classification. | [Supervised Learning Lab](/activity/02/) |
 | Wed 6/3/26 | [Neural Networks + LLM Foundations](/topic/03/) | Neural networks, transformers, prompt engineering, and an LLM lab that participants adapt toward cybersecurity uses such as SOC copilots and threat intelligence. | [LLM Foundations Lab](/activity/03/) |
 | Thu 6/4/26 | [Adversarial ML + Trustworthy AI](/topic/04/) | Adversarial examples, robustness, and a model-attack lab that leads into a classroom build-break-fix activity design. | [Adversarial ML Lab](/activity/04/) |
