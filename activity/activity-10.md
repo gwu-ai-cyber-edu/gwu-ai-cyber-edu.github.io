@@ -100,7 +100,7 @@ Pick **one** target (or bring your own that fits the contract). All targets run 
 
 | App | Platform | What breakers attack |
 | --- | --- | --- |
-| LaTeX / PDF report generator | Python or Node + TinyTeX | `\write18` shell-escape; `\input` path traversal to read the secret |
+| LaTeX / PDF report generator | Python or Node + MiKTeX | `\write18` shell-escape; `\input` path traversal to read the secret |
 | Static site / blog | Astro (Node) | the private draft leaking into the build; XSS; secrets baked into built JS |
 
 An **optional AI-assistant track** is also available for teams who want the AI flavor: a study assistant over a mixed-trust corpus whose break surface is prompt injection, jailbreak, and leakage. It requires an OpenAI-compatible LLM endpoint and is not required — every other target runs with no LLM at all.
