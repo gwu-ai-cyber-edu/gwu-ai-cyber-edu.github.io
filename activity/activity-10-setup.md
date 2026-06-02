@@ -79,9 +79,9 @@ Open **Windows PowerShell** (not as administrator) and run these in order.
 # 1. Scoop — a per-user package manager (no admin)
 irm get.scoop.sh | iex
 
-# 2. Core dev tools: git (brings Git Bash + sh), Node/npm, GitHub CLI, make, Perl
+# 2. Core dev tools: git (brings Git Bash + sh), Node/npm, Python, GitHub CLI, make, Perl
 #    (Perl is required by latexmk).
-scoop install git nodejs gh make perl
+scoop install git nodejs python gh make perl
 
 # 3. LaTeX via MiKTeX (TinyTeX is blocked on the lab workstations). Scoop installs
 #    MiKTeX per-user; it provides the real pdflatex, xelatex command set.
@@ -90,9 +90,6 @@ scoop install latex
 ```
 
 (Claude Code is installed separately, with npm in Git Bash — see step B below.)
-
-> _Screenshot: PowerShell after `scoop install git nodejs gh make perl` completes, showing the installed packages._
-<!-- TODO screenshot: assets/images/activity-10/scoop-install.png -->
 
 **If PowerShell blocks the install scripts**, set the per-user execution policy (no admin needed) and re-run:
 
@@ -125,9 +122,6 @@ npm install -g @anthropic-ai/claude-code
 claude --version          # confirm it's on your PATH
 ```
 
-> _Screenshot: VS Code with a **Git Bash** integrated terminal running `claude --version` and `make --version` to confirm the toolchain._
-<!-- TODO screenshot: assets/images/activity-10/gitbash-verify.png -->
-
 ### D. Clone your project and work
 
 Set up your editor extensions and clone your team repository with the VS Code interface — see **[Set up VS Code](#set-up-vs-code)** below. No terminal required for cloning.
@@ -151,17 +145,10 @@ Codespaces is **enabled on the institute's GitHub organization**, and your team 
 1. In VS Code, install the [**GitHub Codespaces** extension](https://marketplace.visualstudio.com/items?itemName=GitHub.codespaces) (installs per-user, no admin).
 2. Sign in to GitHub from the **Accounts** menu (bottom-left).
 3. Open the **GitHub Codespaces** view (its icon appears in the left sidebar once the extension is installed, or open the **Remote Explorer** and choose **GitHub Codespaces** from its dropdown). Click the **`+`** (Create Codespace) at the top of that view — this opens the **Command Palette**, where you pick your team repository, then the branch and machine type.
-
-> _Screenshot: the GitHub Codespaces view with the **`+`** create button, and the Command Palette it opens listing repositories._
-<!-- TODO screenshot: assets/images/activity-10/codespaces-create.png -->
-
 4. **Prefer to drive it from the Command Palette directly?** Open the Command Palette (`Ctrl+Shift+P` / `Cmd+Shift+P`) and run one of:
    - **`Codespaces: Create New Codespace`** — to create a new Codespace, or
    - **`Codespaces: Connect to Codespace…`** — to open an existing Codespace in VS Code.
 5. VS Code connects to the container over SSH. The first build runs the setup automatically.
-
-> _Screenshot: VS Code connected to a Codespace — the green remote indicator in the bottom-left, with Claude Code running in the integrated terminal._
-<!-- TODO screenshot: assets/images/activity-10/vscode-codespace.png -->
 
 ### B. Confirm and work
 
@@ -188,15 +175,9 @@ Open the **Extensions** view (the squares icon in the left sidebar, or `Ctrl+Shi
 - **GitHub Codespaces** (by GitHub) — **Install this even if you don't plan to use Codespace as it might come in handy** 
 - **GitHub Pull Requests** (by GitHub) — handy in the Fix phase for opening pull requests without leaving the editor.
 
-> _Screenshot: the Extensions view with "Claude Code" searched and the **Install** button visible._
-<!-- TODO screenshot: assets/images/activity-10/vscode-extensions.png -->
-
 ### Sign in to GitHub
 
 Click the **Accounts** icon at the bottom-left of VS Code and sign in to GitHub. This lets VS Code clone your repository and, for Option 3, open Codespaces.
-
-> _Screenshot: the Accounts menu at the bottom-left with "Sign in to GitHub"._
-<!-- TODO screenshot: assets/images/activity-10/vscode-github-signin.png -->
 
 ### Open your team repository — no terminal needed
 
@@ -205,9 +186,6 @@ Click the **Accounts** icon at the bottom-left of VS Code and sign in to GitHub.
 1. On GitHub, copy your team repository URL (the green **Code** button → **HTTPS** → copy).
 2. In VS Code, open the Command Palette (`Ctrl+Shift+P` / `Cmd+Shift+P`) and run **Git: Clone**.
 3. Paste the URL, choose a folder to save it in, and click **Open** when VS Code offers to open the cloned repo.
-
-> _Screenshot: the Command Palette showing **Git: Clone** with the repository URL pasted in._
-<!-- TODO screenshot: assets/images/activity-10/vscode-clone.png -->
 
 **Option 3 (Codespace):** your repository is already open in the Codespace — there is nothing to clone.
 
