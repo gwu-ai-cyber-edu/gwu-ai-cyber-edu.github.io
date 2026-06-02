@@ -8,8 +8,7 @@ permalink: /topic/01/
 
 ## Morning Outline
 
-- Program kickoff, goals, and structure
-- Participant introductions and teaching context
+- [Program kickoff](/topic/welcom.pdf): goals and structure, participant introductions and teaching context
 - World view and state of AI
 
 ## Afternoon Preview
