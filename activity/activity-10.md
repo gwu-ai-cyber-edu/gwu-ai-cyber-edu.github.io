@@ -29,7 +29,7 @@ It is **OK if Fix is partial**. The closing debrief is protected even at the cos
 - [ ] Have a **development environment** ready — pick the first that works for you. Step-by-step instructions, with links and screenshots, are on the **[Environment setup guide]({{ site.baseurl }}/activity/10/setup/)**.
   - **Your own laptop** with `git`, a Bash shell, and Python and/or Node installed, **or**
   - a **lab Windows machine** with a per-user, no-admin install (no administrator rights needed), **or**
-  - **GitHub Codespaces** — Codespaces is enabled on the institute's GitHub organization, so you can open your team repository in a ready-to-code cloud container straight from the **Code → Codespaces** button. The container comes with Python, Node, the GitHub CLI, and Claude Code already installed; connect to it from desktop VS Code for the best experience.
+  - **VS Code connected to a GitHub Codespace** — Codespaces is enabled on the institute's GitHub organization, so your local VS Code can connect to a ready-to-code cloud container (Python, Node, the GitHub CLI, and Claude Code preinstalled). You work in your local VS Code as a thin client — not in the browser.
 - [ ] Have **VS Code** (or another editor you are comfortable with) available.
 - [ ] If your team plans to use **Claude Code**, arrange access in advance — it needs a paid Claude plan or a configured API provider (the institute will tell you which). The free Claude.ai plan does not include Claude Code.
 

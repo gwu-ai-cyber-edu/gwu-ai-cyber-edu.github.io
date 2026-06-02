@@ -10,9 +10,9 @@ permalink: /activity/10/setup/
 
 | Option | Best for | Admin rights needed |
 | --- | --- | --- |
-| **1. Your own laptop** | Anyone with a personal machine they can install software on | Yes (to install) |
-| **2. Lab Windows machine (no-admin)** | Locked-down lab machines where you have a login but not admin | **No** |
-| **3. GitHub Codespaces** | No capable local machine, or you'd rather work in the cloud | **No** |
+| **1. Your own laptop** (Mac or Windows) | A personal machine you can install software on | Mac: no (Homebrew user install) · Windows: yes |
+| **2. Windows, no admin** (lab machine *or* your own laptop) | Any Windows machine where you have a login but not admin | **No** |
+| **3. VS Code thin client to a Codespace** | No capable local machine, or you'd rather offload to the cloud | **No** |
 
 Whatever you pick, by the end you should have: **`git`**, a **Bash shell**, **Python and/or Node**, and — if you'll build a LaTeX target — **TinyTeX**. If your team will use **Claude Code**, you also need Claude Code access arranged in advance (a paid Claude plan or a configured API provider; the free Claude.ai plan does not include Claude Code).
 
@@ -20,16 +20,48 @@ Whatever you pick, by the end you should have: **`git`**, a **Bash shell**, **Py
 
 ## Option 1 — Your own laptop
 
-If you can install software on your own machine, this is the simplest path.
+The simplest path if you can install software on your own machine. Pick your OS.
 
-- **Editor:** [Visual Studio Code](https://code.visualstudio.com/) (or any editor you like).
-- **Git:** [git-scm.com/downloads](https://git-scm.com/downloads). On Windows, [Git for Windows](https://git-scm.com/downloads/win) also gives you the **Git Bash** shell.
-- **Python:** [python.org/downloads](https://www.python.org/downloads/) (3.10+), **and/or Node.js:** [nodejs.org](https://nodejs.org/) (LTS).
-- **GitHub CLI** (optional, handy for filing breaks): [cli.github.com](https://cli.github.com/).
-- **Claude Code** (optional): follow the [official install guide](https://code.claude.com/docs/en/setup).
-- **TinyTeX** (only for LaTeX targets): [yihui.org/tinytex](https://yihui.org/tinytex/).
+### macOS — install everything with Homebrew
 
-Then clone your team repository and you're ready:
+[Homebrew](https://brew.sh/) installs the whole toolchain from one place. Install Homebrew first if you don't already have it:
+
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+> **No admin on your Mac?** Install Homebrew into a folder you own — no `sudo` required — then put it on your `PATH`:
+>
+> ```bash
+> mkdir -p ~/homebrew && curl -L https://github.com/Homebrew/brew/tarball/master | tar xz --strip-components 1 -C ~/homebrew
+> echo 'export PATH="$HOME/homebrew/bin:$PATH"' >> ~/.zprofile && exec zsh
+> ```
+
+Then install the tools:
+
+```bash
+brew install git node python gh         # git, Node/npm, Python, GitHub CLI
+brew install --cask claude-code         # Claude Code
+brew install --cask visual-studio-code  # editor (skip if you already have it)
+
+# LaTeX targets only — TinyTeX (lightweight TeX Live):
+curl -sL https://yihui.org/tinytex/install-bin-unix.sh | sh
+```
+
+### Windows (with admin) — standard installers
+
+If you have administrator rights on your Windows laptop, install each tool with its normal installer:
+
+- **Editor:** [Visual Studio Code](https://code.visualstudio.com/).
+- **Git + Git Bash:** [Git for Windows](https://git-scm.com/downloads/win) (also gives you the **Git Bash** shell).
+- **Python:** [python.org/downloads](https://www.python.org/downloads/) (3.10+) — **and/or Node.js:** [nodejs.org](https://nodejs.org/) (LTS).
+- **GitHub CLI:** [cli.github.com](https://cli.github.com/).
+- **Claude Code:** [official install guide](https://code.claude.com/docs/en/setup).
+- **TinyTeX** (LaTeX targets only): [yihui.org/tinytex](https://yihui.org/tinytex/).
+
+> **No admin on your Windows laptop?** Use **Option 2** below — it installs everything per-user, no admin required.
+
+### Then clone your repo
 
 ```bash
 git clone <your-classroom-repo-url>
@@ -38,9 +70,9 @@ cd <your-repo>
 
 ---
 
-## Option 2 — Lab Windows machine, no admin rights
+## Option 2 — Windows without admin (lab machine *or* your own laptop)
 
-Everything here installs **per-user** — no administrator rights required. VS Code is assumed to already be on the machine.
+Use this on **any Windows machine where you have a login but not administrator rights** — a locked-down lab machine *or* your own personal laptop. Everything here installs **per-user**, no admin required. VS Code is assumed to be available already (if not, install it per-user with the [User Installer](https://code.visualstudio.com/docs/setup/windows)).
 
 ### A. One-time setup (run in PowerShell)
 
@@ -94,35 +126,31 @@ claude        # starts Claude Code (uses Git Bash for its Bash tool)
 
 ---
 
-## Option 3 — GitHub Codespaces (cloud, no install)
+## Option 3 — VS Code thin client to a Codespace
 
-Codespaces is **enabled on the institute's GitHub organization**, and your team repository ships a dev-container definition. That means a Codespace opens with **Python, Node, the GitHub CLI, and Claude Code already installed** — nothing to set up by hand.
+A Codespace gives you a cloud Linux container, but you **work in your local VS Code, not in a browser tab.** VS Code becomes a *thin client*: the editor and terminal are local, while your code, tools, and processes run in the cloud container. Working entirely in the cloud/browser isn't the intended path here — connect from desktop VS Code instead.
 
-### A. Open a Codespace
+Codespaces is **enabled on the institute's GitHub organization**, and your team repository ships a dev-container, so the container comes up with **Python, Node, the GitHub CLI, and Claude Code already installed** — nothing to set up by hand.
 
-On your team repository page, click **Code → Codespaces → Create codespace on main**.
+### A. Connect VS Code to a Codespace
 
-> _Screenshot: the green **Code** button expanded to the **Codespaces** tab with "Create codespace on main"._
-<!-- TODO screenshot: assets/images/activity-10/codespaces-create.png -->
+1. In VS Code, install the [**GitHub Codespaces** extension](https://marketplace.visualstudio.com/items?itemName=GitHub.codespaces) (installs per-user, no admin).
+2. Sign in to GitHub from the **Accounts** menu (bottom-left).
+3. From the Command Palette, run **Codespaces: Create New Codespace** (or open an existing one from the **Remote Explorer**) and pick your team repository.
+4. VS Code connects to the container over SSH. The first build runs the setup automatically.
 
-Wait for the container to build the first time (it runs the setup automatically). When the terminal is ready, confirm the toolchain:
+> _Screenshot: VS Code connected to a Codespace — the green remote indicator in the bottom-left, with Claude Code running in the integrated terminal._
+<!-- TODO screenshot: assets/images/activity-10/vscode-codespace.png -->
+
+### B. Confirm and work
+
+In the VS Code integrated terminal (now running inside the container):
 
 ```bash
 python --version && node --version && gh --version && claude --version
 ```
 
-### B. Recommended: connect from desktop VS Code
-
-For the best Claude Code experience, drive the Codespace from **desktop VS Code** rather than the browser:
-
-1. In VS Code, install the [**GitHub Codespaces** extension](https://marketplace.visualstudio.com/items?itemName=GitHub.codespaces) (installs per-user, no admin).
-2. Sign in to GitHub, then **open your Codespace** from the Remote Explorer.
-3. Work in the integrated terminal; forwarded ports map to your `localhost` automatically.
-
-> _Screenshot: VS Code connected to a Codespace (the green remote indicator in the bottom-left), with Claude Code running in the integrated terminal._
-<!-- TODO screenshot: assets/images/activity-10/vscode-codespace.png -->
-
-Notes: Codespaces usage counts against your GitHub [Codespaces quota](https://docs.github.com/en/codespaces), and Claude Code still needs the access your team arranged.
+Forwarded ports map to your `localhost` automatically, so a web target you run in the container opens in your local browser. Codespaces usage counts against your GitHub [Codespaces quota](https://docs.github.com/en/codespaces), and Claude Code still needs the access your team arranged.
 
 ---
 
