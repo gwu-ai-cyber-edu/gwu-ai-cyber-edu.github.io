@@ -61,9 +61,9 @@ If you have administrator rights on your Windows laptop, install each tool with 
 
 > **No admin on your Windows laptop?** Use **Option 2** below — it installs everything per-user, no admin required.
 
-### Then open your project
+### Then authenticate and open your project
 
-Set up your editor and open your team repository with the VS Code interface — see **[Set up VS Code](#set-up-vs-code)** below. No terminal required.
+Authenticate the GitHub CLI so cloning and pushing over **HTTPS** work: run `gh auth login` in a terminal and choose **GitHub.com → HTTPS → Yes (authenticate Git) → Login with a web browser**. Then set up your editor and open your team repository with the VS Code interface — see **[Set up VS Code](#set-up-vs-code)** below.
 
 ---
 
@@ -122,11 +122,21 @@ npm install -g @anthropic-ai/claude-code
 claude --version          # confirm it's on your PATH
 ```
 
-### D. Clone your project and work
+### D. Authenticate the GitHub CLI (`gh`)
+
+Before you can clone, push, or file breaks, authenticate `gh` in your Git Bash terminal. This also wires git to use your GitHub credentials over **HTTPS**, so cloning and pushing just work:
+
+```bash
+gh auth login
+```
+
+When prompted, choose: **GitHub.com** → **HTTPS** as the protocol → **Yes** to authenticate Git with your GitHub credentials → **Login with a web browser**, then finish in the browser.
+
+### E. Clone your project and work
 
 Set up your editor extensions and clone your team repository with the VS Code interface — see **[Set up VS Code](#set-up-vs-code)** below. No terminal required for cloning.
 
-### E. Python targets — pip and a virtual environment
+### F. Python targets — pip and a virtual environment
 
 `pip` ships with the Scoop Python. In your Git Bash terminal, upgrade it and install `virtualenv`, then create and activate a per-project environment before installing your target's dependencies:
 
