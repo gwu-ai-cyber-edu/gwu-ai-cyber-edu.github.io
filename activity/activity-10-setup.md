@@ -129,8 +129,15 @@ Codespaces is **enabled on the institute's GitHub organization**, and your team 
 
 1. In VS Code, install the [**GitHub Codespaces** extension](https://marketplace.visualstudio.com/items?itemName=GitHub.codespaces) (installs per-user, no admin).
 2. Sign in to GitHub from the **Accounts** menu (bottom-left).
-3. From the Command Palette, run **Codespaces: Create New Codespace** (or open an existing one from the **Remote Explorer**) and pick your team repository.
-4. VS Code connects to the container over SSH. The first build runs the setup automatically.
+3. Open the **GitHub Codespaces** view (its icon appears in the left sidebar once the extension is installed, or open the **Remote Explorer** and choose **GitHub Codespaces** from its dropdown). Click the **`+`** (Create Codespace) at the top of that view — this opens the **Command Palette**, where you pick your team repository, then the branch and machine type.
+
+> _Screenshot: the GitHub Codespaces view with the **`+`** create button, and the Command Palette it opens listing repositories._
+<!-- TODO screenshot: assets/images/activity-10/codespaces-create.png -->
+
+4. **Prefer to drive it from the Command Palette directly?** Open the Command Palette (`Ctrl+Shift+P` / `Cmd+Shift+P`) and run one of:
+   - **`Codespaces: Create New Codespace`** — to create a new Codespace, or
+   - **`Codespaces: Connect to Codespace…`** — to open an existing Codespace in VS Code.
+5. VS Code connects to the container over SSH. The first build runs the setup automatically.
 
 > _Screenshot: VS Code connected to a Codespace — the green remote indicator in the bottom-left, with Claude Code running in the integrated terminal._
 <!-- TODO screenshot: assets/images/activity-10/vscode-codespace.png -->
@@ -157,7 +164,7 @@ Open the **Extensions** view (the squares icon in the left sidebar, or `Ctrl+Shi
 
 - **Claude Code** (by Anthropic) — runs Claude Code inside VS Code. See the [VS Code extension guide](https://code.claude.com/docs/en/vs-code).
 - **Python** (by Microsoft) — for Python build targets.
-- **GitHub Codespaces** (by GitHub) — **only if you're using Option 3** (connects VS Code to a cloud Codespace).
+- **GitHub Codespaces** (by GitHub) — **Install this even if you don't plan to use Codespace as it might come in handy** 
 - **GitHub Pull Requests** (by GitHub) — handy in the Fix phase for opening pull requests without leaving the editor.
 
 > _Screenshot: the Extensions view with "Claude Code" searched and the **Install** button visible._
