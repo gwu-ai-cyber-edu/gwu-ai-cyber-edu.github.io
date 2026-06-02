@@ -9,7 +9,7 @@ permalink: /topic/01/
 ## Morning Program
 
 - [Program kickoff](welcome.pdf): goals and structure, participant introductions and teaching context
-- World view and state of AI \[[slides](Lecture1.pdf)\]
+- World view and state of AI \[[slides](Lecture 1.pdf)\]
 
 ## Afternoon Preview
 
