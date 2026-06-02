@@ -11,6 +11,6 @@ permalink: /topic/01/
 - [Program kickoff](welcome.pdf): goals and structure, participant introductions and teaching context
 - World view and state of AI \[[slides](Lecture 1.pdf)\]
 
-## Afternoon Preview
-
-The afternoon activity is [ML Tech Stack](/activity/01/), an overview of tools and technical frameworks.
+## Afternoon Program
+- A bit of AI history and current AI Tech Stacks \[[slides](TechStacks_Pless.pdf)\]
+- Lab activity: [ML Tech Stack](/activity/01/), an overview of tools and technical frameworks.
