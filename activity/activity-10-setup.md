@@ -131,6 +131,7 @@ Set up your editor extensions and clone your team repository with the VS Code in
 - **`make` is not bundled with Git Bash** — that's why step 2 installs it via Scoop. Run `make` *from Git Bash* (not cmd/PowerShell) so recipe lines run via `sh`.
 - **Web/React dev servers** bind to a high `localhost` port (e.g. `5173`, `8000`) — no admin needed. `npm create vite@latest` works out of the box.
 - **LaTeX = MiKTeX here.** TinyTeX is blocked on the lab workstations, so use MiKTeX (`scoop install latex`) — a full TeX distribution with the real `pdflatex`/`xelatex`/`latexmk` commands. On the first compile it offers to install missing packages: choose **install on-the-fly for the current user** (no admin).
+- **Python in Git Bash:** put Scoop's shims first on your `PATH` so the Scoop `python`/`pip` win over the Windows Store `python` alias (and your aliases/defaults work). In Git Bash run `export PATH="$HOME/scoop/shims:$PATH"`, and add that line to `~/.bashrc` to make it stick.
 
 ---
 
