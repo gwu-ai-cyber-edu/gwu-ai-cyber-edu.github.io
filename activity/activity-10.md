@@ -58,6 +58,53 @@ Whatever you build, it must hold a **shared five-property contract** — which i
 
 A break is only valid if it shows that one of these properties was violated **using only the artifact's inputs** — no editing the artifact's code, configuration, or stored data.
 
+## Build menu
+
+Pick **one** target (or bring your own that fits the contract). All targets run with Python or Node on `localhost`, no admin rights, no Docker, and no system database server — so they work on any of the environments above. The full menu with starter guidance ships as `BUILD-MENU.md` in the starter repository.
+
+### Command-line tools
+
+| App | Platform | What breakers attack |
+| --- | --- | --- |
+| Secret-keeping notes / password vault | Python / Node | leaking the canary via `--debug`, export, or error trace |
+| Markdown → HTML converter | Python / Node | path traversal; executing embedded scripts/includes |
+| Log analyzer / grep tool | Python / Node | regex injection, path traversal, echoing private lines |
+| CSV/JSON query tool (mini-jq) | Python / Node | field-selector injection leaking private fields |
+| Template / mail-merge renderer | Python / Node | template injection (SSTI) exposing the secret |
+| Expression / calculator evaluator | Python / Node | `eval`-style code injection |
+| File encryptor / decryptor | Python / Node | key leak in verbose/error output |
+| .env / config linter | Python / Node | printing the secret while "validating" |
+| To-do manager with private tasks | Python / Node | filter bypass that lists private tasks |
+| JWT / token inspector | Python / Node | secret leak; accepting forged tokens |
+| Commit-message / hook checker | Python / Node | command injection via crafted message |
+| Password-strength / breach checker | Python / Node | leaking other entries in the local list |
+
+### Local web apps / APIs
+
+| App | Platform | What breakers attack |
+| --- | --- | --- |
+| Paste-bin / snippet service | Flask / Express | IDOR, guessable IDs, stored XSS |
+| Notes / journal app with login | Flask / Express | authorization bypass, IDOR |
+| URL shortener service | Flask / Express | enumeration, open redirect |
+| Blog + comments board | Flask / Express | stored XSS, authorization |
+| Contact / feedback API | FastAPI / Express | header/email injection, SSRF |
+| File upload + preview | Flask / Express | path traversal, content-type XSS |
+| Bookmark manager REST API | FastAPI / Express | IDOR, missing authorization on GET |
+| Key-value store API | FastAPI / Express | namespace / authorization bypass |
+| Quiz / poll app | Flask / Express | answer-key leak, IDOR |
+| Webhook receiver / proxy | FastAPI / Express | SSRF, token leak in logs |
+| Local doc search service | Flask / Express | query injection returning private docs |
+| Mini static-site generator + preview | Python / Node | publishing the draft, SSTI |
+
+### Document / static-site targets
+
+| App | Platform | What breakers attack |
+| --- | --- | --- |
+| LaTeX / PDF report generator | Python or Node + TinyTeX | `\write18` shell-escape; `\input` path traversal to read the secret |
+| Static site / blog | Astro (Node) | the private draft leaking into the build; XSS; secrets baked into built JS |
+
+An **optional AI-assistant track** is also available for teams who want the AI flavor: a study assistant over a mixed-trust corpus whose break surface is prompt injection, jailbreak, and leakage. It requires an OpenAI-compatible LLM endpoint and is not required — every other target runs with no LLM at all.
+
 ## How breaks get filed today
 
 Every break is filed as a **GitHub Issue** on the targeted team's repository using the **Break Report** issue template. The form enforces six required fields, drawn verbatim from the activity protocol:
