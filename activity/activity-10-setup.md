@@ -126,6 +126,18 @@ claude --version          # confirm it's on your PATH
 
 Set up your editor extensions and clone your team repository with the VS Code interface — see **[Set up VS Code](#set-up-vs-code)** below. No terminal required for cloning.
 
+### E. Python targets — pip and a virtual environment
+
+`pip` ships with the Scoop Python. In your Git Bash terminal, upgrade it and install `virtualenv`, then create and activate a per-project environment before installing your target's dependencies:
+
+```bash
+python -m pip install --upgrade pip
+pip install virtualenv
+virtualenv .venv
+source .venv/Scripts/activate        # Git Bash on Windows (.venv/Scripts, not bin)
+pip install -r requirements.txt
+```
+
 ### Things that trip people up
 
 - **`make` is not bundled with Git Bash** — that's why step 2 installs it via Scoop. Run `make` *from Git Bash* (not cmd/PowerShell) so recipe lines run via `sh`.
