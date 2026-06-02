@@ -87,10 +87,9 @@ scoop install git nodejs gh make perl
 #    MiKTeX per-user; it provides the real pdflatex, xelatex command set.
 #    Only needed for LaTeX targets.
 scoop install latex
-
-# 4. Claude Code — installs to %USERPROFILE%\.local\bin (no admin)
-irm https://claude.ai/install.ps1 | iex
 ```
+
+(Claude Code is installed separately, with npm in Git Bash — see step B below.)
 
 > _Screenshot: PowerShell after `scoop install git nodejs gh make perl` completes, showing the installed packages._
 <!-- TODO screenshot: assets/images/activity-10/scoop-install.png -->
@@ -109,14 +108,29 @@ Open a **fresh** shell afterward so the new `PATH` is picked up.
 miktex packages install latexmk
 ```
 
-### B. Open your project and work
+### B. Use the Git Bash terminal in VS Code
 
-Set up your editor and clone your team repository with the VS Code interface — see **[Set up VS Code](#set-up-vs-code)** below. No terminal required for cloning.
+From here on, run commands in a **Git Bash** terminal *inside VS Code* (not cmd/PowerShell) — there, `git`, `npm`, `make`, the MiKTeX commands (`pdflatex`, `latexmk`), and `claude` are all on `PATH` and behave Unix-style.
 
-When you need to **run** commands, use **Git Bash** rather than cmd/PowerShell — there, `git`, `npm`, `make`, the MiKTeX commands (`pdflatex`, `latexmk`), and `claude` are all on `PATH` and behave Unix-style. You can open Git Bash right inside VS Code: **Terminal → New Terminal**, then choose **Git Bash** from the terminal's dropdown (the `∨` next to the `+`).
+1. Open a terminal: **Terminal → New Terminal**.
+2. From the terminal dropdown (the `∨` next to the `+`), choose **Git Bash**.
+3. To make it the default, open the Command Palette (`Ctrl+Shift+P`) and run **Terminal: Select Default Profile → Git Bash**. New terminals will now be Git Bash.
+
+### C. Install Claude Code (npm, in Git Bash)
+
+Node and npm came from Scoop in step 2, so install Claude Code with **npm** from your Git Bash terminal — a per-user global install, no admin:
+
+```bash
+npm install -g @anthropic-ai/claude-code
+claude --version          # confirm it's on your PATH
+```
 
 > _Screenshot: VS Code with a **Git Bash** integrated terminal running `claude --version` and `make --version` to confirm the toolchain._
 <!-- TODO screenshot: assets/images/activity-10/gitbash-verify.png -->
+
+### D. Clone your project and work
+
+Set up your editor extensions and clone your team repository with the VS Code interface — see **[Set up VS Code](#set-up-vs-code)** below. No terminal required for cloning.
 
 ### Things that trip people up
 
