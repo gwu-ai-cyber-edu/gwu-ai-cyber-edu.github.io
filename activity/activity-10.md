@@ -22,18 +22,18 @@ Teams build a small software artifact in the morning, exchange it for adversaria
 
 It is **OK if Fix is partial**. The closing debrief is protected even at the cost of cutting Fix short. The mechanisms are what we are after, not a polished artifact.
 
-## Before you arrive
+## Setup requirements
 
 - [ ] Have a **GitHub account** with the username you gave your team captain.
-- [ ] Be ready to accept the **GitHub Classroom invite** (URL projected on the final slide of the morning primer).
-- [ ] Have a **development environment** ready. In order of preference:
-  - **your own laptop** with `git`, a Bash shell, and Python and/or Node installed, **or**
-  - a **lab Windows machine** set up with a per-user, no-admin install (Scoop + `git`, Node, `make`, and optional TinyTeX) — no administrator rights needed, **or**
-  - **VS Code connected to a GitHub Codespace** as a thin client (last resort).
+- [ ] Join the class through the **GitHub Classroom assignment**: [**accept the invite here**](#TODO-github-classroom-link). Accepting creates your team repository from the starter template. <!-- TODO: replace #TODO-github-classroom-link with the GitHub Classroom assignment URL. The invite is also projected on the final slide of the morning primer. -->
+- [ ] Have a **development environment** ready — pick the first that works for you. Step-by-step instructions, with links and screenshots, are on the **[Environment setup guide]({{ site.baseurl }}/activity/10/setup/)**.
+  - **Your own laptop** with `git`, a Bash shell, and Python and/or Node installed, **or**
+  - a **lab Windows machine** with a per-user, no-admin install (no administrator rights needed), **or**
+  - **GitHub Codespaces** — Codespaces is enabled on the institute's GitHub organization, so you can open your team repository in a ready-to-code cloud container straight from the **Code → Codespaces** button. The container comes with Python, Node, the GitHub CLI, and Claude Code already installed; connect to it from desktop VS Code for the best experience.
 - [ ] Have **VS Code** (or another editor you are comfortable with) available.
 - [ ] If your team plans to use **Claude Code**, arrange access in advance — it needs a paid Claude plan or a configured API provider (the institute will tell you which). The free Claude.ai plan does not include Claude Code.
 
-Full step-by-step setup for each path is in `ENVIRONMENTS.md` in the starter repository.
+For the full walkthrough of every path — the no-admin Windows install and the Codespaces setup — see the **[Environment setup guide]({{ site.baseurl }}/activity/10/setup/)**.
 
 ## Goals
 
