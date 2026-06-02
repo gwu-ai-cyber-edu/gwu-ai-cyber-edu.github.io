@@ -79,11 +79,12 @@ Open **Windows PowerShell** (not as administrator) and run these in order.
 # 1. Scoop — a per-user package manager (no admin)
 irm get.scoop.sh | iex
 
-# 2. Core dev tools: git (brings Git Bash + sh), Node/npm, GitHub CLI, make
-scoop install git nodejs gh make
+# 2. Core dev tools: git (brings Git Bash + sh), Node/npm, GitHub CLI, make, Perl
+#    (Perl is required by latexmk).
+scoop install git nodejs gh make perl
 
 # 3. LaTeX via MiKTeX (TinyTeX is blocked on the lab workstations). Scoop installs
-#    MiKTeX per-user; it provides the real pdflatex, xelatex, latexmk command set.
+#    MiKTeX per-user; it provides the real pdflatex, xelatex command set.
 #    Only needed for LaTeX targets.
 scoop install latex
 
@@ -91,7 +92,7 @@ scoop install latex
 irm https://claude.ai/install.ps1 | iex
 ```
 
-> _Screenshot: PowerShell after `scoop install git nodejs gh make` completes, showing the installed packages._
+> _Screenshot: PowerShell after `scoop install git nodejs gh make perl` completes, showing the installed packages._
 <!-- TODO screenshot: assets/images/activity-10/scoop-install.png -->
 
 **If PowerShell blocks the install scripts**, set the per-user execution policy (no admin needed) and re-run:
@@ -101,6 +102,12 @@ Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
 ```
 
 Open a **fresh** shell afterward so the new `PATH` is picked up.
+
+**LaTeX targets only:** in that fresh terminal (so `miktex` is on `PATH`), install `latexmk` through MiKTeX's package manager — it isn't pulled in by default and relies on the Perl from step 2:
+
+```powershell
+miktex packages install latexmk
+```
 
 ### B. Open your project and work
 
