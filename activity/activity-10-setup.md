@@ -61,12 +61,9 @@ If you have administrator rights on your Windows laptop, install each tool with 
 
 > **No admin on your Windows laptop?** Use **Option 2** below — it installs everything per-user, no admin required.
 
-### Then clone your repo
+### Then open your project
 
-```bash
-git clone <your-classroom-repo-url>
-cd <your-repo>
-```
+Set up your editor and open your team repository with the VS Code interface — see **[Set up VS Code](#set-up-vs-code)** below. No terminal required.
 
 ---
 
@@ -105,17 +102,13 @@ Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
 
 Open a **fresh** shell afterward so the new `PATH` is picked up.
 
-### B. Everyday work — use Git Bash
+### B. Open your project and work
 
-Do day-to-day work in **Git Bash** (search the Start menu for "Git Bash"). There, `git`, `npm`, `make`, the TinyTeX commands (`pdflatex`, `latexmk`), and `claude` are all on `PATH` and behave Unix-style.
+Set up your editor and clone your team repository with the VS Code interface — see **[Set up VS Code](#set-up-vs-code)** below. No terminal required for cloning.
 
-```bash
-git clone <your-classroom-repo-url>
-cd <your-repo>
-claude        # starts Claude Code (uses Git Bash for its Bash tool)
-```
+When you need to **run** commands, use **Git Bash** rather than cmd/PowerShell — there, `git`, `npm`, `make`, the TinyTeX commands (`pdflatex`, `latexmk`), and `claude` are all on `PATH` and behave Unix-style. You can open Git Bash right inside VS Code: **Terminal → New Terminal**, then choose **Git Bash** from the terminal's dropdown (the `∨` next to the `+`).
 
-> _Screenshot: Git Bash running `claude --version` and `make --version` to confirm the toolchain._
+> _Screenshot: VS Code with a **Git Bash** integrated terminal running `claude --version` and `make --version` to confirm the toolchain._
 <!-- TODO screenshot: assets/images/activity-10/gitbash-verify.png -->
 
 ### Things that trip people up
@@ -154,9 +147,47 @@ Forwarded ports map to your `localhost` automatically, so a web target you run i
 
 ---
 
+## Set up VS Code
+
+Do this once, whichever option you chose. Everything here is point-and-click — no terminal needed.
+
+### Install the extensions
+
+Open the **Extensions** view (the squares icon in the left sidebar, or `Ctrl+Shift+X` / `Cmd+Shift+X` on Mac), search each by name, and click **Install**:
+
+- **Claude Code** (by Anthropic) — runs Claude Code inside VS Code. See the [VS Code extension guide](https://code.claude.com/docs/en/vs-code).
+- **Python** (by Microsoft) — for Python build targets.
+- **GitHub Codespaces** (by GitHub) — **only if you're using Option 3** (connects VS Code to a cloud Codespace).
+- **GitHub Pull Requests** (by GitHub) — handy in the Fix phase for opening pull requests without leaving the editor.
+
+> _Screenshot: the Extensions view with "Claude Code" searched and the **Install** button visible._
+<!-- TODO screenshot: assets/images/activity-10/vscode-extensions.png -->
+
+### Sign in to GitHub
+
+Click the **Accounts** icon at the bottom-left of VS Code and sign in to GitHub. This lets VS Code clone your repository and, for Option 3, open Codespaces.
+
+> _Screenshot: the Accounts menu at the bottom-left with "Sign in to GitHub"._
+<!-- TODO screenshot: assets/images/activity-10/vscode-github-signin.png -->
+
+### Open your team repository — no terminal needed
+
+**Options 1 and 2 (working locally):** clone with the VS Code interface.
+
+1. On GitHub, copy your team repository URL (the green **Code** button → **HTTPS** → copy).
+2. In VS Code, open the Command Palette (`Ctrl+Shift+P` / `Cmd+Shift+P`) and run **Git: Clone**.
+3. Paste the URL, choose a folder to save it in, and click **Open** when VS Code offers to open the cloned repo.
+
+> _Screenshot: the Command Palette showing **Git: Clone** with the repository URL pasted in._
+<!-- TODO screenshot: assets/images/activity-10/vscode-clone.png -->
+
+**Option 3 (Codespace):** your repository is already open in the Codespace — there is nothing to clone.
+
+To run anything, open the integrated terminal with **Terminal → New Terminal**, and start Claude Code by typing `claude` or from the Claude Code extension.
+
 ## Verify you're ready
 
-Whatever option you chose, you should be able to run, from your repo:
+Whatever option you chose, you should be able to run, in VS Code's integrated terminal (**Terminal → New Terminal**):
 
 ```bash
 git status                 # you're in the cloned team repo
