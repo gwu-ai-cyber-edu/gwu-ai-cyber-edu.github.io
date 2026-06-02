@@ -8,14 +8,14 @@ permalink: /activity/10/
 
 > Friday of Week 2 is **one continuous all-day event**. The day opens with the **[Build-it / Break-it / Fix-it primer]({{ site.baseurl }}/topic/10/)** (~30 minutes), then runs the activity below for the rest of the day. This page covers the activity itself: the day flow, what to bring, the break-submission protocol, and the live scoreboard. The primer page covers the pedagogy (four mechanisms, three depth tiers, the research lineage).
 
-Teams build a small AI artifact in the morning, exchange it for adversarial review during a working-lunch break phase, then fix and report out in the afternoon. The point is not a polished tool; the point is to inhabit the [Build-it / Break-it / Fix-it](https://builditbreakit.org/) teaching format end to end so faculty can decide how to adopt it in their own courses.
+Teams build a small software artifact in the morning, exchange it for adversarial review during a working-lunch break phase, then fix and report out in the afternoon. The point is not a polished tool; the point is to inhabit the [Build-it / Break-it / Fix-it](https://builditbreakit.org/) teaching format end to end so faculty can decide how to adopt it in their own courses.
 
 ## Day flow
 
 | Block | Duration | What happens |
 | --- | --- | --- |
 | Topic primer | ~35 min | Mechanism-and-translation primer for BBF; ends with the Classroom invite URL. |
-| **Build** | 90 min, hard stop | Teams build a small AI assistant that must satisfy a published spec, including a "canary" string the assistant must never disclose. End-of-phase 3-minute team demos. |
+| **Build** | 90 min, hard stop | Teams each build a small app of their choosing (a CLI tool, web app, or document generator) that must satisfy a shared five-property spec, including a "canary" secret it must never disclose. End-of-phase 3-minute team demos. |
 | **Break** (working lunch) | 90 min | Teams attempt to make other teams' artifacts leak the canary, violate the spec, or bypass guardrails. Every attempted break is logged as a structured GitHub Issue. End-of-phase 3-minute "most-interesting-break" presentations. |
 | **Fix** | 90 to 120 min | Teams read the breaks logged against their artifact, triage in `fix_notes.md`, implement what they can, open PRs that close the issues. |
 | **Debrief** | 30 min (protected) | What was surprising in each role. What you would adopt in your own course. |
@@ -26,12 +26,14 @@ It is **OK if Fix is partial**. The closing debrief is protected even at the cos
 
 - [ ] Have a **GitHub account** with the username you gave your team captain.
 - [ ] Be ready to accept the **GitHub Classroom invite** (URL projected on the final slide of the morning primer).
-- [ ] Either:
-  - have **Ollama** (or any OpenAI-compatible local LLM) installed and running locally, **or**
-  - be ready to use **GitHub Codespaces** in the browser (no install needed; works from any modern laptop).
-- [ ] Have a code editor you are comfortable with (VS Code, the in-browser Codespaces editor, anything).
+- [ ] Have a **development environment** ready. In order of preference:
+  - **your own laptop** with `git`, a Bash shell, and Python and/or Node installed, **or**
+  - a **lab Windows machine** set up with a per-user, no-admin install (Scoop + `git`, Node, `make`, and optional TinyTeX) — no administrator rights needed, **or**
+  - **VS Code connected to a GitHub Codespace** as a thin client (last resort).
+- [ ] Have **VS Code** (or another editor you are comfortable with) available.
+- [ ] If your team plans to use **Claude Code**, arrange access in advance — it needs a paid Claude plan or a configured API provider (the institute will tell you which). The free Claude.ai plan does not include Claude Code.
 
-If you have used Ollama in earlier activities this week (Activities 06 and 07), the same setup works here.
+Full step-by-step setup for each path is in `ENVIRONMENTS.md` in the starter repository.
 
 ## Goals
 
@@ -44,14 +46,17 @@ By the end of the activity, participants should be able to:
 
 ## What you're building
 
-A small AI assistant that answers questions over a mixed-trust corpus (public study notes plus a private file containing canary strings). The full build specification is published as `SPEC.md` in the starter repository. The assistant must satisfy four named properties:
+Each team picks **one** small application to build — a command-line tool, a local web app or API, or a document generator — and the platform to build it on (Python or Node). There is no single required app: the institute publishes a build menu of around two dozen options (plus a LaTeX/PDF target, a static-site target, and an optional AI-assistant track). The full menu and specification ship as `BUILD-MENU.md` and `SPEC.md` in the starter repository.
 
-- **P1: Canary confidentiality.** Never disclose any string starting with `CANARY_`.
-- **P2: Corpus-grounded answers.** Answer accurately from the public corpus; do not hallucinate.
-- **P3: Topic discipline.** Refuse off-topic queries; redirect to the corpus scope.
-- **P4: No code execution.** Refuse user instructions to run commands or scripts.
+Whatever you build, it must hold a **shared five-property contract** — which is what keeps breaks comparable no matter what each team chose:
 
-A break is only valid if it shows that one of these properties was violated **using only the artifact's inputs** — no editing the artifact's code, configuration, or corpus.
+- **P1: Confidentiality.** Never leak the `CANARY_` secret in any output.
+- **P2: Correctness.** Do the app's documented job correctly on valid input.
+- **P3: Input discipline.** Handle malformed, empty, or oversized input without crashing.
+- **P4: No injection / code execution.** Never run user input as code, shell commands, SQL, file paths, or templates.
+- **P5: Authorization & output safety.** For web/UI targets: require authorization for private data, and never let user content run as HTML.
+
+A break is only valid if it shows that one of these properties was violated **using only the artifact's inputs** — no editing the artifact's code, configuration, or stored data.
 
 ## How breaks get filed today
 
@@ -59,7 +64,7 @@ Every break is filed as a **GitHub Issue** on the targeted team's repository usi
 
 1. **Target artifact** — which file or service did you attack.
 2. **Attack class** — prompt-injection, indirect-injection, retrieval-abuse, jailbreak, leakage, evasion, data-poisoning, policy-bypass, input-validation, authn-authz, or other.
-3. **Property violated** — quote the SPEC.md property (P1, P2, P3, or P4) verbatim.
+3. **Property violated** — quote the SPEC.md property (P1, P2, P3, P4, or P5) verbatim.
 4. **Steps to reproduce** — numbered, copy-pasteable.
 5. **Evidence** — transcript, model output, screenshot path, or diff that proves the break occurred.
 6. **Severity** — low, medium, or high (self-rated).
@@ -120,7 +125,7 @@ The scoreboard URL is announced at the start of the Build phase and projected on
 This activity runs on a small, forkable GitHub-based infrastructure that any faculty member can re-deploy in their own institution. The source-of-truth scaffold is published as part of the institute curriculum repository.
 
 - **Infrastructure plan** — `activities/10/github-infrastructure-plan.md` in the institute repo. The full design (GitHub Classroom + Issues/PRs as the data model, Python-based scoreboard cron, the auto-refreshing display, the slash-command moderation flow) is documented as a checklist with concrete code excerpts.
-- **Scaffold** — `activities/10/github-scaffold/` in the institute repo. Twenty files (`setup.sh`, `gen-teams-yaml.sh`, the template repo contents, the scoreboard repo contents). Run `setup.sh <your-org>` to instantiate the whole system in your own GitHub Organization.
+- **Scaffold** — `activities/10/github-scaffold/` in the institute repo. The `setup.sh` script, `gen-teams-yaml.sh`, the template repo contents (including `BUILD-MENU.md`, `ENVIRONMENTS.md`, `SPEC.md`, the `secret/` canary, and an optional AI-assistant example), and the scoreboard repo contents. Run `setup.sh <your-org>` to instantiate the whole system in your own GitHub Organization.
 - **Activity stub** — `activities/10/stub.md` in the institute repo. The pedagogical design behind the activity, including the four-condition definition of a valid break, the entry-template fields, and the classroom-safety norms.
 
 The scaffold is intentionally minimal: two repos in your GitHub org (a template repo and a scoreboard repo) and a Classroom assignment that distributes the template. Setup is about three working days of preparation; the day itself is around five hours of active activity plus 30 minutes of debrief.
