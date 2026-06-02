@@ -136,9 +136,18 @@ When prompted, choose: **GitHub.com** → **HTTPS** as the protocol → **Yes** 
 
 Set up your editor extensions and clone your team repository with the VS Code interface — see **[Set up VS Code](#set-up-vs-code)** below. No terminal required for cloning.
 
-### F. Python targets — pip and a virtual environment
+### F. Python targets — PATH, pip, and a virtual environment
 
-`pip` ships with the Scoop Python. In your Git Bash terminal, upgrade it and install `virtualenv`, then create and activate a per-project environment before installing your target's dependencies:
+First, make Git Bash use the Scoop Python (the bare `python` otherwise opens the Windows Store stub, and `pip`/`virtualenv` live in Scoop's `Scripts` folder). Add these lines to `~/.bashrc`, then run `source ~/.bashrc` (or open a new terminal):
+
+```bash
+# Scoop Python first: python.exe is in .../current, pip & virtualenv in .../current/Scripts
+export PATH="$HOME/scoop/apps/python/current:$HOME/scoop/apps/python/current/Scripts:$HOME/scoop/shims:$PATH"
+# Make `python` use Scoop's python3 (the bare `python` may open the Windows Store stub)
+alias python=python3
+```
+
+`pip` ships with the Scoop Python. Upgrade it, install `virtualenv`, then create and activate a per-project environment before installing your target's dependencies:
 
 ```bash
 python -m pip install --upgrade pip
@@ -153,7 +162,6 @@ pip install -r requirements.txt
 - **`make` is not bundled with Git Bash** — that's why step 2 installs it via Scoop. Run `make` *from Git Bash* (not cmd/PowerShell) so recipe lines run via `sh`.
 - **Web/React dev servers** bind to a high `localhost` port (e.g. `5173`, `8000`) — no admin needed. `npm create vite@latest` works out of the box.
 - **LaTeX = MiKTeX here.** TinyTeX is blocked on the lab workstations, so use MiKTeX (`scoop install latex`) — a full TeX distribution with the real `pdflatex`/`xelatex`/`latexmk` commands. On the first compile it offers to install missing packages: choose **install on-the-fly for the current user** (no admin).
-- **Python in Git Bash:** put Scoop's shims first on your `PATH` so the Scoop `python`/`pip` win over the Windows Store `python` alias (and your aliases/defaults work). In Git Bash run `export PATH="$HOME/scoop/shims:$PATH"`, and add that line to `~/.bashrc` to make it stick.
 
 ---
 
