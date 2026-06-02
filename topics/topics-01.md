@@ -6,14 +6,11 @@ permalink: /topic/01/
 
 # Orientation + AI Mental Models
 
-## Morning Outline
+## Morning Program
 
-- Program kickoff, goals, and structure
-- Participant introductions and teaching context
-- AI versus traditional programming
-- What machine learning does: patterns, not rules
-- Security callouts: IDS, phishing, malware
+- [Program kickoff](welcome.pdf): goals and structure, participant introductions and teaching context
+- World view and state of AI \[[slides](Lecture 1.pdf)\]
 
-## Afternoon Preview
-
-The afternoon activity is [Orientation Worksheet](/activity/01/), a short setup and reflection exercise around the day’s ideas.
+## Afternoon Program
+- A bit of AI history and current AI Tech Stacks \[[slides](TechStacks_Pless.pdf)\]
+- Lab activity: [ML Tech Stack](/activity/01/), an overview of tools and technical frameworks.
