@@ -6,10 +6,10 @@ permalink: /topic/01/
 
 # Orientation + AI Mental Models
 
-## Morning Outline
+## Morning Program
 
-- [Program kickoff](/topic/welcom.pdf): goals and structure, participant introductions and teaching context
-- World view and state of AI
+- [Program kickoff](welcom.pdf): goals and structure, participant introductions and teaching context
+- World view and state of AI \[[slides](lecture1.pdf)\]
 
 ## Afternoon Preview
 
