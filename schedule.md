@@ -69,11 +69,11 @@ continued implementation and improvement
       <tr>
         <td class="time-cell">10 AM - 11 AM</td>
         <td class="guest-orientation">
-          Welcome and Orientation
+          <a href="/topics/welcome.pdf">Welcome</a> and Orientation
           <span class="location">[SEH Lehman]</span>
         </td>
         <td class="lecture-session" rowspan="2">
-          Supervised Learning Foundations
+          <a href="https://docs.google.com/presentation/d/1b8yDXacb1vXyZoNrWOghhzDzRmXOMfkTe7AQEJXvEQ4/edit?slide=id.p1#slide=id.p1" target="_blank">Supervised Learning Foundations</a>
           <span class="instructor">Rebecca</span>
           <span class="location">[SEH 4040]</span>
         </td>
@@ -88,15 +88,16 @@ continued implementation and improvement
           <span class="location">[SEH 4040]</span>
         </td>
         <td class="guest-orientation" rowspan="2">
-          Guest speaker: Mohit Iyyer
+          Guest speaker: <a href="/topic/05/">Mohit Iyyer</a>
+          <span class="location">[SEH Lehman]</span>
         </td>
       </tr>
       <tr>
         <td class="time-cell">11 AM - 11:30 AM</td>
         <td class="lecture-session" rowspan="2">
-          World View
+          <a href="/topics/Lecture%201.pdf">World View</a>
           <span class="instructor">Shi</span>
-          <span class="location">[SEH 4040]</span>
+          <span class="location">[SEH Lehman]</span>
         </td>
       </tr>
       <tr>
@@ -114,7 +115,7 @@ continued implementation and improvement
       <tr>
         <td class="time-cell">1 PM - 1:30 PM</td>
         <td class="lecture-session" rowspan="2">
-          Supervised Learning Foundations Continued
+          <a href="https://docs.google.com/presentation/d/1M_1aKqEOqWDovPQ0BoODQ3WXhAesJPf4dWgnwR7lXy8/edit?slide=id.p1#slide=id.p1" target="_blank">Supervised Learning Foundations Continued</a>
           <span class="instructor">Rebecca</span>
           <span class="location">[SEH 4040]</span>
         </td>
@@ -137,7 +138,8 @@ continued implementation and improvement
       <tr>
         <td class="time-cell">1:30 PM - 2:30 PM</td>
         <td class="lab-session" rowspan="2">
-          Guided Lab: ML Tech Stack
+          <a href="/topics/TechStacks_Pless.pdf">ML Tech Stack Lecture</a><br>
+          <a href="https://colab.research.google.com/drive/1_5hXaFWqS1hfkqGNX9dCWiSTo2tC0KG1" target="_blank">ML Tech Stack Lab</a>
           <span class="instructor">Robert</span>
           <span class="location">[SEH 4040]</span>
         </td>
@@ -145,7 +147,7 @@ continued implementation and improvement
       <tr>
         <td class="time-cell">2:30 PM - 4 PM</td>
         <td class="lab-session">
-          Guided Lab: Supervised Learning
+          <a href="https://colab.research.google.com/drive/1CxNLiC7KHQBm0rIvghUs9XV2JYMOvYBB" target="_blank">Guided Lab: Supervised Learning</a>
           <span class="instructor">Rebecca</span>
           <span class="location">[SEH 4040]</span>
         </td>
