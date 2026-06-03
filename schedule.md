@@ -83,7 +83,7 @@ continued implementation and improvement
           <span class="location">[SEH 4040]</span>
         </td>
         <td class="lecture-session" rowspan="2">
-          Robustness
+          Toward agents
           <span class="instructor">Shi</span>
           <span class="location">[SEH 4040]</span>
         </td>
@@ -125,13 +125,13 @@ continued implementation and improvement
           <span class="location">[SEH 4040]</span>
         </td>
         <td class="lecture-session" rowspan="2">
-          Towards agents
-          <span class="instructor">Shi</span>
+          Trustworthy AI
+          <span class="instructor">Robert</span>
           <span class="location">[SEH 4040]</span>
         </td>
         <td class="lab-session" rowspan="3">
-          Adapt-a-Lab Sprint
-          <span class="instructor">Robert, Shi, Rebecca</span>
+          Transformers
+          <span class="instructor">Shi</span>
           <span class="location">[SEH 4040]</span>
         </td>
       </tr>
@@ -158,7 +158,7 @@ continued implementation and improvement
         </td>
         <td class="lab-session">
           Guided Lab: Adversarial ML
-          <span class="instructor">Shi</span>
+          <span class="instructor">Robert</span>
           <span class="location">[SEH 4040]</span>
         </td>
       </tr>
@@ -186,7 +186,7 @@ continued implementation and improvement
 | Tue 6/2/26 | [Supervised Learning Foundations](/topic/02/) | Supervised learning pipeline, evaluation metrics, and a guided classifier lab. | [Supervised Learning Lab](/activity/02/) |
 | Wed 6/3/26 | [Neural Networks + LLM Foundations](/topic/03/) | Neural networks, transformers, prompt engineering, and an LLM lab that participants adapt toward cybersecurity uses. | [LLM Foundations Lab](/activity/03/) |
 | Thu 6/4/26 | [Adversarial ML + Trustworthy AI](/topic/04/) | Adversarial examples, robustness, and a model-attack lab. | [Adversarial ML Lab](/activity/04/) |
-| Fri 6/5/26 | [Guest speaker: Dr. Mohit Iyyer (UMD)](/topic/05/) | We are pleased to have Dr. Iyyer present a guest lecture in the morning; in the afternoon, we will faciliate participant-selected deep dive discussion and a lab adaptation sprint, backward design, and course integration planning.  | [Adapt-a-Lab Sprint](/activity/05/) |
+| Fri 6/5/26 | [Guest speaker: Dr. Mohit Iyyer (UMD)](/topic/05/) | We are pleased to have Dr. Iyyer present a guest lecture in the morning, "Detecting and characterizing AI use in collaborative writings"; in the afternoon, we will continue exploring NLP in a transformer lab. | [Transformer Lab](/activity/05/) |
 
 ### Week 2
 

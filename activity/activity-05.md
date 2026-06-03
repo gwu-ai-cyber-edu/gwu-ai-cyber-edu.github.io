@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Adapt-a-Lab Sprint
+title: Transformer Lab
 permalink: /activity/05/
 ---
 
-# Adapt-a-Lab Sprint
+# Transformer Lab
 
-This afternoon activity might be an adaptation sprint where participants convert one morning lesson into a course-ready cybersecurity-relevant activity.
+This afternoon activity is a hands-on Colab notebook lab exploring the mechanics of transformer architectures. Participants will configure and train a small attention-based model, gaining a practical, step-by-step understanding of how transformers process sequential data.
