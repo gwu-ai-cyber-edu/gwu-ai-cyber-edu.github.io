@@ -130,7 +130,7 @@ continued implementation and improvement
           <span class="location">[SEH 4040]</span>
         </td>
         <td class="lab-session" rowspan="3">
-          Transformers
+          Guided Lab: Transformers
           <span class="instructor">Shi</span>
           <span class="location">[SEH 4040]</span>
         </td>
