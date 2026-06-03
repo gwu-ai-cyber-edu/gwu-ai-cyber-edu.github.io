@@ -6,4 +6,4 @@ permalink: /activity/03/
 
 # LLM Foundations Lab
 
-This afternoon activity might be a prompt-engineering exercise that uses general LLM tasks before adapting them to a cybersecurity context.
+This afternoon activity will provide hands-on practice on a character-based language model to gain a better understand of the foundational concepts discussed in the lecture.
