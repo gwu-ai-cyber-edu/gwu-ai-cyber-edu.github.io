@@ -130,8 +130,9 @@ Severity: high
 - The targeted team is auto-notified (they're subscribed to their own repo's issues).
 - A member of the targeted team reproduces it and comments **`/repro-confirmed`** (→ `valid`, it scores) or **`/repro-failed`** (→ `invalid`). A facilitator may comment **`/out-of-scope`** (→ `invalid`).
 - **First finder wins.** The first team to file a given break (same target + property + attack class) earns full points; later duplicates **decay** (halved roughly every 5 minutes, toward zero). You *may* still file a duplicate, but check the target's existing issues first — usually it's better to find a new break.
+- **Same defect, different path = one break.** The test is the *fix*: if one patch closes every variant you found, it's a single break — file the clearest repro and list the other paths as evidence. A genuinely different root cause is a new break, even in the same attack class. An automated check may comment *"possible duplicate of #N"* as a hint; a **facilitator** decides with **`/duplicate-of #N`** (merge — it stops scoring and stops counting against the target) or **`/distinct`** (un-merge).
 
-**Issue labels:** `valid` (confirmed, scores) · `invalid` (failed repro / out of scope) · `fix-claimed` (fix merged, awaiting your confirmation) · `fixed` (fix confirmed by the breaker) · `fix-rejected` (fix didn't hold). They're created automatically by the repo's `issue-events` workflow.
+**Issue labels:** `valid` (confirmed, scores) · `invalid` (failed repro / out of scope) · `fix-claimed` (fix merged, awaiting your confirmation) · `fixed` (fix confirmed by the breaker) · `fix-rejected` (fix didn't hold) · `duplicate` / `dup-of:N` (merged into another break). They're created automatically by the repo's `issue-events` workflow.
 
 ### Classroom-safety norms (read aloud at the start of Break)
 
@@ -170,9 +171,9 @@ A dark, CTF-style live scoreboard is projected on the wall all day.
 
 ![BBF live scoreboard — leaderboard, score-over-time graph, and break feed]({{ site.baseurl }}/assets/images/activity-10/scoreboard.png)
 
-It shows, per team: **Score** · **Build** status · **Landed** (confirmed breaks you filed) · **Received** (confirmed breaks against you) · **High-sev** · **Fixed** · **Pending breaks** (you submitted, awaiting confirmation) · **Pending review** (awaiting your repro/fix confirmation). Below the leaderboard are a **score-over-time graph** and a filterable **break feed** (status, team, severity, black-box/white-box) linking to every issue.
+It shows, per team: **Score** · **Build** status · **Landed** (confirmed breaks you filed) · **Received** (confirmed breaks against you) · **High-sev** · **Fixed** · **Defense** (end-of-Break resilience bonus) · **Pending breaks** (you submitted, awaiting confirmation) · **Pending review** (awaiting your repro/fix confirmation). Below the leaderboard are a **score-over-time graph** and a filterable **break feed** (status, team, severity, black-box/white-box) linking to every issue.
 
-**How Score works:** **+10** per confirmed break you landed (**+5** more if high severity), **+5** per fix you confirmed, **−5** per break received — and **first finder wins**, so duplicates of the same break decay by half every ~5 minutes toward zero. The scoreboard recomputes about every 5 minutes (and on each change). It is **a teaching device, not a competitive ranking** — the debrief returns to the learning, not the leaderboard.
+**How Score works:** **+10** per confirmed break you landed (**+5** more if high severity), **+5** per fix you confirmed, **−5** per break received — and **first finder wins**, so duplicates of the same defect decay by half every ~5 minutes toward zero. **Defense isn't only avoiding the −5:** at the end of the Break phase the least-broken team (with a green build) earns a **Defense bonus** of up to **+15**, scaled by how few confirmed breaks it took versus the field — so a team that ships a hard-to-break app is rewarded, not just the busiest breakers. The scoreboard recomputes about every 5 minutes (and on each change). It is **a teaching device, not a competitive ranking** — the debrief returns to the learning, not the leaderboard.
 
 ## Using AI assistance during the day
 
