@@ -184,7 +184,7 @@ continued implementation and improvement
 | :--- | :--- | :--- | :--- |
 | Mon 6/1/26 | [Orientation + World view and State of AI](/topic/01/) | Program kickoff, participant introductions, an overview on the state of AI, and an introduction to technicla frameworks. | [ML Tech Stack Orientation](/activity/01/) |
 | Tue 6/2/26 | [Supervised Learning Foundations](/topic/02/) | Supervised learning pipeline, evaluation metrics, and a guided classifier lab. | [Supervised Learning Lab](/activity/02/) |
-| Wed 6/3/26 | [Neural Networks + LLM Foundations](/topic/03/) | Neural networks, transformers, prompt engineering, and an LLM lab that participants adapt toward cybersecurity uses. | [LLM Foundations Lab](/activity/03/) |
+| Wed 6/3/26 | [Neural Networks + LLM Foundations](/topic/03/) | Neural networks, transformers, prompt engineering, and a character-based LLM lab. | [LLM Foundations Lab](/activity/03/) |
 | Thu 6/4/26 | [Adversarial ML + Trustworthy AI](/topic/04/) | Adversarial examples, robustness, and a model-attack lab. | [Adversarial ML Lab](/activity/04/) |
 | Fri 6/5/26 | [Guest speaker: Dr. Mohit Iyyer (UMD)](/topic/05/) | We are pleased to have Dr. Iyyer present a guest lecture in the morning, "Detecting and characterizing AI use in collaborative writings"; in the afternoon, we will continue exploring NLP in a transformer lab. | [Transformer Lab](/activity/05/) |
 
