@@ -1,16 +1,12 @@
 ---
 layout: default
-title: Guest Speakers — AI Governance and AI Abuse
+title: Guest Speaker — AI Governance (David Broniatowski)
 permalink: /topic/08/
 ---
 
-# Guest Speakers: AI Governance and AI Abuse
+# Guest Speaker: AI Governance
 
-This day features two visiting guest speakers. The morning session focuses on the
-governance of AI systems, and the afternoon session examines AI abuse. There is no
-afternoon activity on this day.
-
-## Morning: AI Governance
+This morning session is the first of two visiting guest-speaker sessions on Wednesday 6/10. It focuses on the governance of AI systems and the limits of metrics-driven risk management under the NIST AI Risk Management Framework. The [afternoon session](/topic/08a/) examines AI abuse. There is no afternoon activity on this day.
 
 <div style="display: flex; margin-bottom: 20px;">
   <div style="flex: 0 0 100px; margin-right: 20px;">
@@ -23,15 +19,10 @@ afternoon activity on this day.
   </div>
 </div>
 
-## Afternoon: AI Abuse
+## Beyond the Metrics: Navigating Systems Risk and Trustworthiness under the NIST AI RMF
 
-<div style="display: flex; margin-bottom: 20px;">
-  <div style="flex: 0 0 100px; margin-right: 20px;">
-    <img src="/assets/images/redmiles.png" alt="Elissa M. Redmiles" style="width: 100px; border-radius: 5px;">
-  </div>
-  <div>
-    <h3 style="margin-top: 0;"><a href="https://gufaculty360.georgetown.edu/s/contact/003Hp00002jN3TsIAK/elissa-redmiles" target="_blank">Elissa M. Redmiles</a></h3>
-    <p><em>Clare Boothe Luce Assistant Professor of Computer Science, Georgetown University; Faculty Associate, Berkman Klein Center for Internet &amp; Society, Harvard University</em></p>
-    <p>Redmiles uses computational, economic, and social science methods to understand users' security, privacy, and online safety decision-making. Her current work focuses on defense-in-depth against image-based sexual abuse, including the AI generation of intimate imagery; her research on AI "nudification" websites was a runner-up for the 2025 Internet Defense Prize.</p>
-  </div>
-</div>
+As Artificial Intelligence systems scale across critical sectors, frameworks like the NIST AI Risk Management Framework (RMF) have emerged to define the core parameters of trustworthy AI—including validity, safety, fairness, resilience, and explainability. However, a major challenge in modern socio-technical systems engineering lies in how organizations attempt to operationalize these properties, frequently reducing complex system lifecycle behaviors to rigid, purely quantitative metrics that remain open problems to verify.
+
+This talk explores the foundational limits of a metrics-only approach to AI risk management. Drawing on systems engineering, cognitive psychology, and risk theory, we will examine how relying strictly on "verbatim" data optimization can lead to catastrophic oversights, whereas human experts instinctively rely on context-dependent "gist interpretations" to navigate complex realities. We will dissect how simplistic proxy metrics fundamentally fail to capture systemic context, illustrating this through real-world algorithmic failures such as healthcare reimbursement models that mistakenly substitute commercial spending costs for actual medical utilization needs.
+
+Furthermore, the presentation will address how information-centric systems are uniquely susceptible to power-law distributions, generating high-impact, low-probability "black swan" failures that traditional objective statistics fail to adequately predict or prevent. Ultimately, this presentation argues that managing AI risk requires shifting from an insular technocratic paradigm to an explicitly participatory framework. Attendees will discover how combining structured requirements elicitation with the active inclusion of marginalized voices and "lay experts" can bridge the gap between abstract compliance metrics and genuine, durable public trust.
