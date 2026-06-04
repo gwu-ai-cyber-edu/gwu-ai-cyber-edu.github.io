@@ -193,7 +193,7 @@ continued implementation and improvement
 **Week 2 at-a-glance:**
 
 <div class="table-responsive">
-  <table class="weekly-grid-table">
+  <table class="weekly-grid-table weekly-grid-table--equal-rows">
     <thead>
       <tr>
         <th class="time-col">Time</th>
@@ -208,25 +208,25 @@ continued implementation and improvement
       <tr>
         <td class="time-cell">10 AM - 11 AM</td>
         <td class="lecture-session" rowspan="2">
-          Applying ML to Cyber Problems
+          <a href="/topic/06/">Applying ML to Cyber Problems</a>
           <span class="instructor">Adam</span>
           <span class="location">[SEH 4040]</span>
         </td>
         <td class="lecture-session" rowspan="2">
-          Securing AI Systems
+          <a href="/topic/07/">Securing AI Systems</a>
           <span class="instructor">Adam</span>
           <span class="location">[SEH 4040]</span>
         </td>
         <td class="guest-orientation">
-          Guest Speaker: David Broniatowski
+          Guest Speaker: <a href="/topic/08/">David Broniatowski</a>
         </td>
         <td class="lecture-session" rowspan="2">
-          Privacy
+          <a href="/topic/09/">Privacy</a>
           <span class="instructor">Arkady</span>
           <span class="location">[SEH 4040]</span>
         </td>
         <td class="lab-session" rowspan="2">
-          Build-it Break-it Fix-it
+          <a href="/topic/10/">Build-it Break-it Fix-it</a>
           <span class="instructor">Adam</span>
           <span class="location">[SEH 4040]</span>
         </td>
@@ -246,29 +246,35 @@ continued implementation and improvement
         <td class="food-event-center">Provided working lunch</td>
       </tr>
       <tr>
-        <td class="time-cell">1 PM - 3 PM</td>
-        <td class="lab-session">
-          Guided Lab: Security Classifier
+        <td class="time-cell">1 PM - 2 PM</td>
+        <td class="lab-session" rowspan="2">
+          <a href="/activity/06/">Guided Lab: Security Classifier</a>
           <span class="instructor">Adam</span>
           <span class="location">[SEH 4040]</span>
         </td>
-        <td class="lab-session">
-          Guided Lab: AI Systems Security
+        <td class="lab-session" rowspan="2">
+          <a href="/activity/07/">Guided Lab: AI Systems Security</a>
           <span class="instructor">Adam</span>
           <span class="location">[SEH 4040]</span>
         </td>
         <td class="guest-orientation">
-          Guest Speaker: Elissa Redmiles
+          Guest Speaker: <a href="/topic/08a/">Elissa Redmiles</a>
         </td>
-        <td class="lecture-session">
-          Human Factors Privacy
+        <td class="lecture-session" rowspan="2">
+          <a href="/topic/09a/">Human Factors Privacy</a>
           <span class="instructor">Shiza</span>
           <span class="location">[SEH 4040]</span>
         </td>
-        <td class="lab-session">
-          Build-it Break-it Fix-it
+        <td class="lab-session" rowspan="2">
+          <a href="/activity/10/">Build-it Break-it Fix-it</a>
           <span class="instructor">Adam</span>
           <span class="location">[SEH 4040]</span>
+        </td>
+      </tr>
+      <tr>
+        <td class="time-cell">2 PM - 3 PM</td>
+        <td class="guest-orientation">
+          Discussion
         </td>
       </tr>
       <tr>
@@ -285,7 +291,7 @@ continued implementation and improvement
 | :--- | :--- | :--- | :--- |
 | Mon 6/8/26 | [Applying ML to Cybersecurity Problems](/topic/06/) | Map the ML pipeline to intrusion detection, phishing detection, malware classification, and security operations, then translate these patterns into teachable classroom labs.  | [Security Classifier Lab Design Studio](/activity/06/) |
 | Tue 6/9/26 | [Securing AI Systems](/topic/07/) | AI threat models, deployment vulnerabilities, prompt injection, leakage, and jailbreaks, with emphasis on system design and basic defenses. | [AI Systems Security Lab](/activity/07/) |
-| Wed 6/10/26 | [Guest Speakers: AI Governance and AI Abuse](/topic/08/) | Two visiting guest speakers: **David Broniatowski** (GW) on AI governance in the morning, and **Elissa Redmiles** (Georgetown) on AI abuse in the afternoon. | — |
+| Wed 6/10/26 | **Morning:** [Guest Speaker: AI Governance](/topic/08/)<br>**Afternoon:** [Guest Speaker: AI Abuse](/topic/08a/) | **Morning:** **David Broniatowski** (GW) — *Beyond the Metrics: Navigating Systems Risk and Trustworthiness under the NIST AI RMF*, on the limits of a metrics-only approach to AI governance.<br>**Afternoon:** **Elissa Redmiles** (Georgetown) — *An AI-Involved Landscape of Sexual Abuse*, on threat models, technical defenses, and open questions for AI-powered image-based sexual abuse. | — |
 | Thu 6/11/26 | **Morning:** [Privacy in AI/ML and Cybersecurity](/topic/09/)<br>**Afternoon:** [Human Factors in LLM and AI Privacy](/topic/09a/) | **Morning:** privacy risks in training data, logs, prompts, and outputs, including data leakage, sensitive cybersecurity datasets, and classroom-safe data practices.<br>**Afternoon:** Human Factors in LLM and AI Privacy, a presentation and hands-on studio on what users disclose to LLMs, what they consider sensitive, mental-model failures, and contextual integrity. | — |
 | Fri 6/12/26 | [Build-it / Break-it / Fix-it](/topic/10/) | All-day synthesis in which teams build an AI-enabled security artifact or teaching lab, exchange it for critique or attack, then fix and document improvements.  | [Build-it / Break-it / Fix-it Lab](/activity/10/) |
 
