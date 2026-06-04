@@ -208,12 +208,12 @@ continued implementation and improvement
       <tr>
         <td class="time-cell">10 AM - 11 AM</td>
         <td class="lecture-session" rowspan="2">
-          Applying ML to Cyber Problems
+          <a href="/topic/06/">Applying ML to Cyber Problems</a>
           <span class="instructor">Adam</span>
           <span class="location">[SEH 4040]</span>
         </td>
         <td class="lecture-session" rowspan="2">
-          Securing AI Systems
+          <a href="/topic/07/">Securing AI Systems</a>
           <span class="instructor">Adam</span>
           <span class="location">[SEH 4040]</span>
         </td>
@@ -221,12 +221,12 @@ continued implementation and improvement
           Guest Speaker: <a href="/topic/08/">David Broniatowski</a>
         </td>
         <td class="lecture-session" rowspan="2">
-          Privacy
+          <a href="/topic/09/">Privacy</a>
           <span class="instructor">Arkady</span>
           <span class="location">[SEH 4040]</span>
         </td>
         <td class="lab-session" rowspan="2">
-          Build-it Break-it Fix-it
+          <a href="/topic/10/">Build-it Break-it Fix-it</a>
           <span class="instructor">Adam</span>
           <span class="location">[SEH 4040]</span>
         </td>
@@ -248,12 +248,12 @@ continued implementation and improvement
       <tr>
         <td class="time-cell">1 PM - 3 PM</td>
         <td class="lab-session">
-          Guided Lab: Security Classifier
+          <a href="/activity/06/">Guided Lab: Security Classifier</a>
           <span class="instructor">Adam</span>
           <span class="location">[SEH 4040]</span>
         </td>
         <td class="lab-session">
-          Guided Lab: AI Systems Security
+          <a href="/activity/07/">Guided Lab: AI Systems Security</a>
           <span class="instructor">Adam</span>
           <span class="location">[SEH 4040]</span>
         </td>
@@ -261,12 +261,12 @@ continued implementation and improvement
           Guest Speaker: <a href="/topic/08a/">Elissa Redmiles</a>
         </td>
         <td class="lecture-session">
-          Human Factors Privacy
+          <a href="/topic/09a/">Human Factors Privacy</a>
           <span class="instructor">Shiza</span>
           <span class="location">[SEH 4040]</span>
         </td>
         <td class="lab-session">
-          Build-it Break-it Fix-it
+          <a href="/activity/10/">Build-it Break-it Fix-it</a>
           <span class="instructor">Adam</span>
           <span class="location">[SEH 4040]</span>
         </td>
