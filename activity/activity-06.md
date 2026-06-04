@@ -32,12 +32,13 @@ The downloadable lab is written as a student-facing assignment. It uses an IDS-s
 
 To use the starter package:
 
-1. Download and unzip the starter package.
-2. Upload `ids_colab_explorer.ipynb` to Google Colab.
-3. Upload the `data/` directory when prompted by the notebook, or upload `ids_flows_dev.csv` and `ids_flows_train.csv` into the Colab runtime.
+1. Download and unzip the starter package to get the `topic-06-ids-lab` folder.
+2. Upload the whole `topic-06-ids-lab` folder to your Google Drive, ideally at the top of *My Drive* (so it lives at `My Drive/topic-06-ids-lab`).
+3. Open `ids_colab_explorer.ipynb` in Google Colab and run the first cell. It mounts your Drive and sets `DATA_DIR = '/content/drive/MyDrive/topic-06-ids-lab/data'`; edit `DATA_DIR` if you uploaded the folder elsewhere.
 4. Run the notebook cells, complete the code TODOs, and replace notebook `Answer here:` placeholders.
 5. Transfer the selected final feature pipeline, classifier, threshold, and model name into `best_model.py`.
 6. Replace the `Answer here:` placeholders in `evaluation_notes.md`, `incident_review.md`, and `reflection.md`.
+7. Submit your files (at minimum `best_model.py`, the file scored for the bonus competition) through the course submission Google Form your instructor shares.
 
 The starter package includes a small development set and a 5,000-row synthetic training set. The private competition test set used for bonus scoring is the real Kaggle [Cybersecurity Threat Detection Dataset](https://www.kaggle.com/datasets/dhrubangtalukdar/cybersecurity-threat-detection-dataset), shares the same 13 columns as the training file, and is not included in the starter package.
 
