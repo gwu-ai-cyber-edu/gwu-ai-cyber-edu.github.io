@@ -183,6 +183,14 @@ section table a:focus {
   color: #586069;
 }
 
+/* Equal-height rows (scoped to Week 2): every hour-row gets the same
+   minimum height so rowspan cells don't make the hours look uneven.
+   Applied via the time-cell, which is present once per body row and is
+   never part of a rowspan. */
+.weekly-grid-table--equal-rows tbody tr td.time-cell {
+  height: 80px;
+}
+
 /* Event Types Styling */
 .weekly-grid-table .empty-cell {
   background-color: #fafbfc;

@@ -193,7 +193,7 @@ continued implementation and improvement
 **Week 2 at-a-glance:**
 
 <div class="table-responsive">
-  <table class="weekly-grid-table">
+  <table class="weekly-grid-table weekly-grid-table--equal-rows">
     <thead>
       <tr>
         <th class="time-col">Time</th>
