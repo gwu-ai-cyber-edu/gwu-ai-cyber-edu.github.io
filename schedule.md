@@ -78,12 +78,12 @@ continued implementation and improvement
           <span class="location">[SEH 4040]</span>
         </td>
         <td class="lecture-session" rowspan="2">
-          Neural Networks
+          <a href="https://drive.google.com/file/d/1UFS4bsShJnuCk9M7qeiHAc8Sm0uOdPrC/view?usp=sharing" target="_blank">Neural Networks</a>
           <span class="instructor">Shi</span>
           <span class="location">[SEH 4040]</span>
         </td>
         <td class="lecture-session" rowspan="2">
-          Toward agents
+          <a href="https://drive.google.com/file/d/1cDvtan-koG95apIL77ejam2WZDEUGqGU/view?usp=sharing" target="_blank">Toward agents</a>
           <span class="instructor">Shi</span>
           <span class="location">[SEH 4040]</span>
         </td>
@@ -120,12 +120,12 @@ continued implementation and improvement
           <span class="location">[SEH 4040]</span>
         </td>
         <td class="lecture-session" rowspan="2">
-          Generative Models and Transformers
+          <a href="https://drive.google.com/file/d/1tn4KwjKnmMMUTB014PVBq8FFz4-tZ_mZ/view?usp=sharing" target="_blank">Generative Models and Transformers</a>
           <span class="instructor">Shi</span>
           <span class="location">[SEH 4040]</span>
         </td>
         <td class="lecture-session" rowspan="2">
-          Trustworthy AI
+          <a href="https://drive.google.com/file/d/1NsdDVdOLFFG9yTX4oC7WJbTyhMSPLA7U/view?usp=sharing" target="_blank">Robustness and Visualization and Adversaries</a>
           <span class="instructor">Robert</span>
           <span class="location">[SEH 4040]</span>
         </td>
@@ -152,12 +152,12 @@ continued implementation and improvement
           <span class="location">[SEH 4040]</span>
         </td>
         <td class="lab-session">
-          Guided Lab: LLM
+          <a href="https://docs.google.com/document/d/1Eccm7NctClwf4iR1hQLsPKL-9GY8P5abPyqMYhM9P8s/edit?usp=sharing" target="_blank">Guided Lab: LM + Classification</a>
           <span class="instructor">Shi</span>
           <span class="location">[SEH 4040]</span>
         </td>
         <td class="lab-session">
-          Guided Lab: Adversarial ML
+          <a href="https://docs.google.com/document/d/1Ucn-gMdB2_TR2VBKXUcTItnSkM3JfTwhXhuB-Va1At4/edit?usp=sharing" target="_blank">Visual Adversarial Attacks Lab</a>
           <span class="instructor">Robert</span>
           <span class="location">[SEH 4040]</span>
         </td>
@@ -185,7 +185,7 @@ continued implementation and improvement
 | Mon 6/1/26 | [Orientation + World view and State of AI](/topic/01/) | Program kickoff, participant introductions, an overview on the state of AI, and an introduction to technicla frameworks. | [ML Tech Stack Orientation](/activity/01/) |
 | Tue 6/2/26 | [Supervised Learning Foundations](/topic/02/) | Supervised learning pipeline, evaluation metrics, and a guided classifier lab. | [Supervised Learning Lab](/activity/02/) |
 | Wed 6/3/26 | [Neural Networks + LLM Foundations](/topic/03/) | Neural networks, transformers, prompt engineering, and a character-based LLM lab. | [LLM Foundations Lab](/activity/03/) |
-| Thu 6/4/26 | [Adversarial ML + Trustworthy AI](/topic/04/) | Adversarial examples, robustness, and a model-attack lab. | [Adversarial ML Lab](/activity/04/) |
+| Thu 6/4/26 | [Toward Agents + Robustness, Visualization, and Adversaries](/topic/04/) | LLMs as agents, model robustness against adversarial attacks, and a hands-on visual adversarial attacks lab. | [Visual Adversarial Attacks](/activity/04/) |
 | Fri 6/5/26 | [Guest speaker: Dr. Mohit Iyyer (UMD)](/topic/05/) | We are pleased to have Dr. Iyyer present a guest lecture in the morning, "Detecting and characterizing AI use in collaborative writings"; in the afternoon, we will continue exploring NLP in a transformer lab. | [Transformer Lab](/activity/05/) |
 
 ### Week 2
