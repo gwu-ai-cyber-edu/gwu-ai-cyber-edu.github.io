@@ -246,13 +246,13 @@ continued implementation and improvement
         <td class="food-event-center">Provided working lunch</td>
       </tr>
       <tr>
-        <td class="time-cell">1 PM - 3 PM</td>
-        <td class="lab-session">
+        <td class="time-cell">1 PM - 2 PM</td>
+        <td class="lab-session" rowspan="2">
           <a href="/activity/06/">Guided Lab: Security Classifier</a>
           <span class="instructor">Adam</span>
           <span class="location">[SEH 4040]</span>
         </td>
-        <td class="lab-session">
+        <td class="lab-session" rowspan="2">
           <a href="/activity/07/">Guided Lab: AI Systems Security</a>
           <span class="instructor">Adam</span>
           <span class="location">[SEH 4040]</span>
@@ -260,15 +260,21 @@ continued implementation and improvement
         <td class="guest-orientation">
           Guest Speaker: <a href="/topic/08a/">Elissa Redmiles</a>
         </td>
-        <td class="lecture-session">
+        <td class="lecture-session" rowspan="2">
           <a href="/topic/09a/">Human Factors Privacy</a>
           <span class="instructor">Shiza</span>
           <span class="location">[SEH 4040]</span>
         </td>
-        <td class="lab-session">
+        <td class="lab-session" rowspan="2">
           <a href="/activity/10/">Build-it Break-it Fix-it</a>
           <span class="instructor">Adam</span>
           <span class="location">[SEH 4040]</span>
+        </td>
+      </tr>
+      <tr>
+        <td class="time-cell">2 PM - 3 PM</td>
+        <td class="guest-orientation">
+          Discussion
         </td>
       </tr>
       <tr>
