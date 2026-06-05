@@ -130,9 +130,9 @@ continued implementation and improvement
           <span class="location">[SEH 4040]</span>
         </td>
         <td class="lab-session" rowspan="3">
-          Guided Lab: Transformers
-          <span class="instructor">Shi</span>
-          <span class="location">[SEH 4040]</span>
+          Group Discussions over Ice-Cream + Claude Code Demo + <a href="https://docs.google.com/document/d/17XO5VRK0KwSkoBRGThC0eqLceQBqrNEH1pqsQIg3LUk/edit?usp=sharing" target="_blank">Transformer Lab</a>
+          <span class="instructor">Adam, Arkady, Rebecca, Robert, Shi</span>
+          <span class="location">[SEH B1270]</span>
         </td>
       </tr>
       <tr>
@@ -186,7 +186,7 @@ continued implementation and improvement
 | Tue 6/2/26 | [Supervised Learning Foundations](/topic/02/) | Supervised learning pipeline, evaluation metrics, and a guided classifier lab. | [Supervised Learning Lab](/activity/02/) |
 | Wed 6/3/26 | [Neural Networks + LLM Foundations](/topic/03/) | Neural networks, transformers, prompt engineering, and a character-based LLM lab. | [LLM Foundations Lab](/activity/03/) |
 | Thu 6/4/26 | [Toward Agents + Robustness, Visualization, and Adversaries](/topic/04/) | LLMs as agents, model robustness against adversarial attacks, and a hands-on visual adversarial attacks lab. | [Visual Adversarial Attacks](/activity/04/) |
-| Fri 6/5/26 | [Guest speaker: Dr. Mohit Iyyer (UMD)](/topic/05/) | We are pleased to have Dr. Iyyer present a guest lecture in the morning, "Detecting and characterizing AI use in collaborative writings"; in the afternoon, we will continue exploring NLP in a transformer lab. | [Transformer Lab](/activity/05/) |
+| Fri 6/5/26 | [Guest speaker: Dr. Mohit Iyyer (UMD)](/topic/05/) | We are pleased to have Dr. Iyyer present a guest lecture in the morning, "Detecting and characterizing AI use in collaborative writings"; in the afternoon, we will have group discussions over ice-cream, a Claude Code demo, and a transformer lab. | [Group Discussions over Ice-Cream + Claude Code Demo + Transformer Lab](/activity/05/) |
 
 ### Week 2
 

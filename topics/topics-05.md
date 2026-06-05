@@ -21,4 +21,4 @@ Dr. Mohit Iyyer is an associate professor in computer science at University of M
 
 ## Afternoon Preview
 
-The afternoon activity is [Transformer Lab](/activity/05/).
+The afternoon activity is [Group Discussions over Ice-Cream + Claude Code Demo + Transformer Lab](/activity/05/).

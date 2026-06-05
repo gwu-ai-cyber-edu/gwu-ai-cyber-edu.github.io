@@ -1,9 +1,14 @@
 ---
 layout: default
-title: Transformer Lab
+title: Group Discussions over Ice-Cream + Claude Code Demo + Transformer Lab
 permalink: /activity/05/
 ---
 
-# Transformer Lab
+# Group Discussions over Ice-Cream + Claude Code Demo + Transformer Lab
 
-This afternoon activity is a hands-on Colab notebook lab exploring the mechanics of transformer architectures. Participants will configure and train a small attention-based model, gaining a practical, step-by-step understanding of how transformers process sequential data.
+This afternoon activity consists of:
+1. **Group Discussions over Ice-Cream**
+2. **Claude Code Demo**
+3. **Transformer Lab**
+
+Participants will work on the hands-on [Transformer Lab](https://docs.google.com/document/d/17XO5VRK0KwSkoBRGThC0eqLceQBqrNEH1pqsQIg3LUk/edit?usp=sharing) worksheet to explore the mechanics of transformer architectures.
