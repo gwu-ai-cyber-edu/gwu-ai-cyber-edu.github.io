@@ -330,6 +330,7 @@ continued implementation and improvement
         </td>
         <td class="guest-orientation" rowspan="2">
           Guest Speaker: Malihe Aliktani
+          <span class="location">[SEH Lehman]</span>
         </td>
         <td class="lab-session" rowspan="2">
           Cohort Showcase
