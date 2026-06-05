@@ -6,36 +6,35 @@ permalink: /topic/06/
 
 # Applying ML to Cybersecurity Problems
 
-This session moves from ML foundations into security-first decision making. Participants examine where classification and related AI techniques fit cybersecurity work such as intrusion detection, phishing detection, malware classification, SOC triage, and threat intelligence, then carry those ideas into metrics, human factors, limitations, and teaching translation.
+This session moves from machine-learning foundations into security-first decision making. Participants look at where classification and related AI techniques fit cybersecurity work such as intrusion detection, phishing detection, malware classification, SOC triage, and threat intelligence, then carry those ideas into metrics, limitations, and teaching translation. Two running examples thread through the morning: a phishing classifier in a SOC and an LLM/RAG alert-summary assistant.
 
-By the end of the session, participants should be able to evaluate whether a security task is a good fit for ML, explain why metrics such as precision and recall represent real security tradeoffs, and translate these ideas into classroom activities that prepare students for hands-on security classifier work.
+By the end of the session, participants should be able to judge whether a security task is a good fit for ML, explain why metrics such as precision and recall are real security tradeoffs rather than just model scores, and turn these ideas into classroom material.
 
 ## Learning Objectives
 
-- Map common cybersecurity problem spaces to appropriate AI/ML approaches
-- Evaluate whether a security task is a good, constrained, or poor fit for ML
-- Connect precision, recall, false positives, and false negatives to operational risk
-- Identify trust, data, and system-level concerns that shape responsible ML use in security
-- Prepare for the afternoon Security Classifier Lab through a security-first framing
+- Map cybersecurity problems to appropriate AI/ML approaches, with an emphasis on classification.
+- Judge whether a security task is a good, limited, or poor fit for ML.
+- Connect precision, recall, false positives, and false negatives to operational risk.
+- Identify the trust, data, and system-level concerns that shape responsible ML use in security.
+- Translate the morning's concepts into a small, reusable teaching seed.
 
-## Discussion Activities
+## What the Session Covers
 
-### Security Tasks, Patterns, and AI/ML Fit
-
-Small groups generate cybersecurity tasks from their own teaching or professional contexts, select 2-3 examples, connect each task to the closest application pattern and a possible AI/ML role, and classify each as a strong fit, possible with constraints, or poor fit. Groups also sketch an in-class use and a guardrail or human review step.
-
-[Download worksheet: Security Tasks, Patterns, and AI/ML Fit PDF](/assets/worksheets/topic-06-ml-fit-spectrum.pdf)
-
-### Teaching Seed Design
-
-Teams draft a short, non-lab teaching seed that teaches one ML-for-security tradeoff. Each team identifies a class example, a teaching moment, a student task, a key tradeoff such as precision versus recall or trust versus automation, and a quick assessment check.
-
-[Download worksheet: Teaching Seed Design PDF](/assets/worksheets/topic-06-teaching-seed-design.pdf)
+- **Foundations review** — supervised classification, LLMs in security workflows, and trustworthy AI/ML (adversarial examples, model leakage, data poisoning, fairness, explainability).
+- **Core security concepts** — assets, policy, adversaries, CIA, AAA, and trusted versus trustworthy, applied to AI/ML workflows.
+- **Two directions** — using AI/ML for security versus securing AI/ML systems, traced through the same two examples.
+- **Application patterns** — classify, rank, cluster, summarize, and retrieve, and where each fits a security task.
+- **Metrics as security operations** — thresholds, alert volume, analyst capacity, and evaluation in the lab versus in operations.
+- **Limitations** — where AI/ML stops helping: data, context, human trust and review, and deployment fit.
 
 ## Teaching Translations
 
 - Start with a concrete security task, then ask what AI/ML helps with and what it does not.
-- Make the tradeoff visible: precision, recall, thresholding, workload, missed attacks, and recovery paths.
-- Keep the human role visible in design, deployment, training, review, and trust.
-- Use participant-owned examples when possible so the teaching move fits their own classroom context.
+- Make the tradeoff visible: precision, recall, thresholds, workload, missed attacks, and recovery paths.
+- Keep the human role visible in review and trust, not just in model accuracy.
+- Use participant-owned examples so the teaching move fits their own classroom.
 - End with a small, reusable teaching seed rather than a full module.
+
+## Afternoon Activity
+
+The afternoon is a standalone, student-facing intrusion-detection lab: a Colab classifier over a synthetic network-flow dataset that compares several models and evaluates them with a train/validation split, cross-validation, and a private real-data competition set. Participants review the lab as an exemplar, then sketch a similar AI/ML security lab for their own course. See the [Security Classifier Lab Design Studio](/activity/06/).
