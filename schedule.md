@@ -219,6 +219,7 @@ continued implementation and improvement
         </td>
         <td class="guest-orientation">
           Guest Speaker: <a href="/topic/08/">David Broniatowski</a>
+          <span class="location">[SEH 4040]</span>
         </td>
         <td class="lecture-session" rowspan="2">
           <a href="/topic/09/">Privacy</a>
@@ -235,6 +236,7 @@ continued implementation and improvement
         <td class="time-cell">11 AM - 12 PM</td>
         <td class="guest-orientation">
           Discussion
+          <span class="location">[SEH 4040]</span>
         </td>
       </tr>
       <tr>
@@ -259,6 +261,7 @@ continued implementation and improvement
         </td>
         <td class="guest-orientation">
           Guest Speaker: <a href="/topic/08a/">Elissa Redmiles</a>
+          <span class="location">[SEH 4040]</span>
         </td>
         <td class="lecture-session" rowspan="2">
           <a href="/topic/09a/">Human Factors Privacy</a>
@@ -275,6 +278,7 @@ continued implementation and improvement
         <td class="time-cell">2 PM - 3 PM</td>
         <td class="guest-orientation">
           Discussion
+          <span class="location">[SEH 4040]</span>
         </td>
       </tr>
       <tr>
