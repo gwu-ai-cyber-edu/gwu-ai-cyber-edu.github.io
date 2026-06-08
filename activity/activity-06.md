@@ -25,7 +25,7 @@ By the end of the activity, participants should be able to:
 
 ## Student Lab Package
 
-The downloadable lab is written as a student-facing assignment. It uses an IDS-style classifier over network log records and is designed for Google Colab. Students create derived features, choose at least three classifier types to compare, evaluate a train/validation split and five-fold cross-validation, designate one best model in `best_model.py`, and explain how the model output would fit into an IDS workflow. In the student materials, "validation" refers to the local train/validation split, while "test" is reserved for the private competition test set used for bonus scoring.
+The downloadable lab is written as a student-facing assignment. It uses an IDS-style classifier over network log records and is designed for Google Colab. Students create derived features, choose at least three classifier types to compare, evaluate a train/validation split and five-fold cross-validation, designate one best model in `best_model.ipynb`, and explain how the model output would fit into an IDS workflow. In the student materials, "validation" refers to the local train/validation split, while "test" is reserved for the private competition test set used for bonus scoring.
 
 - [Download the IDS student lab write-up PDF](/assets/activities/topic-06-ids-student-lab.pdf)
 - [Download the Google Colab starter package ZIP](/assets/activities/topic-06-ids-student-lab-starter.zip)
@@ -36,7 +36,7 @@ To use the starter package:
 2. Upload the whole `topic-06-ids-lab` folder to your Google Drive, ideally at the top of *My Drive* (so it lives at `My Drive/topic-06-ids-lab`).
 3. Open `ids_colab_explorer.ipynb` in Google Colab and run the first cell. It mounts your Drive and sets `DATA_DIR = '/content/drive/MyDrive/topic-06-ids-lab/data'`; edit `DATA_DIR` if you uploaded the folder elsewhere.
 4. Run the notebook cells, complete the code TODOs, and replace notebook `Answer here:` placeholders.
-5. Transfer the selected final feature pipeline, classifier, threshold, and model name into `best_model.py`.
+5. Transfer the selected final feature pipeline, classifier, threshold, and model name into `best_model.ipynb`.
 6. Replace the `Answer here:` placeholders in `evaluation_notes.md`, `incident_review.md`, and `reflection.md`.
 7. Submit your files through the course submission [Google Form](https://forms.gle/kgj24Ucn1YUxhsr96). <span style="color: red;"> &larr; SUBMISSION LINK</span>
 
@@ -46,7 +46,7 @@ The student submission package includes:
 
 - `ids_colab_explorer.ipynb` as the exploration and evidence notebook, including code TODOs and written answers
 - `evaluation_notes.md` with validation and cross-validation results for at least three classifiers
-- `best_model.py` with the selected reproducible scoring pipeline
+- `best_model.ipynb` with the selected reproducible scoring pipeline
 - `incident_review.md` with alert interpretation and human-review notes
 - `reflection.md` with answers to the lab reflection questions
 - `ai_assistance_log.md` if AI assistance was used
