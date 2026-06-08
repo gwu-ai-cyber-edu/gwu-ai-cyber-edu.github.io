@@ -38,7 +38,7 @@ To use the starter package:
 4. Run the notebook cells, complete the code TODOs, and replace notebook `Answer here:` placeholders.
 5. Transfer the selected final feature pipeline, classifier, threshold, and model name into `best_model.py`.
 6. Replace the `Answer here:` placeholders in `evaluation_notes.md`, `incident_review.md`, and `reflection.md`.
-7. Submit your files (at minimum `best_model.py`, the file scored for the bonus competition) through the course submission Google Form your instructor shares.
+7. Submit your files through the course submission [Google Form](https://forms.gle/kgj24Ucn1YUxhsr96). <span style="color: red;"> &larr; SUBMISSION LINK</span>
 
 The starter package includes a small development set and a 5,000-row synthetic training set. The private competition test set used for bonus scoring is the real Kaggle [Cybersecurity Threat Detection Dataset](https://www.kaggle.com/datasets/dhrubangtalukdar/cybersecurity-threat-detection-dataset), shares the same 13 columns as the training file, and is not included in the starter package.
 
