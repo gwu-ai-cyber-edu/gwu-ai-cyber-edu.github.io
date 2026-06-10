@@ -216,6 +216,7 @@ continued implementation and improvement
           <a href="/topic/07/">Securing AI Systems</a>
           <span class="instructor">Adam</span>
           <span class="location">[SEH 4040]</span>
+          <span class="slides">[<a href="/assets/slides/topic-07.pdf">slides</a>]</span>
         </td>
         <td class="guest-orientation">
           Guest Speaker: <a href="/topic/08/">David Broniatowski</a>
@@ -294,7 +295,7 @@ continued implementation and improvement
 | Date | Topic | Description | Activity |
 | :--- | :--- | :--- | :--- |
 | Mon 6/8/26 | [Applying ML to Cybersecurity Problems](/topic/06/) | Map the ML pipeline to intrusion detection, phishing detection, malware classification, and security operations, then translate these patterns into teachable classroom labs.  | [Security Classifier Lab Design Studio](/activity/06/) |
-| Tue 6/9/26 | [Securing AI Systems](/topic/07/) | AI threat models, deployment vulnerabilities, prompt injection, leakage, and jailbreaks, with emphasis on system design and basic defenses. | [AI Systems Security Lab](/activity/07/) |
+| Tue 6/9/26 | [Securing AI Systems](/topic/07/) ([slides](/assets/slides/topic-07.pdf)) | AI threat models, deployment vulnerabilities, prompt injection, leakage, and jailbreaks, with emphasis on system design and basic defenses. | [AI Systems Security Lab](/activity/07/) |
 | Wed 6/10/26 | **Morning:** [Guest Speaker: AI Governance](/topic/08/)<br>**Afternoon:** [Guest Speaker: AI Abuse](/topic/08a/) | **Morning:** **David Broniatowski** (GW) — *Beyond the Metrics: Navigating Systems Risk and Trustworthiness under the NIST AI RMF*, on the limits of a metrics-only approach to AI governance.<br>**Afternoon:** **Elissa Redmiles** (Georgetown) — *An AI-Involved Landscape of Sexual Abuse*, on threat models, technical defenses, and open questions for AI-powered image-based sexual abuse. | — |
 | Thu 6/11/26 | **Morning:** [Privacy in AI/ML and Cybersecurity](/topic/09/)<br>**Afternoon:** [Human Factors in LLM and AI Privacy](/topic/09a/) | **Morning:** privacy risks in training data, logs, prompts, and outputs, including data leakage, sensitive cybersecurity datasets, and classroom-safe data practices.<br>**Afternoon:** Human Factors in LLM and AI Privacy, a presentation and hands-on studio on what users disclose to LLMs, what they consider sensitive, mental-model failures, and contextual integrity. | — |
 | Fri 6/12/26 | [Build-it / Break-it / Fix-it](/topic/10/) | All-day synthesis in which teams build an AI-enabled security artifact or teaching lab, exchange it for critique or attack, then fix and document improvements.  | [Build-it / Break-it / Fix-it Lab](/activity/10/) |

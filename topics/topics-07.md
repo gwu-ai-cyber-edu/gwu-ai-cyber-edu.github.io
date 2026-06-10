@@ -6,6 +6,8 @@ permalink: /topic/07/
 
 # Securing AI Systems
 
+\[[slides](/assets/slides/topic-07.pdf)\]
+
 This session reframes AI security from "is the model safe" to "is the application around the model safe." Participants examine an AI application as a workflow with prompts, retrieval, output handling, application logic, and memory, then walk that workflow through the OWASP LLM Top 10, a working threat-modeling shape, the recurring attack families (prompt injection, leakage, hijacking, jailbreaks), and a layered set of defenses. Two running examples thread through the morning: a quiz assistant for a course and an alert-summary assistant for a security operations center, with the same architecture diagram describing both.
 
 By the end of the session, participants should be able to draw an AI application and name its trust boundaries, classify a failure as a quality issue or a security boundary failure, map a threat to OWASP and the four-part threat shape, design a layered defense, and translate the analysis into a classroom-ready teaching example.
