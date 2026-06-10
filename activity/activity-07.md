@@ -21,42 +21,27 @@ By the end of the activity, participants should be able to:
 - Identify the system-level trust boundaries in a small RAG application and connect them to the morning's attack-family taxonomy.
 - Demonstrate how mixed-trust retrieval, prompt-only guardrails, and verbatim output handling combine into a leakage path.
 - Distinguish between prompt-level mitigations and architectural defenses, and articulate the residual risk of each.
-- Run a small AI application locally using a self-hosted LLM (Ollama) so faculty can replicate the lab without an institutional API key.
+- Run a small AI application in Google Colab against a self-hosted LLM (an in-Colab Ollama server) so faculty can replicate the lab without an institutional API key or a local install.
 - Sketch a classroom-ready AI-application-security mini-lab with a defensible learning objective, dataset plan, and assessment approach.
 
 ## Distributed Lab Package
 
-The downloadable lab is a deliberately weak retrieval-based study and quiz assistant, written as a participant-facing assignment. Participants run the application locally, attempt three classes of attack (direct leakage, guardrail bypass, retrieval abuse), and document their findings.
+The downloadable lab is a deliberately weak retrieval-based study and quiz assistant, written as a participant-facing assignment. Participants run the application in Google Colab, attempt three classes of attack (direct leakage, guardrail bypass, retrieval abuse), and document their findings.
 
 - [Download the AI Application Security Lab write-up PDF](/assets/activities/topic-07-ai-app-security-lab.pdf)
 - [Download the lab starter package ZIP](/assets/activities/topic-07-ai-app-security-lab-starter.zip)
 
 To use the starter package:
 
-1. Download and unzip the starter package.
-2. Install Ollama from <https://ollama.com/download> and pull a small instruction-tuned model: `ollama pull llama3.2:3b`.
-3. Inside the unzipped starter, set up a Python environment and copy the example env file:
+1. Download and unzip the starter package to get the `topic-07-ai-app-security-lab` folder.
+2. Upload the whole `topic-07-ai-app-security-lab` folder to your Google Drive, ideally at the top of *My Drive* (so it lives at `My Drive/topic-07-ai-app-security-lab`).
+3. Open `lab.ipynb` from that Drive folder in Google Colab (File → Open notebook → Google Drive), then choose **Runtime → Change runtime type → T4 GPU**.
+4. Run the cells top to bottom. Section 2 mounts your Drive and copies the starter into `/content/lab`; edit `STARTER_DIR` in that cell if you uploaded the folder elsewhere. Later sections install an in-Colab Ollama server and pull `llama3.1:8b` (a one-time ~3–5 minute download).
+5. Use the smoke-test section to confirm the four CLI paths return output, then work through the three attack families in the notebook's attack workspace.
+6. Document attempts in `attack_log.md` and write a root-cause analysis in `analysis.md` (both live in `/content/lab/` in the Colab file browser).
+7. Run the notebook's final cell to bundle and download your deliverables; your Drive is already mounted if you prefer to copy them there instead.
 
-   ```bash
-   python3 -m venv .venv
-   source .venv/bin/activate         # Windows: .venv\Scripts\activate
-   pip install -r requirements.txt
-   cp .env.example .env
-   ```
-
-4. Smoke test the four CLI paths:
-
-   ```bash
-   python3 app.py --list-sources
-   python3 app.py --question "How can retrieved context leak sensitive information?"
-   python3 app.py --generate-quiz
-   python3 app.py --grade-question "Why are prompt-only guardrails weak?" \
-     --student-answer "Because the model can still see internal retrieved context."
-   ```
-
-5. Document attempts in `attack_log.md` and write a root-cause analysis in `analysis.md`.
-
-The starter package includes a working application, a small mixed-trust corpus (with obviously fake `LAB7-CANARY-*` markers), prompt templates, deliverable scaffolds, and a detailed `OLLAMA_SETUP.md` covering platform-specific install steps and a hosted-API fallback path.
+The starter package includes a working application, a small mixed-trust corpus (with obviously fake `LAB7-CANARY-*` markers), prompt templates, deliverable scaffolds, and a detailed `COLAB_SETUP.md` covering the Colab and Google Drive setup steps and troubleshooting.
 
 The participant submission package includes:
 
@@ -68,17 +53,14 @@ The participant submission package includes:
 
 Participants may use AI agents for brainstorming attack ideas, critiquing whether an attack log is specific enough, comparing leakage paths, or reviewing the clarity of a defense explanation. The starter includes `AGENTS.md`, which describes the intended boundaries for agent help. The goal is not to make those boundaries impossible to bypass; the goal is for participants to practice using assistance while preserving their own reasoning, security interpretation, and final submitted code.
 
-## Local LLM Setup
+## LLM Setup (Runs in Google Colab)
 
-This lab is designed to run against a **local LLM** so participants do not need an institutional API key. The default backend is [Ollama](https://ollama.com), which exposes an OpenAI-compatible API at `http://localhost:11434/v1`.
+This lab runs entirely in **Google Colab** so participants do not need an institutional API key or a local install. The notebook installs and starts a self-hosted [Ollama](https://ollama.com) server *inside the Colab runtime* (an OpenAI-compatible API at `http://localhost:11434/v1`) and pulls the model for you:
 
-Recommended models (any of these works; pick one that fits your machine):
+- `llama3.1:8b` — primary backend, about 4.7 GB, a one-time download per runtime.
+- `llama3.2:3b` — about 2 GB, pulled only for the optional cross-model comparison.
 
-- `llama3.2:3b` (about 2 GB, recommended starting point)
-- `qwen2.5:3b-instruct` (about 2 GB, slightly different refusal behavior)
-- `gemma2:2b` (about 1.6 GB, smallest)
-
-If Ollama will not install on your machine, the starter's `OLLAMA_SETUP.md` documents a hosted-API fallback for any OpenAI-compatible endpoint (including OpenAI itself, OpenRouter, Groq, vLLM, llama.cpp's server, LM Studio, or institutional gateways).
+A T4 GPU runtime (**Runtime → Change runtime type → T4 GPU**) is recommended. The guardrails under test live in the *prompt templates*, not the model, so swapping models changes how well the same guardrail holds — which is the point of the optional comparison section. Full setup and troubleshooting steps are in the starter's `COLAB_SETUP.md`.
 
 ## From Lab Review To Lab Design
 

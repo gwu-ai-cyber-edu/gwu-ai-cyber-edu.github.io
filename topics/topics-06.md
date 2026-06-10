@@ -6,6 +6,8 @@ permalink: /topic/06/
 
 # Applying ML to Cybersecurity Problems
 
+\[[slides](/assets/slides/topic-06.pdf)\]
+
 This session moves from machine-learning foundations into security-first decision making. Participants look at where classification and related AI techniques fit cybersecurity work such as intrusion detection, phishing detection, malware classification, SOC triage, and threat intelligence, then carry those ideas into metrics, limitations, and teaching translation. Two running examples thread through the morning: a phishing classifier in a SOC and an LLM/RAG alert-summary assistant.
 
 By the end of the session, participants should be able to judge whether a security task is a good fit for ML, explain why metrics such as precision and recall are real security tradeoffs rather than just model scores, and turn these ideas into classroom material.
