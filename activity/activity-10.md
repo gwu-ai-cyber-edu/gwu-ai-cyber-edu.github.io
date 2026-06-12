@@ -8,19 +8,21 @@ permalink: /activity/10/
 
 > Friday of Week 2 is **one continuous all-day event**. The day opens with the **[Build-it / Break-it / Fix-it primer]({{ site.baseurl }}/topic/10/)** (~30 minutes), then runs the activity below for the rest of the day. This page covers the activity itself: the day flow, what to bring, the break-submission protocol, and the live scoreboard. The primer page covers the pedagogy (four mechanisms, three depth tiers, the research lineage).
 
-Teams build a small software artifact in the morning, exchange it for adversarial review during a working-lunch break phase, then fix and report out in the afternoon. The point is not a polished tool; the point is to inhabit the [Build-it / Break-it / Fix-it](https://builditbreakit.org/) teaching format end to end so faculty can decide how to adopt it in their own courses.
+This is a **toy AI-assisted red-team exercise.** Each team uses an AI coding agent (e.g., **Claude Code**) to **build** a small web app, then to **break** other teams' running apps, then to **fix** what gets found — living the [Build-it / Break-it / Fix-it](https://builditbreakit.org/) loop end to end. **Nearly every step is a big AI task:** you *prompt and direct* the agent, it does the heavy lifting, and you learn how AI-assisted offense and defense actually works — including where it helps and where you still have to steer it. The point is not a polished tool; it is to feel the loop, and the AI workflow, so faculty can decide how to adopt it.
+
+**The larger goal:** experience a small, safe, end-to-end **AI red-team cycle** — build with AI, attack with AI, defend with AI — and notice what the agent does well, where it goes off the rails, and how much direction it still needs.
 
 ## Day flow
 
 | Block | Duration | What happens |
 | --- | --- | --- |
-| Topic primer | ~35 min | Mechanism-and-translation primer for BBF; ends with the Classroom invite URL. |
-| **Build** | 90 min, hard stop | Teams each build a small app of their choosing (a CLI tool, web app, or document generator) that must satisfy a shared five-property spec, including a "canary" secret it must never disclose. End-of-phase 3-minute team demos. |
-| **Break** (working lunch) | 90 min | Teams attempt to make other teams' artifacts leak the canary, violate the spec, or bypass guardrails. Every attempted break is logged as a structured GitHub Issue. End-of-phase 3-minute "most-interesting-break" presentations. |
-| **Fix** | 90 to 120 min | Teams read the breaks logged against their artifact, triage in `fix_notes.md`, implement what they can, open PRs that close the issues. |
-| **Debrief** | 30 min (protected) | What was surprising in each role. What you would adopt in your own course. |
+| Topic primer | ~30 min | Mechanism-and-translation primer for BBF; ends with the Classroom invite URL. |
+| **Build** | 30 min, hard stop | Drive your AI agent to ship a small **web app** that meets the five-property spec (including a `CANARY_` secret it must never leak). Short end-of-phase demo. |
+| **Break** | 120 min | Point your AI agent at *other teams'* running apps and try to violate P1–P5 — **black-box first, then source-assisted**. File each confirmed break as a structured Break Report issue; re-test and confirm others' fixes. |
+| **Fix** | 30 min | Triage the breaks filed against you, drive your agent to patch them, and open PRs (`closes #N`). The team that filed each break confirms the fix. |
+| **Debrief** | 30 min (protected) | What surprised you in each role; what you'd adopt; where AI helped vs. where it needed steering. |
 
-It is **OK if Fix is partial**. The closing debrief is protected even at the cost of cutting Fix short. The mechanisms are what we are after, not a polished artifact.
+It is **OK if Fix is partial**. The closing debrief is protected even at the cost of cutting Fix short — the mechanisms (and the AI workflow) are what we are after, not a polished artifact.
 
 ## Setup requirements
 
@@ -46,84 +48,91 @@ By the end of the activity, participants should be able to:
 
 ## What you're building
 
-Each team picks **one** small application to build — a command-line tool, a local web app or API, or a document generator — and the platform to build it on (Python or Node). There is no single required app: the institute publishes a build menu of around two dozen options (plus a LaTeX/PDF target, a static-site target, and an optional AI-assistant track). The full menu and specification ship as `BUILD-MENU.md` and `SPEC.md` in the starter repository.
+This run, every team builds a small **web app** (you pick which one and the platform — Python with Flask/FastAPI, or Node with Express). A running web app gives breakers an obvious HTTP surface to probe. **You build it by directing your AI agent** — describe the app and the constraints, let the agent scaffold and code it, and steer it when it drifts.
 
-Whatever you build, it must hold a **shared five-property contract** — which is what keeps breaks comparable no matter what each team chose:
+Whatever you build must hold a **shared five-property contract** — which is what keeps breaks comparable across teams:
 
-- **P1: Confidentiality.** Never leak the `CANARY_` secret in any output.
+- **P1: Confidentiality.** Never leak the `CANARY_` secret through the interface.
 - **P2: Correctness.** Do the app's documented job correctly on valid input.
 - **P3: Input discipline.** Handle malformed, empty, or oversized input without crashing.
-- **P4: No injection / code execution.** Never run user input as code, shell commands, SQL, file paths, or templates.
-- **P5: Authorization & output safety.** For web/UI targets: require authorization for private data, and never let user content run as HTML.
+- **P4: No injection / code execution.** Never run user input as code, shell, SQL, file paths, or templates.
+- **P5: Authorization & output safety.** Require authorization for private data; never let user content run as HTML.
 
-A break is only valid if it shows that one of these properties was violated **using only the artifact's inputs** — no editing the artifact's code, configuration, or stored data.
+A break is valid only if it shows one of these properties violated **through the running app's interface** — not by editing the app's code or reading its `secret/` files.
 
-## Build menu
+### How your AI agent is steered: the AGENTS files
 
-Pick **one** target (or bring your own that fits the contract). All targets run with Python or Node on `localhost`, no admin rights, no Docker, and no system database server — so they work on any of the environments above. The full menu with starter guidance ships as `BUILD-MENU.md` in the starter repository.
+Your team repository ships agent instructions that keep the AI **"coloring within the lines"** of the activity — read them before you start:
 
-### Command-line tools
+- **`AGENTS.md`** — a **phase gate**: the agent first establishes whether you are in **Build**, **Break**, or **Fix** mode (from the `PHASE` file) and follows only that mode's rules. Build mode helps you ship a working app; Break mode attacks *another* team's app; Fix mode patches confirmed breaks on your own.
+- **`AGENTS_BREAK.md`** — the rules for breaking: **black-box first** (attack the running app over HTTP) until you've exhausted it, *then* source-assisted; finding the canary by reading a file is **not** a break — you must show *how* it breaks through the interface. It also covers verifying a finding, checking for duplicates, and filing.
 
-| App | Platform | What breakers attack |
+You still **prompt and direct** the agent throughout — these files constrain *how* it works, not the thinking you bring. See the menu and a beginner-friendly Build prompt in `BUILD-MENU.md`, and the property contract in `SPEC.md`, in your starter repo.
+
+## Build menu (web apps)
+
+Pick **one** (or bring your own web app that fits the contract). All run with Python or Node on `localhost` — no admin, no Docker, no system database server. The full menu and a beginner Build prompt ship as `BUILD-MENU.md` in the starter repo.
+
+| App | Platform | What breakers probe for |
 | --- | --- | --- |
-| Secret-keeping notes / password vault | Python / Node | leaking the canary via `--debug`, export, or error trace |
-| Markdown → HTML converter | Python / Node | path traversal; executing embedded scripts/includes |
-| Log analyzer / grep tool | Python / Node | regex injection, path traversal, echoing private lines |
-| CSV/JSON query tool (mini-jq) | Python / Node | field-selector injection leaking private fields |
-| Template / mail-merge renderer | Python / Node | template injection (SSTI) exposing the secret |
-| Expression / calculator evaluator | Python / Node | `eval`-style code injection |
-| File encryptor / decryptor | Python / Node | key leak in verbose/error output |
-| .env / config linter | Python / Node | printing the secret while "validating" |
-| To-do manager with private tasks | Python / Node | filter bypass that lists private tasks |
-| JWT / token inspector | Python / Node | secret leak; accepting forged tokens |
-| Commit-message / hook checker | Python / Node | command injection via crafted message |
-| Password-strength / breach checker | Python / Node | leaking other entries in the local list |
+| Paste-bin / snippet service | Flask / FastAPI / Express | IDOR, guessable IDs, stored XSS |
+| Notes / journal app with login | Flask / FastAPI / Express | authorization bypass, IDOR |
+| URL shortener service | Flask / FastAPI / Express | enumeration, open redirect |
+| Blog + comments board | Flask / FastAPI / Express | stored XSS, authorization |
+| Contact / feedback API | FastAPI / Flask / Express | header/email injection, SSRF |
+| File upload + preview | Flask / FastAPI / Express | path traversal, content-type XSS |
+| Bookmark manager REST API | FastAPI / Flask / Express | IDOR, missing authorization on GET |
+| Key-value store API | FastAPI / Flask / Express | namespace / authorization bypass |
+| Quiz / poll app | Flask / FastAPI / Express | answer-key leak, IDOR |
+| Webhook receiver / proxy | FastAPI / Flask / Express | SSRF, token leak in responses/logs |
+| Local doc search service | Flask / FastAPI / Express | query injection returning private docs |
 
-### Local web apps / APIs
+Want an **AI flavor?** Build a web app whose backend calls an LLM (a small chat/Q&A endpoint) — still a web app, and the LLM adds prompt-injection / jailbreak / leakage on top of P1–P5.
 
-| App | Platform | What breakers attack |
-| --- | --- | --- |
-| Paste-bin / snippet service | Flask / Express | IDOR, guessable IDs, stored XSS |
-| Notes / journal app with login | Flask / Express | authorization bypass, IDOR |
-| URL shortener service | Flask / Express | enumeration, open redirect |
-| Blog + comments board | Flask / Express | stored XSS, authorization |
-| Contact / feedback API | FastAPI / Express | header/email injection, SSRF |
-| File upload + preview | Flask / Express | path traversal, content-type XSS |
-| Bookmark manager REST API | FastAPI / Express | IDOR, missing authorization on GET |
-| Key-value store API | FastAPI / Express | namespace / authorization bypass |
-| Quiz / poll app | Flask / Express | answer-key leak, IDOR |
-| Webhook receiver / proxy | FastAPI / Express | SSRF, token leak in logs |
-| Local doc search service | Flask / Express | query injection returning private docs |
-| Mini static-site generator + preview | Python / Node | publishing the draft, SSTI |
-
-### Document / static-site targets
-
-| App | Platform | What breakers attack |
-| --- | --- | --- |
-| LaTeX / PDF report generator | Python or Node + MiKTeX | `\write18` shell-escape; `\input` path traversal to read the secret |
-| Static site / blog | Astro (Node) | the private draft leaking into the build; XSS; secrets baked into built JS |
-
-An **optional AI-assistant track** is also available for teams who want the AI flavor: a study assistant over a mixed-trust corpus whose break surface is prompt injection, jailbreak, and leakage. It requires an OpenAI-compatible LLM endpoint and is not required — every other target runs with no LLM at all.
+> **New to git, repos, issues, and PRs?** Read the short **[Git &amp; GitHub Classroom basics]({{ site.baseurl }}/activity/10/git/)** primer first.
 
 ## How breaks get filed today
 
-Every break is filed as a **GitHub Issue** on the targeted team's repository using the **Break Report** issue template. The form enforces six required fields, drawn verbatim from the activity protocol:
+Every break is filed as a **GitHub Issue** on the targeted team's repo using the built-in **Break Report** form. Blank issues are disabled, so on the target repo **Issues → New issue** opens the form directly. Your AI agent can also file it for you with `gh issue create` (it must fill the same fields). Required fields:
 
-1. **Target artifact** — which file or service did you attack.
-2. **Attack class** — prompt-injection, indirect-injection, retrieval-abuse, jailbreak, leakage, evasion, data-poisoning, policy-bypass, input-validation, authn-authz, or other.
-3. **Property violated** — quote the SPEC.md property (P1, P2, P3, P4, or P5) verbatim.
-4. **Steps to reproduce** — numbered, copy-pasteable.
-5. **Evidence** — transcript, model output, screenshot path, or diff that proves the break occurred.
-6. **Severity** — low, medium, or high (self-rated).
+1. **Target artifact** — the endpoint/page you attacked (e.g., `GET /notes/{id}`).
+2. **Attack class** — `idor-authz`, `xss`, `sql-injection`, `command-injection`, `path-traversal`, `template-injection`, `ssrf`, `open-redirect`, `dos-resource-exhaustion`, `leakage`, `input-validation`, `policy-bypass`, `prompt-injection`, `jailbreak`, or `other`.
+3. **Discovery method** — **black-box** (interface only) or **white-box** (source-assisted). Per `AGENTS_BREAK.md`, work black-box first; only review source after you've exhausted it.
+4. **Property violated** — quote the SPEC property (`P1: Confidentiality`, …) verbatim.
+5. **Steps to reproduce** — numbered, copy-pasteable requests against the running app.
+6. **Evidence** — the request and the response that proves it.
+7. **Severity** — low, medium, or high (self-rated).
 
-You cannot file a break without all six fields. This is deliberate — it is the structural enforcement of the per-break entry template described in the activity stub.
+In the steps/evidence, **explain the mechanism in a sentence or two** — *why* the app failed. A finding with no mechanism isn't done.
+
+**Example Break Report**
+
+```
+Title:  [BREAK] P1: /notes/{id} returns another user's note (IDOR)
+Target artifact:   GET /notes/2
+Attack class:      idor-authz
+Discovery method:  black-box (interface only)
+Property violated: P1: Confidentiality
+Steps to reproduce:
+  1. Start the app per START_APP.md (http://localhost:8000).
+  2. Log in as user A; request GET /notes/2 (a note owned by user B).
+  3. Observe the response.
+Evidence:
+  Request:  GET /notes/2
+  Response: 200 {"note": "... CANARY_alpha_7Fz9pQrK2mE1Lv3X ..."}
+  Mechanism: the handler loads a note by id with no owner check, so any
+  logged-in user can read any note — including one holding the canary.
+Severity: high
+```
 
 ### What happens after you file
 
-- The targeted team is auto-notified (they are subscribed to issues on their own repo).
-- A member of the targeted team will try to reproduce the break against their own artifact and comment **`/repro-confirmed`** or **`/repro-failed`** on the issue.
-- Only breaks marked `/repro-confirmed` count for the scoreboard.
-- A facilitator can comment **`/out-of-scope`** to rule a break invalid (unsafe content, off-protocol, etc.). That ruling is final for the day; the technique can still be discussed in the debrief.
+- The targeted team is auto-notified (they're subscribed to their own repo's issues).
+- A member of the targeted team reproduces it and comments **`/repro-confirmed`** (→ `valid`, it scores) or **`/repro-failed`** (→ `invalid`). A facilitator may comment **`/out-of-scope`** (→ `invalid`).
+- **First finder wins.** The first team to file a given break (same target + property + attack class) earns full points; later duplicates **decay** (halved roughly every 5 minutes, toward zero). You *may* still file a duplicate, but check the target's existing issues first — usually it's better to find a new break.
+- **Same defect, different path = one break.** The test is the *fix*: if one patch closes every variant you found, it's a single break — file the clearest repro and list the other paths as evidence. A genuinely different root cause is a new break, even in the same attack class. An automated check may comment *"possible duplicate of #N"* as a hint; a **facilitator** decides with **`/duplicate-of #N`** (merge — it stops scoring and stops counting against the target) or **`/distinct`** (un-merge).
+
+**Issue labels:** `valid` (confirmed, scores) · `invalid` (failed repro / out of scope) · `fix-claimed` (fix merged, awaiting your confirmation) · `fixed` (fix confirmed by the breaker) · `fix-rejected` (fix didn't hold) · `duplicate` / `dup-of:N` (merged into another break). They're created automatically by the repo's `issue-events` workflow.
 
 ### Classroom-safety norms (read aloud at the start of Break)
 
@@ -134,32 +143,47 @@ You cannot file a break without all six fields. This is deliberate — it is the
 
 ## How fixes get filed
 
-For each break logged against your team's artifact, you decide whether to fix it. Triage first, code second.
+For each break logged against your team's app, you decide whether to fix it — usually by handing the confirmed break to your AI agent and asking it to patch *that one thing*. Triage first, code second.
 
-1. Before writing any code, create `fix_notes.md` in your repo with:
-   - The 1-2 breaks you will fix and why.
-   - The breaks you will not fix yet and what you would do next.
-2. Open **one PR per fix**. The PR body must say `closes #N` (with N being the issue number) so the issue auto-closes on merge.
-3. The PR template asks which layer your fix lands at: Layer 1 input handling, Layer 2 prompt or data, Layer 3 model, Layer 4 output handling, or Layer 5 governance. This is the same layered-defense framing introduced in [Topic 07]({{ site.baseurl }}/topic/07/).
-4. When the PR merges, the `fixed` label is applied automatically and the scoreboard reflects it within 5 minutes.
+1. Before writing code, create `fix_notes.md` with the 1–2 breaks you'll fix and why (and what you'd do next for the rest). Honest triage is full credit.
+2. Open **one PR per fix**. The PR body must include **`closes #N`** (N = the issue number) so the issue auto-closes on merge. The PR template asks which **defense layer** the fix lands at (input handling / app logic / data / output handling / governance) and to confirm the build check passes.
+3. **Fixing is a two-step round.** When the PR merges, the issue closes and is labeled **`fix-claimed`** — it does **not** score the fix yet. The **team that filed the break** re-tests your now-fixed app and comments **`/fix-confirmed`** (→ `fixed`, the fix scores) or **`/fix-failed`** (→ the issue reopens; try again). A fix is credited on the breaker's word, not the target's.
+
+**Example fix PR body**
+
+```
+Closes #14
+
+Triage: highest-severity break against us (P1 canary leak via IDOR).
+
+Layer: app logic / authorization — /notes/{id} now checks that the note's
+owner == the authenticated user before returning it.
+
+Build tests: `pytest tests/build_check.py` passes; the reproduction in #14
+now returns 403 instead of the note.
+```
+
+Then comment on the issue so the breaker knows to re-test, e.g. *"Fixed in #PR — please re-run your repro and `/fix-confirmed` or `/fix-failed`."*
 
 ## Live scoreboard
 
-A live scoreboard tracks, for each team:
+A dark, CTF-style live scoreboard is projected on the wall all day.
 
-- **Build status** (whether the build-check workflow is passing)
-- **Breaks landed** (valid breaks filed against other teams)
-- **Breaks received** (valid breaks filed against this team)
-- **High-severity received**
-- **Fixed**
+![BBF live scoreboard — leaderboard, score-over-time graph, and break feed]({{ site.baseurl }}/assets/images/activity-10/scoreboard.png)
 
-The scoreboard URL is announced at the start of the Build phase and projected on the wall. It refreshes every 5 minutes (and immediately on any change). The scoreboard is **explicitly framed as a teaching device, not a competitive ranking** — the closing debrief returns to the learning, not the leaderboard.
+It shows, per team: **Score** · **Build** status · **Landed** (confirmed breaks you filed) · **Received** (confirmed breaks against you) · **High-sev** · **Fixed** · **Defense** (end-of-Break resilience bonus) · **Pending breaks** (you submitted, awaiting confirmation) · **Pending review** (awaiting your repro/fix confirmation). Below the leaderboard are a **score-over-time graph** and a filterable **break feed** (status, team, severity, black-box/white-box) linking to every issue.
+
+**How Score works:** **+10** per confirmed break you landed (**+5** more if high severity), **+5** per fix you confirmed, **−5** per break received — and **first finder wins**, so duplicates of the same defect decay by half every ~5 minutes toward zero. **Defense isn't only avoiding the −5:** at the end of the Break phase the least-broken team (with a green build) earns a **Defense bonus** of up to **+15**, scaled by how few confirmed breaks it took versus the field — so a team that ships a hard-to-break app is rewarded, not just the busiest breakers. The scoreboard recomputes about every 5 minutes (and on each change). It is **a teaching device, not a competitive ranking** — the debrief returns to the learning, not the leaderboard.
 
 ## Using AI assistance during the day
 
-**Use it.** AI coding assistance (Copilot, Codespaces' built-in assistants, ChatGPT, Claude, etc.) is encouraged across all three phases. You are faculty, not students; the goal is to ship something in 90 minutes so that the rest of the day can happen.
+**AI does the heavy lifting in every phase.** This is an AI-assisted exercise by design: you drive an agent (Claude Code is provisioned) to **build**, to **break**, and to **fix**. The Build phase is short (30 min) precisely because you're not hand-coding — you're prompting and steering.
 
-**Understanding is still required.** AI helps you move faster, but you still need to read code, reason about systems, and judge whether a fix actually closes the break. If the assistant generates a patch that adds a regex filter for `CANARY_`, you should be able to explain why that filter does or does not handle base64-encoded canaries.
+**But you still prompt and direct.** The agent doesn't know your plan. You decide what to build, which property to attack, which break to fix first, and you judge whether its output is right. If it writes a patch that regex-filters `CANARY_`, you should be able to say whether that also stops a base64-encoded canary.
+
+**Stay inside the lines.** The repo's **`AGENTS.md`** (phase gate) and **`AGENTS_BREAK.md`** (black-box-first, no grepping the secret, verify-then-file, check for duplicates) are the guardrails that keep the agent doing the *intended* task. The exercise works best when the agent is "coloring within the lines" those files draw — read them, and keep the agent pointed the right way.
+
+> New to git/GitHub? See the **[Git &amp; GitHub Classroom basics]({{ site.baseurl }}/activity/10/git/)** primer.
 
 **Discussion questions to bring home:**
 
@@ -175,7 +199,7 @@ This activity runs on a small, forkable GitHub-based infrastructure that any fac
 - **Scaffold** — `activities/10/github-scaffold/` in the institute repo. The `setup.sh` script, `gen-teams-yaml.sh`, the template repo contents (including `BUILD-MENU.md`, `ENVIRONMENTS.md`, `SPEC.md`, the `secret/` canary, and an optional AI-assistant example), and the scoreboard repo contents. Run `setup.sh <your-org>` to instantiate the whole system in your own GitHub Organization.
 - **Activity stub** — `activities/10/stub.md` in the institute repo. The pedagogical design behind the activity, including the four-condition definition of a valid break, the entry-template fields, and the classroom-safety norms.
 
-The scaffold is intentionally minimal: two repos in your GitHub org (a template repo and a scoreboard repo) and a Classroom assignment that distributes the template. Setup is about three working days of preparation; the day itself is around five hours of active activity plus 30 minutes of debrief.
+The template repo also carries the **agent files** — `AGENTS.md` (phase gate), `AGENTS_BREAK.md` (break rules), `START_APP.md`, and `PHASE` — plus the `break-report` issue form, the PR template, and the `issue-events` workflow (slash commands + the fix-confirmation round). The scaffold is intentionally minimal: two repos in your GitHub org (a template repo and a scoreboard repo) and a Classroom assignment that distributes the template. Setup is about three working days of preparation; the day itself is roughly **3.5 hours** of active work (30 min build · 120 min break · 30 min fix · 30 min debrief) after the morning primer.
 
 ## AI assistance in the design of this activity
 
