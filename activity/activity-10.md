@@ -27,7 +27,7 @@ It is **OK if Fix is partial**. The closing debrief is protected even at the cos
 ## Setup requirements
 
 - [ ] Have a **GitHub account** with the username you gave your team captain.
-- [ ] Join the class through the **GitHub Classroom assignment**: [**accept the invite here**](#TODO-github-classroom-link). Accepting creates your team repository from the starter template. <!-- TODO: replace #TODO-github-classroom-link with the GitHub Classroom assignment URL. The invite is also projected on the final slide of the morning primer. -->
+- [ ] Join the class through the **GitHub Classroom assignment**: **[accept the invite here](https://classroom.github.com/a/EpcAXi6n)**. Accepting creates your team repository from the starter template. The invite is also projected on the final slide of the morning primer.
 - [ ] Have a **development environment** ready — pick the first that works for you. Step-by-step instructions, with links and screenshots, are on the **[Environment setup guide]({{ site.baseurl }}/activity/10/setup/)**.
   - **Your own laptop** with `git`, a Bash shell, and Python and/or Node installed, **or**
   - a **lab Windows machine** with a per-user, no-admin install (no administrator rights needed), **or**

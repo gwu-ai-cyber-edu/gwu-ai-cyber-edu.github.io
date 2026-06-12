@@ -69,34 +69,35 @@ continued implementation and improvement
       <tr>
         <td class="time-cell">10 AM - 11 AM</td>
         <td class="guest-orientation">
-          Welcome and Orientation
+          <a href="/topics/welcome.pdf">Welcome</a> and Orientation
           <span class="location">[SEH Lehman]</span>
         </td>
         <td class="lecture-session" rowspan="2">
-          Supervised Learning Foundations
+          <a href="https://docs.google.com/presentation/d/1b8yDXacb1vXyZoNrWOghhzDzRmXOMfkTe7AQEJXvEQ4/edit?slide=id.p1#slide=id.p1" target="_blank">Supervised Learning Foundations</a>
           <span class="instructor">Rebecca</span>
           <span class="location">[SEH 4040]</span>
         </td>
         <td class="lecture-session" rowspan="2">
-          Neural Networks
+          <a href="https://drive.google.com/file/d/1UFS4bsShJnuCk9M7qeiHAc8Sm0uOdPrC/view?usp=sharing" target="_blank">Neural Networks</a>
           <span class="instructor">Shi</span>
           <span class="location">[SEH 4040]</span>
         </td>
         <td class="lecture-session" rowspan="2">
-          Robustness
+          <a href="https://drive.google.com/file/d/1cDvtan-koG95apIL77ejam2WZDEUGqGU/view?usp=sharing" target="_blank">Toward agents</a>
           <span class="instructor">Shi</span>
           <span class="location">[SEH 4040]</span>
         </td>
         <td class="guest-orientation" rowspan="2">
-          Guest speaker: Mohit Iyyer
+          Guest speaker: <a href="/topic/05/">Mohit Iyyer</a>
+          <span class="location">[SEH Lehman]</span>
         </td>
       </tr>
       <tr>
         <td class="time-cell">11 AM - 11:30 AM</td>
         <td class="lecture-session" rowspan="2">
-          World View
+          <a href="/topics/Lecture%201.pdf">World View</a>
           <span class="instructor">Shi</span>
-          <span class="location">[SEH 4040]</span>
+          <span class="location">[SEH Lehman]</span>
         </td>
       </tr>
       <tr>
@@ -114,30 +115,31 @@ continued implementation and improvement
       <tr>
         <td class="time-cell">1 PM - 1:30 PM</td>
         <td class="lecture-session" rowspan="2">
-          Supervised Learning Foundations Continued
+          <a href="https://docs.google.com/presentation/d/1M_1aKqEOqWDovPQ0BoODQ3WXhAesJPf4dWgnwR7lXy8/edit?slide=id.p1#slide=id.p1" target="_blank">Supervised Learning Foundations Continued</a>
           <span class="instructor">Rebecca</span>
           <span class="location">[SEH 4040]</span>
         </td>
         <td class="lecture-session" rowspan="2">
-          Generative Models and Transformers
+          <a href="https://drive.google.com/file/d/1tn4KwjKnmMMUTB014PVBq8FFz4-tZ_mZ/view?usp=sharing" target="_blank">Generative Models and Transformers</a>
           <span class="instructor">Shi</span>
           <span class="location">[SEH 4040]</span>
         </td>
         <td class="lecture-session" rowspan="2">
-          Towards agents
-          <span class="instructor">Shi</span>
+          <a href="https://drive.google.com/file/d/1NsdDVdOLFFG9yTX4oC7WJbTyhMSPLA7U/view?usp=sharing" target="_blank">Robustness and Visualization and Adversaries</a>
+          <span class="instructor">Robert</span>
           <span class="location">[SEH 4040]</span>
         </td>
         <td class="lab-session" rowspan="3">
-          Adapt-a-Lab Sprint
-          <span class="instructor">Robert, Shi, Rebecca</span>
-          <span class="location">[SEH 4040]</span>
+          Group Discussions over Ice-Cream + Claude Code Demo + <a href="https://docs.google.com/document/d/17XO5VRK0KwSkoBRGThC0eqLceQBqrNEH1pqsQIg3LUk/edit?usp=sharing" target="_blank">Transformer Lab</a>
+          <span class="instructor">Adam, Arkady, Rebecca, Robert, Shi</span>
+          <span class="location">[SEH B1270]</span>
         </td>
       </tr>
       <tr>
         <td class="time-cell">1:30 PM - 2:30 PM</td>
         <td class="lab-session" rowspan="2">
-          Guided Lab: ML Tech Stack
+          <a href="/topics/TechStacks_Pless.pdf">ML Tech Stack Lecture</a><br>
+          <a href="https://colab.research.google.com/drive/1_5hXaFWqS1hfkqGNX9dCWiSTo2tC0KG1" target="_blank">ML Tech Stack Lab</a>
           <span class="instructor">Robert</span>
           <span class="location">[SEH 4040]</span>
         </td>
@@ -145,18 +147,18 @@ continued implementation and improvement
       <tr>
         <td class="time-cell">2:30 PM - 4 PM</td>
         <td class="lab-session">
-          Guided Lab: Supervised Learning
+          <a href="https://colab.research.google.com/drive/1CxNLiC7KHQBm0rIvghUs9XV2JYMOvYBB" target="_blank">Guided Lab: Supervised Learning</a>
           <span class="instructor">Rebecca</span>
           <span class="location">[SEH 4040]</span>
         </td>
         <td class="lab-session">
-          Guided Lab: LLM
+          <a href="https://docs.google.com/document/d/1Eccm7NctClwf4iR1hQLsPKL-9GY8P5abPyqMYhM9P8s/edit?usp=sharing" target="_blank">Guided Lab: LM + Classification</a>
           <span class="instructor">Shi</span>
           <span class="location">[SEH 4040]</span>
         </td>
         <td class="lab-session">
-          Guided Lab: Adversarial ML
-          <span class="instructor">Shi</span>
+          <a href="https://docs.google.com/document/d/1Ucn-gMdB2_TR2VBKXUcTItnSkM3JfTwhXhuB-Va1At4/edit?usp=sharing" target="_blank">Visual Adversarial Attacks Lab</a>
+          <span class="instructor">Robert</span>
           <span class="location">[SEH 4040]</span>
         </td>
       </tr>
@@ -182,16 +184,16 @@ continued implementation and improvement
 | :--- | :--- | :--- | :--- |
 | Mon 6/1/26 | [Orientation + World view and State of AI](/topic/01/) | Program kickoff, participant introductions, an overview on the state of AI, and an introduction to technicla frameworks. | [ML Tech Stack Orientation](/activity/01/) |
 | Tue 6/2/26 | [Supervised Learning Foundations](/topic/02/) | Supervised learning pipeline, evaluation metrics, and a guided classifier lab. | [Supervised Learning Lab](/activity/02/) |
-| Wed 6/3/26 | [Neural Networks + LLM Foundations](/topic/03/) | Neural networks, transformers, prompt engineering, and an LLM lab that participants adapt toward cybersecurity uses. | [LLM Foundations Lab](/activity/03/) |
-| Thu 6/4/26 | [Adversarial ML + Trustworthy AI](/topic/04/) | Adversarial examples, robustness, and a model-attack lab. | [Adversarial ML Lab](/activity/04/) |
-| Fri 6/5/26 | [Guest speaker: Dr. Mohit Iyyer (UMD)](/topic/05/) | We are pleased to have Dr. Iyyer present a guest lecture in the morning; in the afternoon, we will faciliate participant-selected deep dive discussion and a lab adaptation sprint, backward design, and course integration planning.  | [Adapt-a-Lab Sprint](/activity/05/) |
+| Wed 6/3/26 | [Neural Networks + LLM Foundations](/topic/03/) | Neural networks, transformers, prompt engineering, and a character-based LLM lab. | [LLM Foundations Lab](/activity/03/) |
+| Thu 6/4/26 | [Toward Agents + Robustness, Visualization, and Adversaries](/topic/04/) | LLMs as agents, model robustness against adversarial attacks, and a hands-on visual adversarial attacks lab. | [Visual Adversarial Attacks](/activity/04/) |
+| Fri 6/5/26 | [Guest speaker: Dr. Mohit Iyyer (UMD)](/topic/05/) | We are pleased to have Dr. Iyyer present a guest lecture in the morning, "Detecting and characterizing AI use in collaborative writings"; in the afternoon, we will have group discussions over ice-cream, a Claude Code demo, and a transformer lab. | [Group Discussions over Ice-Cream + Claude Code Demo + Transformer Lab](/activity/05/) |
 
 ### Week 2
 
 **Week 2 at-a-glance:**
 
 <div class="table-responsive">
-  <table class="weekly-grid-table">
+  <table class="weekly-grid-table weekly-grid-table--equal-rows">
     <thead>
       <tr>
         <th class="time-col">Time</th>
@@ -206,25 +208,28 @@ continued implementation and improvement
       <tr>
         <td class="time-cell">10 AM - 11 AM</td>
         <td class="lecture-session" rowspan="2">
-          Applying ML to Cyber Problems
+          <a href="/topic/06/">Applying ML to Cyber Problems</a>
           <span class="instructor">Adam</span>
           <span class="location">[SEH 4040]</span>
+          <span class="slides">[<a href="/assets/slides/topic-06.pdf">slides</a>]</span>
         </td>
         <td class="lecture-session" rowspan="2">
-          Securing AI Systems
+          <a href="/topic/07/">Securing AI Systems</a>
           <span class="instructor">Adam</span>
           <span class="location">[SEH 4040]</span>
+          <span class="slides">[<a href="/assets/slides/topic-07.pdf">slides</a>]</span>
         </td>
         <td class="guest-orientation">
-          Guest Speaker: David Broniatowski
+          Guest Speaker: <a href="/topic/08/">David Broniatowski</a>
+          <span class="location">[SEH 4040]</span>
         </td>
         <td class="lecture-session" rowspan="2">
-          Privacy
+          <a href="/topic/09/">Privacy</a>
           <span class="instructor">Arkady</span>
           <span class="location">[SEH 4040]</span>
         </td>
         <td class="lab-session" rowspan="2">
-          Build-it Break-it Fix-it
+          <a href="/topic/10/">Build-it Break-it Fix-it</a>
           <span class="instructor">Adam</span>
           <span class="location">[SEH 4040]</span>
         </td>
@@ -233,6 +238,7 @@ continued implementation and improvement
         <td class="time-cell">11 AM - 12 PM</td>
         <td class="guest-orientation">
           Discussion
+          <span class="location">[SEH 4040]</span>
         </td>
       </tr>
       <tr>
@@ -244,28 +250,36 @@ continued implementation and improvement
         <td class="food-event-center">Provided working lunch</td>
       </tr>
       <tr>
-        <td class="time-cell">1 PM - 3 PM</td>
-        <td class="lab-session">
-          Guided Lab: Security Classifier
+        <td class="time-cell">1 PM - 2 PM</td>
+        <td class="lab-session" rowspan="2">
+          <a href="/activity/06/">Guided Lab: Security Classifier</a>
           <span class="instructor">Adam</span>
           <span class="location">[SEH 4040]</span>
         </td>
-        <td class="lab-session">
-          Guided Lab: AI Systems Security
+        <td class="lab-session" rowspan="2">
+          <a href="/activity/07/">Guided Lab: AI Systems Security</a>
           <span class="instructor">Adam</span>
           <span class="location">[SEH 4040]</span>
         </td>
         <td class="guest-orientation">
-          Guest Speaker: Elissa Redmiles
+          Guest Speaker: <a href="/topic/08a/">Elissa Redmiles</a>
+          <span class="location">[SEH 4040]</span>
         </td>
-        <td class="lecture-session">
-          Human Factors Privacy
+        <td class="lecture-session" rowspan="2">
+          <a href="/topic/09a/">Human Factors Privacy</a>
           <span class="instructor">Shiza</span>
           <span class="location">[SEH 4040]</span>
         </td>
-        <td class="lab-session">
-          Build-it Break-it Fix-it
+        <td class="lab-session" rowspan="2">
+          <a href="/activity/10/">Build-it Break-it Fix-it</a>
           <span class="instructor">Adam</span>
+          <span class="location">[SEH 4040]</span>
+        </td>
+      </tr>
+      <tr>
+        <td class="time-cell">2 PM - 3 PM</td>
+        <td class="guest-orientation">
+          Discussion
           <span class="location">[SEH 4040]</span>
         </td>
       </tr>
@@ -282,8 +296,10 @@ continued implementation and improvement
 | Date | Topic | Description | Activity |
 | :--- | :--- | :--- | :--- |
 | Mon 6/8/26 | [Applying ML to Cybersecurity Problems](/topic/06/) | Map the ML pipeline to intrusion detection, phishing detection, malware classification, and security operations, then translate these patterns into teachable classroom labs.  | [Security Classifier Lab Design Studio](/activity/06/) |
+| Tue 6/9/26 | [Securing AI Systems](/topic/07/) ([slides](/assets/slides/topic-07.pdf)) | AI threat models, deployment vulnerabilities, prompt injection, leakage, and jailbreaks, with emphasis on system design and basic defenses. | [AI Systems Security Lab](/activity/07/) |
+| Mon 6/8/26 | [Applying ML to Cybersecurity Problems](/topic/06/) ([slides](/assets/slides/topic-06.pdf)) | Map the ML pipeline to intrusion detection, phishing detection, malware classification, and security operations, then translate these patterns into teachable classroom labs.  | [Security Classifier Lab Design Studio](/activity/06/) |
 | Tue 6/9/26 | [Securing AI Systems](/topic/07/) | AI threat models, deployment vulnerabilities, prompt injection, leakage, and jailbreaks, with emphasis on system design and basic defenses. | [AI Systems Security Lab](/activity/07/) |
-| Wed 6/10/26 | [Guest Speakers: AI Governance and AI Abuse](/topic/08/) | Two visiting guest speakers: **David Broniatowski** (GW) on AI governance in the morning, and **Elissa Redmiles** (Georgetown) on AI abuse in the afternoon. | — |
+| Wed 6/10/26 | **Morning:** [Guest Speaker: AI Governance](/topic/08/)<br>**Afternoon:** [Guest Speaker: AI Abuse](/topic/08a/) | **Morning:** **David Broniatowski** (GW) — *Beyond the Metrics: Navigating Systems Risk and Trustworthiness under the NIST AI RMF*, on the limits of a metrics-only approach to AI governance.<br>**Afternoon:** **Elissa Redmiles** (Georgetown) — *An AI-Involved Landscape of Sexual Abuse*, on threat models, technical defenses, and open questions for AI-powered image-based sexual abuse. | — |
 | Thu 6/11/26 | **Morning:** [Privacy in AI/ML and Cybersecurity](/topic/09/)<br>**Afternoon:** [Human Factors in LLM and AI Privacy](/topic/09a/) | **Morning:** privacy risks in training data, logs, prompts, and outputs, including data leakage, sensitive cybersecurity datasets, and classroom-safe data practices.<br>**Afternoon:** Human Factors in LLM and AI Privacy, a presentation and hands-on studio on what users disclose to LLMs, what they consider sensitive, mental-model failures, and contextual integrity. | — |
 | Fri 6/12/26 | [Build-it / Break-it / Fix-it](/topic/10/) | All-day synthesis in which teams build an AI-enabled security artifact or teaching lab, exchange it for critique or attack, then fix and document improvements.  | [Build-it / Break-it / Fix-it Lab](/activity/10/) |
 
@@ -318,6 +334,7 @@ continued implementation and improvement
         </td>
         <td class="guest-orientation" rowspan="2">
           Guest Speaker: Malihe Aliktani
+          <span class="location">[SEH Lehman]</span>
         </td>
         <td class="lab-session" rowspan="2">
           Cohort Showcase

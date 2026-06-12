@@ -1,9 +1,14 @@
 ---
 layout: default
-title: Adapt-a-Lab Sprint
+title: Group Discussions over Ice-Cream + Claude Code Demo + Transformer Lab
 permalink: /activity/05/
 ---
 
-# Adapt-a-Lab Sprint
+# Group Discussions over Ice-Cream + Claude Code Demo + Transformer Lab
 
-This afternoon activity might be an adaptation sprint where participants convert one morning lesson into a course-ready cybersecurity-relevant activity.
+This afternoon activity consists of:
+1. **Group Discussions over Ice-Cream**
+2. **Claude Code Demo**
+3. **Transformer Lab**
+
+Participants will work on the hands-on [Transformer Lab](https://docs.google.com/document/d/17XO5VRK0KwSkoBRGThC0eqLceQBqrNEH1pqsQIg3LUk/edit?usp=sharing) worksheet to explore the mechanics of transformer architectures.
