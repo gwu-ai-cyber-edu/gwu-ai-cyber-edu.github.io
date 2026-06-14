@@ -387,7 +387,7 @@ continued implementation and improvement
 
 | Date | Topic | Description | Activity |
 | :--- | :--- | :--- | :--- |
-| Mon 6/15/26 | **Morning:** [Throughline Review, Datasets, and Realism](/topic/11/)<br>**Afternoon:** [AI-Assisted Prototyping](/topic/12/) | **Morning:** Reconnect Weeks 1-2 concepts, examine dataset realism and classroom simplification.<br>**Afternoon:** Introduce AI-assisted prototyping tools. | [Initial Prototype and Peer Review](/activity/11/) |
+| Mon 6/15/26 | [Throughline review + AI Assisted Course Prototyping](/topic/11/) | Review Week 1 and Week 2 concepts, and explore potential workflows for AI-assisted course prototyping. | [Data Realism Lab](/activity/11/) |
 | Tue 6/16/26 | [Class Factory](/topic/12/) | Use the Class Factory tool to draft lectures, labs, rubrics, instructor notes, and student materials while evaluating outputs for correctness, feasibility, privacy, and security realism. | [AI-Assisted Teaching Materials Sprint](/activity/12/) |
 | Wed 6/17/26 | Guest Speaker: Malihe Aliktani | Guest Speaker session with Malihe Aliktani in the morning, followed by a Cohort Field Trip in the afternoon. | Cohort Field Trip |
 | Thu 6/18/26 | [All-Day Showcase and Phase 2/3 Transition](/topic/14/) | All-day showcase and transition block with short teaching previews, structured critique, a Phase 2 build backlog, and a Phase 3 teaching-demo plan.  | [Showcase and Transition Planning](/activity/14/) |
