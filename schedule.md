@@ -336,7 +336,7 @@ continued implementation and improvement
           <span class="location">[SEH Lehman]</span>
         </td>
         <td class="lab-session" rowspan="2">
-          Cohort Showcase
+          Cohort Showcase (<a href="https://docs.google.com/presentation/d/1lUo2G4CY-DcN8bWtQkubbCj5L2L3vPglB-mq3XOzCgc/edit?usp=share_link" target="_blank">template</a>)
           <span class="instructor">Adam, Arkady, Rebecca, Robert, Shi</span>
           <span class="location">[SEH 4040]</span>
         </td>
@@ -388,9 +388,9 @@ continued implementation and improvement
 | Date | Topic | Description | Activity |
 | :--- | :--- | :--- | :--- |
 | Mon 6/15/26 | [Throughline review + AI Assisted Course Prototyping](/topic/11/) | Review Week 1 and Week 2 concepts, and explore potential workflows for AI-assisted course prototyping. | [Data Realism Lab](/activity/11/) |
-| Tue 6/16/26 | [Class Factory](/topic/12/) | Use the Class Factory tool to draft lectures, labs, rubrics, instructor notes, and student materials while evaluating outputs for correctness, feasibility, privacy, and security realism. | [AI-Assisted Teaching Materials Sprint](/activity/12/) |
+| Tue 6/16/26 | [Class Factory](/topic/12/) | Use the Class Factory tool to draft lectures, labs, rubrics, instructor notes, and student materials while evaluating outputs for correctness, feasibility, privacy, and security realism. | [Class Factory](/activity/12/) |
 | Wed 6/17/26 | Guest Speaker: Malihe Aliktani | Guest Speaker session with Malihe Aliktani in the morning, followed by a Cohort Field Trip in the afternoon. | Cohort Field Trip |
-| Thu 6/18/26 | [All-Day Showcase and Phase 2/3 Transition](/topic/14/) | All-day showcase and transition block with short teaching previews, structured critique, a Phase 2 build backlog, and a Phase 3 teaching-demo plan.  | [Showcase and Transition Planning](/activity/14/) |
+| Thu 6/18/26 | [Showcase -- Course Proposal (All Day)](/topic/14/) | Each participant will give a 10 minute presentation of their proposed course. | [Showcase and Transition Planning](/activity/14/) ([template](https://docs.google.com/presentation/d/1lUo2G4CY-DcN8bWtQkubbCj5L2L3vPglB-mq3XOzCgc/edit?usp=share_link)) |
 
 ## Phase 2: Week 4-5: Curriculum Refinement (remote)
 

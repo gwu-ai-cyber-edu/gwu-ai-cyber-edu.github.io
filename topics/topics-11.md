@@ -10,7 +10,7 @@ permalink: /topic/11/
 
 * Report out from the Friday BBF activity
 * Discussions/Reflections on the topics and activities from the past two weeks
-* A review module that focuses on data realism
+* A review module that focuses on [data realism](/activity/11/)
 
 ## Afternoon Outline
 
