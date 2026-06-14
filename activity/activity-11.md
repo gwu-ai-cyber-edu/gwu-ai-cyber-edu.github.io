@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Initial Prototype and Peer Review
+title: Data Realism Lab
 permalink: /activity/11/
 ---
 
-# Initial Prototype and Peer Review
+# Data Realism Lab
 
-This afternoon activity might ask participants to draft an initial module prototype, identify dataset and realism constraints, and receive structured peer feedback on concept fit and feasibility.
+This afternoon activity is a hands-on session based on the student notebook located in `~/Desktop/file 2/`. Participants will work through the lab to explore dataset construction, examine the constraints of data realism in cybersecurity education, and evaluate how to simplify complex production data for effective classroom use.

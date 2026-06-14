@@ -357,7 +357,7 @@ continued implementation and improvement
       <tr>
         <td class="time-cell">1 PM - 3 PM</td>
         <td class="lecture-session">
-          AI Assisted Prototyping
+          AI Assisted Course Prototyping
           <span class="instructor">Adam</span>
           <span class="location">[SEH 4040]</span>
         </td>
