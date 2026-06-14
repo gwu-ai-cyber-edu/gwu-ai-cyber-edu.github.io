@@ -16,6 +16,3 @@ permalink: /topic/11/
 
 * A guided discussion on using AI to assist with course prototyping
 
-## Afternoon Preview
-
-The afternoon activity is [Data Realism Lab](/activity/11/).
