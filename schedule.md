@@ -321,13 +321,13 @@ continued implementation and improvement
     <tbody>
       <tr>
         <td class="time-cell">10 AM - 11 AM</td>
-        <td class="lecture-session" rowspan="2">
+        <td class="lab-session" rowspan="2">
           Throughline Review and Dataset Realism
           <span class="instructor">Rebecca</span>
           <span class="location">[SEH 4040]</span>
         </td>
         <td class="lecture-session" rowspan="2">
-          AI Assisted Prototyping and Teaching Methods
+          Class factory
           <span class="instructor">Adam</span>
           <span class="location">[SEH 4040]</span>
         </td>
@@ -356,9 +356,9 @@ continued implementation and improvement
       </tr>
       <tr>
         <td class="time-cell">1 PM - 3 PM</td>
-        <td class="lab-session">
-          Lab: Initial Prototype
-          <span class="instructor">Rebecca</span>
+        <td class="lecture-session">
+          AI Assisted Prototyping
+          <span class="instructor">Adam</span>
           <span class="location">[SEH 4040]</span>
         </td>
         <td class="lecture-session">
@@ -387,8 +387,8 @@ continued implementation and improvement
 
 | Date | Topic | Description | Activity |
 | :--- | :--- | :--- | :--- |
-| Mon 6/15/26 | [Throughline Review, Datasets, and Realism](/topic/11/) | Reconnect Weeks 1-2 concepts, examine dataset realism and classroom simplification, and draft an initial module prototype for peer review.  | [Initial Prototype and Peer Review](/activity/11/) |
-| Tue 6/16/26 | [AI-Assisted Prototyping and Teaching Methods](/topic/12/) | Use AI tools to draft lectures, labs, rubrics, instructor notes, and student materials while evaluating outputs for correctness, feasibility, privacy, and security realism. | [AI-Assisted Teaching Materials Sprint](/activity/12/) |
+| Mon 6/15/26 | **Morning:** [Throughline Review, Datasets, and Realism](/topic/11/)<br>**Afternoon:** [AI-Assisted Prototyping](/topic/12/) | **Morning:** Reconnect Weeks 1-2 concepts, examine dataset realism and classroom simplification.<br>**Afternoon:** Introduce AI-assisted prototyping tools. | [Initial Prototype and Peer Review](/activity/11/) |
+| Tue 6/16/26 | [Class Factory](/topic/12/) | Use the Class Factory tool to draft lectures, labs, rubrics, instructor notes, and student materials while evaluating outputs for correctness, feasibility, privacy, and security realism. | [AI-Assisted Teaching Materials Sprint](/activity/12/) |
 | Wed 6/17/26 | Guest Speaker: Malihe Aliktani | Guest Speaker session with Malihe Aliktani in the morning, followed by a Cohort Field Trip in the afternoon. | Cohort Field Trip |
 | Thu 6/18/26 | [All-Day Showcase and Phase 2/3 Transition](/topic/14/) | All-day showcase and transition block with short teaching previews, structured critique, a Phase 2 build backlog, and a Phase 3 teaching-demo plan.  | [Showcase and Transition Planning](/activity/14/) |
 
