@@ -4,7 +4,7 @@ title: Guest Speaker — AI Governance (David Broniatowski)
 permalink: /topic/08/
 ---
 
-# Guest Speaker: AI Governance
+# Guest Speaker: David Broniatowski
 
 This morning session is the first of two visiting guest-speaker sessions on Wednesday 6/10. It focuses on the governance of AI systems and the limits of metrics-driven risk management under the NIST AI Risk Management Framework. The [afternoon session](/topic/08a/) examines Generative AI and Image-Based Abuse. The afternoon activity is the [Responsible Use and Governance Workshop](/activity/08/).
 
