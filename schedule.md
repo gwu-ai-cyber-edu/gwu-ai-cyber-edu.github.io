@@ -265,7 +265,7 @@ continued implementation and improvement
         <td class="guest-orientation">
           Guest Speaker: <a href="/topic/08a/">Elissa Redmiles</a>
           <span class="location">[SEH 4040]</span>
-          <span class="slides">[<a href="https://drive.google.com/file/d/10bJMCcU6PeJV50WqQWvf03U2RM8feLDb/view?usp=sharing" target="_blank">lecture</a>] [<a href="https://drive.google.com/file/d/1E6vtV6KJS73meWMKRhwc4RgfJKQbX9NV/view?usp=sharing" target="_blank">lab</a>]</span>
+          <span class="slides">[<a href="https://drive.google.com/file/d/10bJMCcU6PeJV50WqQWvf03U2RM8feLDb/view?usp=sharing" target="_blank">slides</a>] [<a href="https://drive.google.com/file/d/1E6vtV6KJS73meWMKRhwc4RgfJKQbX9NV/view?usp=sharing" target="_blank">lab</a>]</span>
         </td>
         <td class="lecture-session" rowspan="2">
           <a href="/topic/09a/">Human Factors Privacy</a>
