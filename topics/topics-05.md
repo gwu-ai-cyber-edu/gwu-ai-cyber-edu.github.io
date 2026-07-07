@@ -9,6 +9,9 @@ permalink: /topic/05/
 This morning session focuses on natural language processing, collaborative writing, and AI-generated text detection.
 
 <div style="display: flex; margin-bottom: 20px;">
+  <div style="flex: 0 0 100px; margin-right: 20px;">
+    <img src="/assets/images/iyyer.jpeg" alt="Mohit Iyyer" style="width: 100px; border-radius: 5px;">
+  </div>
   <div>
     <h3 style="margin-top: 0;"><a href="https://www.cs.umd.edu/~miyyer/" target="_blank">Mohit Iyyer</a></h3>
     <p><em>Associate Professor in Computer Science, University of Maryland, College Park</em></p>
