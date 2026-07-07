@@ -57,7 +57,7 @@ These four axes are not a checklist to grind through. They are the questions to 
 
 ## The tool
 
-The activity depends on **cs-class-scaffolding** (also called "The Class Factory"), a full-stack web app that drives a five-phase Socratic dialogue and emits a course-repo scaffold. The tool is hosted in the institute organizer's repository; participants clone it locally for the day.
+The activity depends on **cs-class-scaffolding** (also called "[The Class Factory](https://class-factory.adamaviv.com/)"), a full-stack web app that drives a five-phase Socratic dialogue and emits a course-repo scaffold. The tool is hosted in the institute organizer's repository; participants clone it locally for the day.
 
 - **Five phases:** Discovery → Structure → Assessment → Policies → Finalize.
 - **Scaffold output:** `syllabus.md`, `course-meta.json`, `README.md` with init prompt, plus builder skills under `.claude/skills/` and `.codex/skills/` (`initialize-repo`, `lecture-builder`, `website-builder`, one `<type>-builder` per assessment type).

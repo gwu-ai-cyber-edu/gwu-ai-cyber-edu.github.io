@@ -71,4 +71,4 @@ This acknowledgement is itself a piece of the institute's content: faculty will 
 
 ## Acknowledgements
 
-The cs-class-scaffolding tool ("The Class Factory") was developed by the institute organizer; a public mirror URL is distributed at the setup checkpoint. The pattern of pairing a tool walkthrough with an all-day build sprint and a structured share-out follows [Topic 10 / Activity 10]({{ site.baseurl }}/topic/10/) (Build-it / Break-it / Fix-it). The four critical-review axes draw on [Topic 08]({{ site.baseurl }}/topic/08/) (Responsible Use) and [Topic 09]({{ site.baseurl }}/topic/09/) (Privacy in AI/ML).
+The cs-class-scaffolding tool ("The [Class Factory](https://class-factory.adamaviv.com/)") was developed by the institute organizer; a public mirror URL is distributed at the setup checkpoint. The pattern of pairing a tool walkthrough with an all-day build sprint and a structured share-out follows [Topic 10 / Activity 10]({{ site.baseurl }}/topic/10/) (Build-it / Break-it / Fix-it). The four critical-review axes draw on [Topic 08]({{ site.baseurl }}/topic/08/) (Responsible Use) and [Topic 09]({{ site.baseurl }}/topic/09/) (Privacy in AI/ML).

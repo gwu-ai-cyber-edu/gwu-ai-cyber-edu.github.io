@@ -322,18 +322,19 @@ continued implementation and improvement
       <tr>
         <td class="time-cell">10 AM - 11 AM</td>
         <td class="lab-session" rowspan="2">
-          Throughline Review and Dataset Realism
+          <a href="https://colab.research.google.com/drive/1KPRp-Ut0GlYClJkVT06siyqNBYGLz_-e" target="_blank">Throughline Review and Dataset Realism</a>
           <span class="instructor">Rebecca</span>
           <span class="location">[SEH 4040]</span>
         </td>
         <td class="lecture-session" rowspan="2">
-          Class factory
+          <a href="https://class-factory.adamaviv.com/" target="_blank">Class factory</a>
           <span class="instructor">Adam</span>
           <span class="location">[SEH 4040]</span>
         </td>
         <td class="guest-orientation" rowspan="2">
           Guest Speaker: <a href="/topic/13/">Malihe Alikhani</a>
           <span class="location">[SEH Lehman]</span>
+          <span class="slides">[<a href="https://docs.google.com/presentation/d/1yViu0_zIl-sZ-gAtu5g3PfERgy_T_q2a/edit?slide=id.p1#slide=id.p1" target="_blank">slides</a>]</span>
         </td>
         <td class="lab-session" rowspan="2">
           Cohort Showcase (<a href="https://docs.google.com/presentation/d/1lUo2G4CY-DcN8bWtQkubbCj5L2L3vPglB-mq3XOzCgc/edit?usp=share_link" target="_blank">template</a>)
@@ -362,7 +363,7 @@ continued implementation and improvement
           <span class="location">[SEH 4040]</span>
         </td>
         <td class="lecture-session">
-          Class factory continued
+          <a href="https://class-factory.adamaviv.com/" target="_blank">Class factory continued</a>
           <span class="instructor">Adam</span>
           <span class="location">[SEH 4040]</span>
         </td>
@@ -388,9 +389,9 @@ continued implementation and improvement
 
 | Date | Topic | Description | Activity |
 | :--- | :--- | :--- | :--- |
-| Mon 6/15/26 | [Throughline review + AI Assisted Course Prototyping](/topic/11/) | Review Week 1 and Week 2 concepts, and explore potential workflows for AI-assisted course prototyping. | [Data Realism Lab](/activity/11/) |
-| Tue 6/16/26 | [Class Factory](/topic/12/) | Use the Class Factory tool to draft lectures, labs, rubrics, instructor notes, and student materials while evaluating outputs for correctness, feasibility, privacy, and security realism. | [Class Factory](/activity/12/) |
-| Wed 6/17/26 | [Guest Speaker: Malihe Alikhani](/topic/13/) | Guest Speaker session with Malihe Alikhani in the morning, followed by a Cohort Field Trip in the afternoon. *Note: By majority vote, the cohort will take a trip to the Cascading Waterfall at [Meridian Hill Park](https://www.nps.gov/rocr/learn/historyculture/meridian-hill-park.htm).* | [Cohort Field Trip](https://www.nps.gov/rocr/learn/historyculture/meridian-hill-park.htm) |
+| Mon 6/15/26 | [Throughline review + AI Assisted Course Prototyping](/topic/11/) | Review Week 1 and Week 2 concepts, and explore potential workflows for AI-assisted course prototyping. | [Data Realism Lab](https://colab.research.google.com/drive/1KPRp-Ut0GlYClJkVT06siyqNBYGLz_-e) |
+| Tue 6/16/26 | [Class Factory](/topic/12/) | Use the [Class Factory](https://class-factory.adamaviv.com/) tool to draft lectures, labs, rubrics, instructor notes, and student materials while evaluating outputs for correctness, feasibility, privacy, and security realism. | [Class Factory](/activity/12/) |
+| Wed 6/17/26 | [Guest Speaker: Malihe Alikhani](/topic/13/) ([slides](https://docs.google.com/presentation/d/1yViu0_zIl-sZ-gAtu5g3PfERgy_T_q2a/edit?slide=id.p1#slide=id.p1)) | Guest Speaker session with Malihe Alikhani in the morning, followed by a Cohort Field Trip in the afternoon. *Note: By majority vote, the cohort will take a trip to the Cascading Waterfall at [Meridian Hill Park](https://www.nps.gov/rocr/learn/historyculture/meridian-hill-park.htm).* | [Cohort Field Trip](https://www.nps.gov/rocr/learn/historyculture/meridian-hill-park.htm) |
 | Thu 6/18/26 | [Showcase -- Course Proposal (All Day)](/topic/14/) | Each participant will give a 10 minute presentation of their proposed course. | [Showcase and Transition Planning](/activity/14/) ([template](https://docs.google.com/presentation/d/1lUo2G4CY-DcN8bWtQkubbCj5L2L3vPglB-mq3XOzCgc/edit?usp=share_link)) |
 
 ## Phase 2: Week 4-5: Curriculum Refinement (remote)
