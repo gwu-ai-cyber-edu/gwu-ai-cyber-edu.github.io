@@ -372,7 +372,7 @@ continued implementation and improvement
           <span class="location">[<a href="https://www.nps.gov/rocr/learn/historyculture/meridian-hill-park.htm" target="_blank">Meridian Hill Park</a>]</span>
         </td>
         <td class="lecture-session">
-          <a href="https://docs.google.com/document/d/1VLsHBdy88q65gZxD80uY5fJIf0M8YxmwQduAiJp7V08/edit?tab=t.0" target="_blank">Transition Plan</a>
+          Transition Plan (<a href="https://docs.google.com/document/d/1VLsHBdy88q65gZxD80uY5fJIf0M8YxmwQduAiJp7V08/edit?tab=t.0" target="_blank">template</a>)
           <span class="instructor">Adam, Arkady, Rebecca, Robert, Shi</span>
           <span class="location">[SEH 4040]</span>
         </td>
@@ -392,7 +392,7 @@ continued implementation and improvement
 | Mon 6/15/26 | [Throughline review + AI Assisted Course Prototyping](/topic/11/) | Review Week 1 and Week 2 concepts, and explore potential workflows for AI-assisted course prototyping. | [Data Realism Lab](https://colab.research.google.com/drive/1KPRp-Ut0GlYClJkVT06siyqNBYGLz_-e) |
 | Tue 6/16/26 | [Class Factory](/topic/12/) | Use the [Class Factory](https://class-factory.adamaviv.com/) tool to draft lectures, labs, rubrics, instructor notes, and student materials while evaluating outputs for correctness, feasibility, privacy, and security realism. | [Class Factory](/activity/12/) |
 | Wed 6/17/26 | [Guest Speaker: Malihe Alikhani](/topic/13/) ([slides](https://docs.google.com/presentation/d/1yViu0_zIl-sZ-gAtu5g3PfERgy_T_q2a/edit?slide=id.p1#slide=id.p1)) | Guest Speaker session with Malihe Alikhani in the morning, followed by a Cohort Field Trip in the afternoon. *Note: By majority vote, the cohort will take a trip to the Cascading Waterfall at [Meridian Hill Park](https://www.nps.gov/rocr/learn/historyculture/meridian-hill-park.htm).* | [Cohort Field Trip](https://www.nps.gov/rocr/learn/historyculture/meridian-hill-park.htm) |
-| Thu 6/18/26 | [Showcase -- Course Proposal (All Day)](/topic/14/) | Each participant will give a 10 minute presentation of their proposed course. | [Showcase and Transition Planning](/activity/14/) ([template](https://docs.google.com/presentation/d/1lUo2G4CY-DcN8bWtQkubbCj5L2L3vPglB-mq3XOzCgc/edit?usp=share_link)) |
+| Thu 6/18/26 | [Showcase -- Course Proposal (All Day)](/topic/14/) | Each participant will give a 10 minute presentation of their proposed course. | [Showcase and Transition Planning](/activity/14/) |
 
 ## Phase 2: Week 4-5: Curriculum Refinement (remote)
 
