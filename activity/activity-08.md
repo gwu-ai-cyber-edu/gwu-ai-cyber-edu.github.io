@@ -8,4 +8,4 @@ permalink: /activity/08/
 
 This afternoon activity asks participants to revise an AI+cybersecurity assignment with responsible AI-use expectations, disclosure requirements, acceptable-assistance boundaries, and governance constraints.
 
-* [AI Abuse Lab Document](https://drive.google.com/file/d/1E6vtV6KJS73meWMKRhwc4RgfJKQbX9NV/view?usp=sharing)
+* [Ideation Workshop](https://drive.google.com/file/d/1E6vtV6KJS73meWMKRhwc4RgfJKQbX9NV/view?usp=sharing)
