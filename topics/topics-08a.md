@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Guest Speaker — AI Abuse (Elissa Redmiles)
+title: Guest Speaker — Generative AI and Image-Based Abuse (Elissa Redmiles)
 permalink: /topic/08a/
 ---
 
-# Guest Speaker: AI Abuse
+# Guest Speaker: Generative AI and Image-Based Abuse
 
 \[[slides](https://drive.google.com/file/d/10bJMCcU6PeJV50WqQWvf03U2RM8feLDb/view?usp=sharing)\]
 
