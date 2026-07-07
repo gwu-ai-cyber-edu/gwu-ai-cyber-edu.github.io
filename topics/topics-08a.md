@@ -6,7 +6,9 @@ permalink: /topic/08a/
 
 # Guest Speaker: AI Abuse
 
-This afternoon session is the second of two visiting guest-speaker sessions on Wednesday 6/10. It examines AI-powered image-based sexual abuse and the landscape of technical and policy defenses. The [morning session](/topic/08/) focuses on AI governance. There is no afternoon activity on this day.
+\[[lecture](https://drive.google.com/file/d/10bJMCcU6PeJV50WqQWvf03U2RM8feLDb/view?usp=sharing)\]
+
+This afternoon session is the second of two visiting guest-speaker sessions on Wednesday 6/10. It examines AI-powered image-based sexual abuse and the landscape of technical and policy defenses. The [morning session](/topic/08/) focuses on AI governance. The afternoon activity is the [Responsible Use and Governance Workshop](/activity/08/).
 
 <div style="display: flex; margin-bottom: 20px;">
   <div style="flex: 0 0 100px; margin-right: 20px;">

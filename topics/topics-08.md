@@ -6,7 +6,7 @@ permalink: /topic/08/
 
 # Guest Speaker: AI Governance
 
-This morning session is the first of two visiting guest-speaker sessions on Wednesday 6/10. It focuses on the governance of AI systems and the limits of metrics-driven risk management under the NIST AI Risk Management Framework. The [afternoon session](/topic/08a/) examines AI abuse. There is no afternoon activity on this day.
+This morning session is the first of two visiting guest-speaker sessions on Wednesday 6/10. It focuses on the governance of AI systems and the limits of metrics-driven risk management under the NIST AI Risk Management Framework. The [afternoon session](/topic/08a/) examines AI abuse. The afternoon activity is the [Responsible Use and Governance Workshop](/activity/08/).
 
 <div style="display: flex; margin-bottom: 20px;">
   <div style="flex: 0 0 100px; margin-right: 20px;">
